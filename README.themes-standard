@@ -1,0 +1,19 @@
+=====================
+gnome-themes-standard 
+=====================
+
+This package contains various components of the default GNOME 3 theme,
+renamed from Adwaita to EndlessOS, minus the HighContrast theme
+and minus the backgrounds
+
+themes/EndlessOS/
+  cursors/: the default GNOME 3 cursor theme
+  gtk-2.0/: the default GNOME 3 theme for GTK+ 2 applications
+  gtk-3.0/: the default GNOME 3 theme for GTK+ 3 applications
+  metacity-1/: the default GNOME 3 window manager theme
+
+Installation
+============
+
+See the 'INSTALL' file for installation instructions. You will need an
+up-to-date GTK+ 3 development environment to build the package.
