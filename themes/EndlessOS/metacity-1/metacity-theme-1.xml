@@ -20,7 +20,7 @@
   <distance name="button_height" value="22"/>
   <distance name="title_vertical_pad" value="11"/>
   <border name="title_border" left="2" right="2" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="0" top="1" bottom="0"/>
+  <border name="button_border" left="6" right="0" top="1" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="geometry_maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -33,7 +33,7 @@
   <distance name="button_height" value="22"/>
   <distance name="title_vertical_pad" value="11"/>
   <border name="title_border" left="2" right="2" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="0" top="1" bottom="0"/>
+  <border name="button_border" left="6" right="0" top="1" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false">
