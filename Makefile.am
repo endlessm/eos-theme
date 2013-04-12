@@ -1,4 +1,4 @@
-SUBDIRS = themes
+SUBDIRS = themes po
 
 MAINTAINERCLEANFILES =			\
 	Makefile.in			\
@@ -32,4 +32,4 @@ dist-hook:
 # we don't want to install mo files, all translations are already stored
 # in theme files
 install-data-local:
-	$(MAKE) -C uninstall
+	$(MAKE) -C po uninstall

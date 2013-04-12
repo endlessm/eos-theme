@@ -10,7 +10,7 @@ libadwaita_la_CFLAGS = $(GTK3_ENGINE_CFLAGS)
 libadwaita_la_LDFLAGS = -module -avoid-version -no-undefined
 libadwaita_la_LIBADD = $(GTK3_ENGINE_LIBS)
 
-themedir = $(datadir)/themes/Adwaita/gtk-3.0
+themedir = $(datadir)/themes/EndlessOS/gtk-3.0
 theme_DATA = 		\
 	gtk.gresource	\
 	gtk.css 	\

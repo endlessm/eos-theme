@@ -1,10 +1,10 @@
 [X-GNOME-Metatheme]
-_Name=Adwaita
+_Name=EndlessOS
 Type=X-GNOME-Metatheme
-_Comment=There is only one
+_Comment=EndlessOS theme
 Encoding=UTF-8
-GtkTheme=Adwaita
-MetacityTheme=Adwaita
-IconTheme=gnome
-CursorTheme=Adwaita
+GtkTheme=EndlessOS
+MetacityTheme=EndlessOS
+IconTheme=EndlessOS
+CursorTheme=EndlessOS
 CursorSize=24

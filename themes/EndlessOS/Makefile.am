@@ -1,4 +1,4 @@
-SUBDIRS = backgrounds cursors metacity-1
+SUBDIRS = cursors metacity-1
 
 if GTK3_ENGINE
 SUBDIRS += gtk-3.0
@@ -8,7 +8,7 @@ if GTK2_ENGINE
 SUBDIRS += gtk-2.0
 endif
 
-THEME_NAME=Adwaita
+THEME_NAME=EndlessOS
 THEME_IN_FILES=index.theme.in
 
 %.theme:   %.theme.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache

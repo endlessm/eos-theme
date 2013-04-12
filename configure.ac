@@ -1,8 +1,8 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([eos-themes], [1.0.0],
-        [http://endlessm.com])
+AC_INIT([eos-theme], [1.0.0],
+        [http://www.endlessm.com])
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-xz no-dist-gzip])
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
@@ -80,6 +80,7 @@ themes/EndlessOS/cursors/Makefile
 themes/EndlessOS/gtk-2.0/Makefile
 themes/EndlessOS/gtk-3.0/Makefile
 themes/EndlessOS/metacity-1/Makefile
+po/Makefile.in
 ])
 
 AC_OUTPUT
