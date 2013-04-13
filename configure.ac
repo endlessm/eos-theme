@@ -74,6 +74,13 @@ AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
 AC_CONFIG_FILES([
 Makefile
+desktop/Makefile
+desktop/applications/Makefile
+desktop/links/Makefile
+icons/Makefile
+icons/apps/Makefile
+icons/folders/Makefile
+icons/mini/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile
 themes/EndlessOS/cursors/Makefile
