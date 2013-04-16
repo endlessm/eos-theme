@@ -81,6 +81,7 @@ icons/Makefile
 icons/apps/Makefile
 icons/folders/Makefile
 icons/mini/Makefile
+icons/shell/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile
 themes/EndlessOS/cursors/Makefile
