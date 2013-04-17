@@ -1,0 +1,36 @@
+# Disable dynamic workspaces and set default number of workspaces to 2
+# (required for the workspace-based solution to keeping the desktop always active)
+[org.gnome.shell.overrides]
+dynamic-workspaces=false
+
+[org.gnome.desktop.wm.preferences]
+num-workspaces=2
+
+# Force the app menu to be on the application window rather than the shell panel
+# (required due to removal of the app menu from the panel)
+[org.gnome.settings-daemon.plugins.xsettings]
+overrides={"Gtk/ShellShowsAppMenu": <int32 0>}
+
+# Select the GTK theme
+[org.gnome.desktop.interface]
+gtk-theme='EndlessOS'
+
+# Select the window theme
+[org.gnome.desktop.wm.preferences]
+theme='EndlessOS'
+
+# Select the icon theme
+[gnome.desktop.interface]
+icon-theme='EndlessOS'
+
+# Select the cursor theme
+[org.gnome.desktop.interface]
+cursor-theme='EndlessOS'
+
+# Remove the Ubuntu overlay scrollbars
+[com.canonical.desktop.interface]
+scrollbar-mode='normal'
+
+# Enable the minimize button (but not maximize)
+[org.gnome.shell.overrides]
+button-layout=':minimize,close'
