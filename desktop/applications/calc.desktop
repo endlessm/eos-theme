@@ -5,6 +5,6 @@ Name[pt]=Calculadora
 Name[es]=Calculadora
 Comment=Calculator
 Type=Application
-Exec=qalculate-gtk
+Exec=gnome-calculator
 Icon=calculator
 Categories=Utility;Calculator;

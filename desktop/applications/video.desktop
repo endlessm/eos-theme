@@ -5,6 +5,6 @@ Name[pt]=Vídeos
 Name[es]=Vídeos
 Comment=Video
 Type=Application
-Exec=/usr/bin/vlc %U
+Exec=totem %U
 Icon=video
 Categories=Video;
