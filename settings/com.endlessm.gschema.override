@@ -1,10 +1,10 @@
-# Disable dynamic workspaces and set default number of workspaces to 2
-# (required for the workspace-based solution to keeping the desktop always active)
+# Disable dynamic workspaces and set default number of workspaces to 1
+# (required for the current solution to keeping the desktop always active)
 [org.gnome.shell.overrides]
 dynamic-workspaces=false
 
 [org.gnome.desktop.wm.preferences]
-num-workspaces=2
+num-workspaces=1
 
 # Force the app menu to be on the application window rather than the shell panel
 # (required due to removal of the app menu from the panel)
