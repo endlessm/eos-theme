@@ -1,1 +1,1 @@
-SUBDIRS = apps folders mini
+SUBDIRS = apps folders mini shell
