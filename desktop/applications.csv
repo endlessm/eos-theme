@@ -3,7 +3,7 @@ armagetron,,,,,X,X,X,X,Armagetron,,Armagetron,Armagetron,,3d light cycle game,,,
 audacity,,,,,X,X,X,X,Audio Editor,,Señor DJ,Edita Som,,Audacity,,,,,audacity,,,,,audacity,,,,,Audio;
 billardgl,,,,,X,X,X,X,Billiards,,Billar,Sinuca,,BillardGL,,,,,billard-gl,,,,,billardgl,,,,,Games;
 blockout,,,,,X,X,X,X,BlockOut 2,,BlockOut 2,BlockOut 2,,3D Tetris-style game,,,,,blockout2,,,,,blockout2,,,,,Games;
-calc,,,,,X,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,qalculate-gtk,,,,,calculator,,,,,Utility;Calculator;
+calc,,,,,X,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,gnome-calculator,,,,,calculator,,,,,Utility;Calculator;
 chromium-bsu,,,,,X,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,chromium-bsu --fullscreen,,,,,chromium-bsu,,,,,Games;
 email,,,,,X,X,X,X,E-mail,,,,,E-mail,,,,,evolution %U,,,,,email,,,,,Mail;Email;
 freecell,,,,,X,X,X,X,Freecell,,,,,Freecell,,,,,/usr/games/sol --freecell --class sol-freecell,,,,,freecell,,,,,Games;
@@ -33,7 +33,7 @@ teeworlds,,,,,X,X,X,X,Teeworlds,,Teelandia,Teelândia,,Multiplayer game,,,,,teew
 tuxkart,,,,,X,X,X,X,Tux Kart,,,,,Tux Kart,,,,,supertuxkart --fullscreen,,,,,supertuxkart,,,,,Games;
 tuxmath,,,,,X,X,X,X,Tux Math,,123 Tux,123 Tux,,Math Games,,,,,tuxmath,,,,,123tux,,,,,Games;Education;
 tuxtyping,,,,,X,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,tuxtype,,,,,tuxtyping,,,,,Games;
-video,,,,,X,X,X,X,Videos,,Vídeos,Vídeos,,Video,,,,,/usr/bin/vlc %U,,,,,video,,,,,Video;
+video,,,,,X,X,X,X,Videos,,Vídeos,Vídeos,,Video,,,,,totem %U,,,,,video,,,,,Video;
 weather,,,,,X,X,X,X,Weather,,Tiempo,Tempo,,See the weather forecast,,,,,endless-os-weather,,,,,weather,,,,,Network;News;
 writer,,,,,X,X,X,X,Writer,,Escritor,Redator,,Writer,,,,,libreoffice --writer %U,,,,,office_text,,,,,Office;
 youtube,,,,,X,X,X,X,YouTube,,YouTube,YouTube,,YouTube,,,,,endless-os-youtube,,,,,youtube-app,,,,,Media;
