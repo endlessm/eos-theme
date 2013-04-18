@@ -1,1 +1,1 @@
-SUBDIRS = apps folders mini shell
+SUBDIRS = apps appstore folders mini shell

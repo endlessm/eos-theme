@@ -79,6 +79,7 @@ desktop/applications/Makefile
 desktop/links/Makefile
 icons/Makefile
 icons/apps/Makefile
+icons/appstore/Makefile
 icons/folders/Makefile
 icons/mini/Makefile
 icons/shell/Makefile
