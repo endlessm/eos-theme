@@ -20,7 +20,7 @@ gtk-theme='EndlessOS'
 theme='EndlessOS'
 
 # Select the icon theme
-[gnome.desktop.interface]
+[org.gnome.desktop.interface]
 icon-theme='EndlessOS'
 
 # Select the cursor theme
