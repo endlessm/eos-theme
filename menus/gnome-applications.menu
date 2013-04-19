@@ -1,0 +1,97 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+
+  <Name>Applications</Name>
+
+  <!-- Bypass all default directories and show
+       only the EndlessOS folders and applications -->
+
+  <AppDir>/usr/share/EndlessOS/applications</AppDir>
+
+  <!-- Application shortcuts directly on the desktop -->
+
+  <Menu>
+    <Name>Desktop</Name>
+    <Include>
+      <Filename>epiphany.desktop</Filename>
+      <Filename>facebook.desktop</Filename>
+      <Filename>youtube.desktop</Filename>
+      <Filename>skype.desktop</Filename>
+      <Filename>writer.desktop</Filename>
+      <Filename>grooveshark.desktop</Filename>
+      <Filename>photos.desktop</Filename>
+      <Filename>nautilus.desktop</Filename>
+    </Include>
+  </Menu> <!-- End Desktop -->
+
+  <!-- Application shortcuts within folders on the desktop -->
+
+  <Menu>
+    <Name>Media</Name>
+    <Directory>Media.directory</Directory>
+    <Include>
+      <Filename>shotwell.desktop</Filename>
+      <Filename>video.desktop</Filename>
+      <Filename>music.desktop</Filename>
+      <Filename>qBittorrent.desktop</Filename>
+      <Filename>photo-editor.desktop</Filename>
+      <Filename>ted.desktop</Filename>
+    </Include>
+  </Menu> <!-- End Media -->
+
+  <Menu>
+    <Name>Games</Name>
+    <Directory>Games.directory</Directory>
+    <Include>
+      <Filename>openarena.desktop</Filename>
+      <Filename>angrybirds.desktop</Filename>
+      <Filename>solitaire.desktop</Filename>
+      <Filename>freecell.desktop</Filename>
+      <Filename>supertux.desktop</Filename>
+      <Filename>chromium-bsu.desktop</Filename>
+      <Filename>tuxkart.desktop</Filename>
+    </Include>
+  </Menu> <!-- End Games -->
+
+  <Menu>
+    <Name>Work</Name>
+    <Directory>Work.directory</Directory>
+    <Include>
+      <Filename>email.desktop</Filename>
+      <Filename>spreadsheet.desktop</Filename>
+      <Filename>impress.desktop</Filename>
+      <Filename>hotmail.desktop</Filename>
+      <Filename>gmail.desktop</Filename>
+      <Filename>calc.desktop</Filename>
+      <Filename>typing.desktop</Filename>
+    </Include>
+  </Menu> <!-- End Work -->
+
+  <Menu>
+    <Name>News</Name>
+    <Directory>News.directory</Directory>
+    <Include>
+      <Filename>weather.desktop</Filename>
+      <Filename>cnn.desktop</Filename>
+      <Filename>nytimes.desktop</Filename>
+      <Filename>wsj.desktop</Filename>
+      <Filename>economist.desktop</Filename>
+    </Include>
+  </Menu> <!-- End News -->
+
+  <Menu>
+    <Name>Curiosity</Name>
+    <Directory>Curiosity.directory</Directory>
+    <Include>
+      <Filename>wikipedia.desktop</Filename>
+      <Filename>khanacademy.desktop</Filename>
+      <Filename>codeacademy.desktop</Filename>
+      <Filename>worldwonders.desktop</Filename>
+      <Filename>gcompris.desktop</Filename>
+      <Filename>stellarium.desktop</Filename>
+    </Include>
+  </Menu> <!-- End Curiosity -->
+
+</Menu> <!-- End Applications -->
