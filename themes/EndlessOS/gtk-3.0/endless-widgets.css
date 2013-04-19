@@ -1,0 +1,27 @@
+/* Endless window top bar */
+
+.top-bar {
+    background-image: -gtk-gradient(linear, center top, center bottom,
+        from(#343434), to(#262624));
+}
+
+.top-bar .button {
+    color: #8a8a8a;
+    icon-shadow: 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar .button:hover {
+    color: #ffffff;
+    icon-shadow: 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar .button:active
+/* .button *:active Needed to override Adwaita */ {
+    color: #464646;
+    icon-shadow: none;
+    /* TODO: In proper CSS the above line is done as follows:
+    position: relative;
+    top: 1px;
+    Replace the style property below when they are supported in GTK. */
+    -GtkButton-child-displacement-y: 1px;
+}
