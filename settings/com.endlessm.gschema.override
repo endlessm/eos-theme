@@ -34,3 +34,7 @@ scrollbar-mode='normal'
 # Enable the minimize button (but not maximize)
 [org.gnome.shell.overrides]
 button-layout=':minimize,close'
+
+# Specify the default background image
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/EndlessOS/backgrounds/default_background.jpg'
