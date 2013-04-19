@@ -6,5 +6,5 @@ Name[es]=Documentos
 Comment=File Manager
 Type=Application
 Exec=nautilus
-Icon=file-manager
+Icon=nautilus
 Categories=FileManager;Utility;Core;GTK;
