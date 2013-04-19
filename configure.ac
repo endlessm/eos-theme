@@ -74,6 +74,7 @@ AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
 AC_CONFIG_FILES([
 Makefile
+backgrounds/Makefile
 desktop/Makefile
 desktop/applications/Makefile
 desktop/links/Makefile
