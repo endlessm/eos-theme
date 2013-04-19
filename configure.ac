@@ -77,6 +77,7 @@ Makefile
 backgrounds/Makefile
 desktop/Makefile
 desktop/applications/Makefile
+desktop/directories/Makefile
 desktop/links/Makefile
 icons/Makefile
 icons/apps/Makefile
@@ -84,6 +85,7 @@ icons/appstore/Makefile
 icons/folders/Makefile
 icons/mini/Makefile
 icons/shell/Makefile
+menus/Makefile
 settings/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile

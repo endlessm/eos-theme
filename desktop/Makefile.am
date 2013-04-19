@@ -1,4 +1,4 @@
-SUBDIRS = applications links
+SUBDIRS = applications links directories
 
 EXTRA_DIST = applications.csv	\
 	links.csv		\
