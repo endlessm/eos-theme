@@ -41,4 +41,4 @@ picture-uri='file:///usr/share/EndlessOS/backgrounds/default_background.jpg'
 
 # Specify the folders for the app selector
 [org.gnome.shell]
-app-folder-categories=['Media', 'Games', 'Work', 'News', 'Curiosity']
+app-folder-categories=['Media', 'Games', 'Work', 'News', 'Curiosity', 'Settings']
