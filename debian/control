@@ -1,0 +1,19 @@
+Source: eos-theme
+Section: gnome
+Priority: optional
+Maintainer: EndlessMobile <asynchrony@endlessm.com>
+Uploaders: Srdjan Grubor <sgnn7@sgnn7.org>
+Build-Depends: autotools-dev,
+               debhelper (>= 8.1.3~),
+               dh-autoreconf,
+               intltool (>= 0.26),
+Standards-Version: 3.9.3
+Homepage: http://endlessm.com
+
+Package: eos-theme
+Architecture: all
+Depends: ${misc:Depends},
+         eos-shell
+Recommends: eos-shell
+Description: Custom theme for eos-shell
+ Custom theme along with icons and images
