@@ -1,1 +1,4 @@
 @import url("resource:///org/gnome/adwaita/gtk-main.css");
+
+/* Endless widget-specific theme */
+@import url("endless-widgets.css");

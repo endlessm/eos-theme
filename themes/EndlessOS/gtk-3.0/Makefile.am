@@ -15,6 +15,7 @@ theme_DATA = 		\
 	gtk.gresource	\
 	gtk.css 	\
 	gtk-dark.css	\
+	endless-widgets.css \
 	settings.ini
 
 resource_files = $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/gtk.gresource.xml)
@@ -26,6 +27,7 @@ EXTRA_DIST = \
 	gtk.css \
 	gtk-dark.css \
 	gtk.gresource.xml \
+	endless-widgets.css \
 	settings.ini
 
 CLEANFILES = \
