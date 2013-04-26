@@ -2,3 +2,5 @@
 *.substvars
 eos-theme/*
 files
+stamp-*
+autoreconf.*
