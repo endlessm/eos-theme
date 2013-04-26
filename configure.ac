@@ -64,11 +64,6 @@ AC_SUBST(GTK2_VERSION)
 GLIB_COMPILE_RESOURCES=`$PKG_CONFIG --variable glib_compile_resources gio-2.0`
 AC_SUBST(GLIB_COMPILE_RESOURCES)
 
-AC_PATH_PROG(GTK_UPDATE_ICON_CACHE, gtk-update-icon-cache)
-if test -z "$GTK_UPDATE_ICON_CACHE"; then
-    AC_MSG_ERROR([Could not find gtk-update-icon-cache])
-fi
-
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
