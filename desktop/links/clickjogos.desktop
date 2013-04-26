@@ -2,6 +2,6 @@
 Version=1.0
 Name=Click Jogos
 Comment=
-Type=Link
-URL=http://www.clickjogos.uol.com.br
+Type=Application
+Exec=epiphany-browser http://www.clickjogos.uol.com.br
 Icon=clickjogos

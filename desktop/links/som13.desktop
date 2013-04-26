@@ -2,6 +2,6 @@
 Version=1.0
 Name=Som13 Musica
 Comment=
-Type=Link
-URL=http://som13.com.br
+Type=Application
+Exec=epiphany-browser http://som13.com.br
 Icon=som13

@@ -2,6 +2,6 @@
 Version=1.0
 Name=Brasil Escola
 Comment=
-Type=Link
-URL=http://www.vestibular.brasilescola.com
+Type=Application
+Exec=epiphany-browser http://www.vestibular.brasilescola.com
 Icon=brasil-escola

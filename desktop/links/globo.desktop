@@ -2,6 +2,6 @@
 Version=1.0
 Name=Globo
 Comment=
-Type=Link
-URL=http://www.globo.com
+Type=Application
+Exec=epiphany-browser http://www.globo.com
 Icon=globo-dot-com

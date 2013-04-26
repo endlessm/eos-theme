@@ -2,6 +2,6 @@
 Version=1.0
 Name=Disque Denuncia
 Comment=
-Type=Link
-URL=http://www.disquedenuncia.org.br
+Type=Application
+Exec=epiphany-browser http://www.disquedenuncia.org.br
 Icon=disque-denuncia

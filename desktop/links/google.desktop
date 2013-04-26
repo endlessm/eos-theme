@@ -2,6 +2,6 @@
 Version=1.0
 Name=Google
 Comment=
-Type=Link
-URL=http://www.google.com
+Type=Application
+Exec=epiphany-browser http://www.google.com
 Icon=google

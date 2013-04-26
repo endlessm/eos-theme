@@ -2,6 +2,6 @@
 Version=1.0
 Name=C.R. Flamengo
 Comment=
-Type=Link
-URL=http://www.flamengo.com.br
+Type=Application
+Exec=epiphany-browser http://www.flamengo.com.br
 Icon=flamengo

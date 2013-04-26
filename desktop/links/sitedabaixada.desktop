@@ -2,6 +2,6 @@
 Version=1.0
 Name=Site da Baixada
 Comment=
-Type=Link
-URL=http://noticias.sitedabaixada.com.br
+Type=Application
+Exec=epiphany-browser http://noticias.sitedabaixada.com.br
 Icon=site-da-baixada

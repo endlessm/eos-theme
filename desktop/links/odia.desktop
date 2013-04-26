@@ -2,6 +2,6 @@
 Version=1.0
 Name=O Dia
 Comment=
-Type=Link
-URL=http://odia.ig.com.br/portal
+Type=Application
+Exec=epiphany-browser http://odia.ig.com.br/portal
 Icon=odia

@@ -2,6 +2,6 @@
 Version=1.0
 Name=Revista Saude
 Comment=
-Type=Link
-URL=http://saude.abril.com.br
+Type=Application
+Exec=epiphany-browser http://saude.abril.com.br
 Icon=saude-abril

@@ -2,6 +2,6 @@
 Version=1.0
 Name=GNT
 Comment=
-Type=Link
-URL=http://gnt.globo.com
+Type=Application
+Exec=epiphany-browser http://gnt.globo.com
 Icon=gnt

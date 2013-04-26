@@ -2,6 +2,6 @@
 Version=1.0
 Name=Receitas
 Comment=
-Type=Link
-URL=http://tvg.globo.com/receitas
+Type=Application
+Exec=epiphany-browser http://tvg.globo.com/receitas
 Icon=receitas-globo

@@ -2,6 +2,6 @@
 Version=1.0
 Name=Globo Esporte
 Comment=
-Type=Link
-URL=http://globoesporte.globo.com
+Type=Application
+Exec=epiphany-browser http://globoesporte.globo.com
 Icon=globoesporte-dot-com

@@ -2,6 +2,6 @@
 Version=1.0
 Name=Extra
 Comment=
-Type=Link
-URL=http://extra.globo.com
+Type=Application
+Exec=epiphany-browser http://extra.globo.com
 Icon=extra

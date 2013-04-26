@@ -2,6 +2,6 @@
 Version=1.0
 Name=Cinema
 Comment=
-Type=Link
-URL=http://www.cinema.com
+Type=Application
+Exec=epiphany-browser http://www.cinema.com
 Icon=cinema

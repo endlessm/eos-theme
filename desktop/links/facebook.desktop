@@ -2,6 +2,6 @@
 Version=1.0
 Name=Facebook
 Comment=
-Type=Link
-URL=http://www.facebook.com
+Type=Application
+Exec=epiphany-browser http://www.facebook.com
 Icon=facebook

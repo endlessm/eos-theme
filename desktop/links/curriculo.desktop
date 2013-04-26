@@ -2,6 +2,6 @@
 Version=1.0
 Name=Curriculo Online
 Comment=
-Type=Link
-URL=http://curriculo.com.br
+Type=Application
+Exec=epiphany-browser http://curriculo.com.br
 Icon=curriculo

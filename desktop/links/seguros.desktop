@@ -2,6 +2,6 @@
 Version=1.0
 Name=Seguros
 Comment=
-Type=Link
-URL=http://www.superqualidadeseguros.com
+Type=Application
+Exec=epiphany-browser http://www.superqualidadeseguros.com
 Icon=sq-seguros

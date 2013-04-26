@@ -2,6 +2,6 @@
 Version=1.0
 Name=Mercado Livre
 Comment=
-Type=Link
-URL=http://www.mercadolivre.com.br
+Type=Application
+Exec=epiphany-browser http://www.mercadolivre.com.br
 Icon=mercadolivre

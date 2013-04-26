@@ -2,6 +2,6 @@
 Version=1.0
 Name=Ingresso
 Comment=
-Type=Link
-URL=http://www.ingresso.com.br
+Type=Application
+Exec=epiphany-browser http://www.ingresso.com.br
 Icon=ingresso-com

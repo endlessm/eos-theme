@@ -2,6 +2,6 @@
 Version=1.0
 Name=G1
 Comment=
-Type=Link
-URL=http://g1.globo.com
+Type=Application
+Exec=epiphany-browser http://g1.globo.com
 Icon=g1

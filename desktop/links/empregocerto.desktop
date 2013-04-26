@@ -2,6 +2,6 @@
 Version=1.0
 Name=Emprego Certo
 Comment=
-Type=Link
-URL=http://empregocerto.uol.com.br/info/cadastre-se.html?psid=1
+Type=Application
+Exec=epiphany-browser http://empregocerto.uol.com.br/info/cadastre-se.html?psid=1
 Icon=emprego-certo

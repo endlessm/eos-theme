@@ -2,6 +2,6 @@
 Version=1.0
 Name=Delegacias
 Comment=
-Type=Link
-URL=http://www.policiacivil.rj.gov.br/delegacia.asp#deam
+Type=Application
+Exec=epiphany-browser http://www.policiacivil.rj.gov.br/delegacia.asp#deam
 Icon=delegacias

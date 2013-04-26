@@ -2,6 +2,6 @@
 Version=1.0
 Name=Fofoca
 Comment=
-Type=Link
-URL=http://www.fofoca.tv/
+Type=Application
+Exec=epiphany-browser http://www.fofoca.tv/
 Icon=fofoca-tv

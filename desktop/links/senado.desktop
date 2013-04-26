@@ -2,6 +2,6 @@
 Version=1.0
 Name=Senado Online
 Comment=
-Type=Link
-URL=http://www.senado.gov.br
+Type=Application
+Exec=epiphany-browser http://www.senado.gov.br
 Icon=senado-federal

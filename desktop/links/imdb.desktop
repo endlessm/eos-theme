@@ -2,6 +2,6 @@
 Version=1.0
 Name=IMDb
 Comment=
-Type=Link
-URL=http://www.imdb.com
+Type=Application
+Exec=epiphany-browser http://www.imdb.com
 Icon=imdb

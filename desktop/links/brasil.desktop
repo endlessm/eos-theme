@@ -2,6 +2,6 @@
 Version=1.0
 Name=Portal Brasil
 Comment=
-Type=Link
-URL=http://www.brasil.gov.br
+Type=Application
+Exec=epiphany-browser http://www.brasil.gov.br
 Icon=portalbrasil

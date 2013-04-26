@@ -2,6 +2,6 @@
 Version=1.0
 Name=Rio Turismo Radical
 Comment=
-Type=Link
-URL=http://www.rioturismoradical.com.br/portugues/index1.htm
+Type=Application
+Exec=epiphany-browser http://www.rioturismoradical.com.br/portugues/index1.htm
 Icon=turismo-radical

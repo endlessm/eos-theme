@@ -2,6 +2,6 @@
 Version=1.0
 Name=New York Times
 Comment=
-Type=Link
-URL=http://www.nytimes.com
+Type=Application
+Exec=epiphany-browser http://www.nytimes.com
 Icon=nyt

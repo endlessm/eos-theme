@@ -2,6 +2,6 @@
 Version=1.0
 Name=InfoJobs
 Comment=
-Type=Link
-URL=http://vagas.infojobs.com.br
+Type=Application
+Exec=epiphany-browser http://vagas.infojobs.com.br
 Icon=infojobs

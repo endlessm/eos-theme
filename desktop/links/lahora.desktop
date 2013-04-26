@@ -2,6 +2,6 @@
 Version=1.0
 Name=La Hora
 Comment=
-Type=Link
-URL=http://www.lahora.com.gt
+Type=Application
+Exec=epiphany-browser http://www.lahora.com.gt
 Icon=lahora

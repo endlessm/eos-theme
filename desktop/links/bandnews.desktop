@@ -2,6 +2,6 @@
 Version=1.0
 Name=Band News
 Comment=
-Type=Link
-URL=http://bandnewsfm.band.com.br
+Type=Application
+Exec=epiphany-browser http://bandnewsfm.band.com.br
 Icon=bandnews

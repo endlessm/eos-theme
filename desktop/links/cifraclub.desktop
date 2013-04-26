@@ -2,6 +2,6 @@
 Version=1.0
 Name=Cifra Club
 Comment=
-Type=Link
-URL=http://www.cifraclub.com.br
+Type=Application
+Exec=epiphany-browser http://www.cifraclub.com.br
 Icon=cifraclub
