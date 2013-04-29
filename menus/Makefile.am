@@ -1,7 +1,3 @@
-menusdir = ${HOME}/.config/menus
+menusdir = $(sysconfdir)/xdg/menus
 menus_DATA = \
-	gnome-applications.menu
-
-skeldir = /etc/skel/.config/menus
-skel_DATA = \
 	gnome-applications.menu
