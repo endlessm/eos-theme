@@ -5,7 +5,7 @@ To build/install from this repo:
 ```
 sudo apt-get install librsvg2-dev
 cd ~/checkout/eos-theme
-./autogen.sh
+./autogen.sh --datadir=/usr/share --sysconfdir=/etc
 make
 sudo make install
 ```
