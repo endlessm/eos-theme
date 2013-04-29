@@ -1,3 +1,3 @@
-desktopdir = $(datadir)/EndlessOS/desktop-directories
+desktopdir = $(datadir)/desktop-directories
 desktop_DATA = \
 	*.directory
