@@ -1,6 +1,7 @@
 *.log
 *.substvars
-eos-theme/*
+tmp/*
 files
 stamp-*
 autoreconf.*
+*.debhelper
