@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Orkut
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.orkut.com
-Icon=orkut

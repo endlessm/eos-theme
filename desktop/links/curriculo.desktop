@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Curriculo Online
-Comment=
-Type=Application
-Exec=epiphany-browser http://curriculo.com.br
-Icon=curriculo

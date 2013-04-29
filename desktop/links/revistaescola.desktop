@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Revista Escola Abril
-Comment=
-Type=Application
-Exec=epiphany-browser http://revistaescola.abril.com.br
-Icon=escola-abril

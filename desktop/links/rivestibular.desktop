@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Rio Vestibular
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.rivestibular.com.br
-Icon=vestibular

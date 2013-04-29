@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Google
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.google.com
-Icon=google

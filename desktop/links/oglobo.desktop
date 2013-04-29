@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=O Globo Online
-Comment=
-Type=Application
-Exec=epiphany-browser http://oglobo.globo.com
-Icon=oglobo

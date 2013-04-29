@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Twitter
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.twitter.com
-Icon=twitter

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Terra
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.terra.com.br/portal
-Icon=terra

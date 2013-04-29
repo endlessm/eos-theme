@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Facebook
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.facebook.com
-Icon=facebook

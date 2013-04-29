@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Alerta Rio
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.climatempo.com.br/alerta-rio/
-Icon=alerta-rio

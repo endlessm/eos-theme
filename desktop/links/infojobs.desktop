@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=InfoJobs
-Comment=
-Type=Application
-Exec=epiphany-browser http://vagas.infojobs.com.br
-Icon=infojobs

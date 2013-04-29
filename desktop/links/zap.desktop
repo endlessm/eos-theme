@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Zap
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.zap.com.br
-Icon=zap

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Ministerio do Esporte
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.esporte.gov.br
-Icon=ministerio-esporte

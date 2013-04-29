@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Globo News
-Comment=
-Type=Application
-Exec=epiphany-browser http://globotv.globo.com/globo-news
-Icon=globonews

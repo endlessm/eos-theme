@@ -21,6 +21,7 @@
        only the EndlessOS folders and applications -->
 
   <AppDir>/usr/share/EndlessOS/applications</AppDir>
+  <AppDir>/usr/share/EndlessOS/links</AppDir>
   <DirectoryDir>/usr/share/EndlessOS/desktop-directories</DirectoryDir>
 
   <!-- Application shortcuts directly on the desktop -->

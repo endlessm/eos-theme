@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Noticias
-Comment=
-Type=Application
-Exec=epiphany-browser http://noticias.r7.com/
-Icon=r7-noticias

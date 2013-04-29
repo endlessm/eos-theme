@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Ingresso
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.ingresso.com.br
-Icon=ingresso-com

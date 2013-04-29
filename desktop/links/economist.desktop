@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=The Economist
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.economist.com
-Icon=theeconomist

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Plano de Saude Online
-Comment=
-Type=Application
-Exec=epiphany-browser http://compreplanosdesaudeonline.com
-Icon=plano-saude-online

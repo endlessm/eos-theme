@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Globo
-Comment=
-Type=Application
-Exec=epiphany-browser http://www.globo.com
-Icon=globo-dot-com

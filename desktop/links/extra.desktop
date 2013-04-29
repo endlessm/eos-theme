@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Extra
-Comment=
-Type=Application
-Exec=epiphany-browser http://extra.globo.com
-Icon=extra
