@@ -76,9 +76,7 @@ AC_CONFIG_FILES([
 Makefile
 backgrounds/Makefile
 desktop/Makefile
-desktop/applications/Makefile
 desktop/directories/Makefile
-desktop/links/Makefile
 icons/Makefile
 icons/apps/Makefile
 icons/appstore/Makefile

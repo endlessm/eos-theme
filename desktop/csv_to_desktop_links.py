@@ -49,8 +49,8 @@ class DesktopWriter:
         desktop_file.write('Version=1.0\n')
         self._write_key(desktop_file, fields, 'Name')
         self._write_key(desktop_file, fields, 'Comment')
-        desktop_file.write('Type=Link\n')
-        desktop_file.write('URL=%s\n' % url)
+	desktop_file.write('Type=Application\n')
+	desktop_file.write('Exec=epiphany-browser %s\n' % url)
         self._write_key(desktop_file, fields, 'Icon')
 
     def _add_index(self, key, locale, index):
