@@ -67,3 +67,4 @@ so_locations
 stamp-h1
 tags
 themes/EndlessOS/index.theme
+config.*cdbs*orig
