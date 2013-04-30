@@ -1,14 +1,14 @@
 enginedir = $(libdir)/gtk-3.0/$(GTK3_VERSION)/theming-engines
 engine_LTLIBRARIES =
-engine_LTLIBRARIES += libadwaita.la
+engine_LTLIBRARIES += libendlessos.la
 
-libadwaita_la_SOURCES =			\
-	adwaita_utils.h			\
-	adwaita_utils.c			\
-	adwaita_engine.c
-libadwaita_la_CFLAGS = $(GTK3_ENGINE_CFLAGS)
-libadwaita_la_LDFLAGS = -module -avoid-version -no-undefined
-libadwaita_la_LIBADD = $(GTK3_ENGINE_LIBS)
+libendlessos_la_SOURCES =			\
+	endlessos_utils.h			\
+	endlessos_utils.c			\
+	endlessos_engine.c
+libendlessos_la_CFLAGS = $(GTK3_ENGINE_CFLAGS)
+libendlessos_la_LDFLAGS = -module -avoid-version -no-undefined
+libendlessos_la_LIBADD = $(GTK3_ENGINE_LIBS)
 
 themedir = $(datadir)/themes/EndlessOS/gtk-3.0
 theme_DATA = 		\

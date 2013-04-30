@@ -549,7 +549,7 @@ style "default"
 
 style "toplevel_hack"
 {
-        engine "adwaita"
+        engine "endlessos"
         {
         }
 }
@@ -719,7 +719,7 @@ style "menu"
 
 style "menu_framed_box"
 {
-	engine "adwaita"
+	engine "endlessos"
 	{
         }
 }

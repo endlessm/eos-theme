@@ -1,4 +1,4 @@
-/* Adwaita - a GTK+ engine
+/* EndlessOS - a GTK+ engine
  *
  * Copyright (C) 2011 Carlos Garnacho <carlosg@gnome.org>
  * Copyright (C) 2011 Red Hat, Inc.
@@ -32,14 +32,14 @@
 #include <gdk/gdkx.h>
 #endif
 
-#include "adwaita_utils.h"
+#include "endlessos_utils.h"
 
-#define ADWAITA_NAMESPACE "adwaita"
+#define ENDLESSOS_NAMESPACE "endlessos"
 
-typedef struct _AdwaitaEngine AdwaitaEngine;
-typedef struct _AdwaitaEngineClass AdwaitaEngineClass;
+typedef struct _EndlessOSEngine EndlessOSEngine;
+typedef struct _EndlessOSEngineClass EndlessOSEngineClass;
 
-struct _AdwaitaEngine
+struct _EndlessOSEngine
 {
   GtkThemingEngine parent_object;
 
@@ -47,31 +47,31 @@ struct _AdwaitaEngine
   GtkCssProvider *fallback_provider;
 };
 
-struct _AdwaitaEngineClass
+struct _EndlessOSEngineClass
 {
   GtkThemingEngineClass parent_class;
 };
 
-#define ADWAITA_TYPE_ENGINE		 (adwaita_engine_get_type ())
-#define ADWAITA_ENGINE(object)		 (G_TYPE_CHECK_INSTANCE_CAST ((object), ADWAITA_TYPE_ENGINE, AdwaitaEngine))
-#define ADWAITA_ENGINE_CLASS(klass)	 (G_TYPE_CHECK_CLASS_CAST ((klass), ADWAITA_TYPE_ENGINE, AdwaitaEngineClass))
-#define ADWAITA_IS_ENGINE(object)	 (G_TYPE_CHECK_INSTANCE_TYPE ((object), ADWAITA_TYPE_ENGINE))
-#define ADWAITA_IS_ENGINE_CLASS(klass)	 (G_TYPE_CHECK_CLASS_TYPE ((klass), ADWAITA_TYPE_ENGINE))
-#define ADWAITA_ENGINE_GET_CLASS(obj)	 (G_TYPE_INSTANCE_GET_CLASS ((obj), ADWAITA_TYPE_ENGINE, AdwaitaEngineClass))
+#define ENDLESSOS_TYPE_ENGINE		 (endlessos_engine_get_type ())
+#define ENDLESSOS_ENGINE(object)		 (G_TYPE_CHECK_INSTANCE_CAST ((object), ENDLESSOS_TYPE_ENGINE, EndlessOSEngine))
+#define ENDLESSOS_ENGINE_CLASS(klass)	 (G_TYPE_CHECK_CLASS_CAST ((klass), ENDLESSOS_TYPE_ENGINE, EndlessOSEngineClass))
+#define ENDLESSOS_IS_ENGINE(object)	 (G_TYPE_CHECK_INSTANCE_TYPE ((object), ENDLESSOS_TYPE_ENGINE))
+#define ENDLESSOS_IS_ENGINE_CLASS(klass)	 (G_TYPE_CHECK_CLASS_TYPE ((klass), ENDLESSOS_TYPE_ENGINE))
+#define ENDLESSOS_ENGINE_GET_CLASS(obj)	 (G_TYPE_INSTANCE_GET_CLASS ((obj), ENDLESSOS_TYPE_ENGINE, EndlessOSEngineClass))
 
-GType adwaita_engine_get_type	    (void) G_GNUC_CONST;
-void  adwaita_engine_register_types (GTypeModule *module);
+GType endlessos_engine_get_type	    (void) G_GNUC_CONST;
+void  endlessos_engine_register_types (GTypeModule *module);
 
-G_DEFINE_DYNAMIC_TYPE (AdwaitaEngine, adwaita_engine, GTK_TYPE_THEMING_ENGINE)
+G_DEFINE_DYNAMIC_TYPE (EndlessOSEngine, endlessos_engine, GTK_TYPE_THEMING_ENGINE)
 
 void
-adwaita_engine_register_types (GTypeModule *module)
+endlessos_engine_register_types (GTypeModule *module)
 {
-  adwaita_engine_register_type (module);
+  endlessos_engine_register_type (module);
 }
 
 static void
-fallback_provider_remove (AdwaitaEngine *self)
+fallback_provider_remove (EndlessOSEngine *self)
 {
   GdkScreen *screen;
 
@@ -85,7 +85,7 @@ fallback_provider_remove (AdwaitaEngine *self)
 }
 
 static void
-fallback_provider_add (AdwaitaEngine *self)
+fallback_provider_add (EndlessOSEngine *self)
 {
   GFile *resource;
   GtkCssProvider *provider;
@@ -95,7 +95,7 @@ fallback_provider_add (AdwaitaEngine *self)
   if (self->fallback_provider != NULL)
     return;
 
-  resource = g_file_new_for_uri ("resource:///org/gnome/adwaita/gtk-fallback.css");
+  resource = g_file_new_for_uri ("resource:///org/gnome/endlessos/gtk-fallback.css");
   provider = gtk_css_provider_new ();
   gtk_css_provider_load_from_file (provider, resource, &error);
   g_object_unref (resource);
@@ -115,7 +115,7 @@ fallback_provider_add (AdwaitaEngine *self)
 }
 
 static void
-adwaita_engine_wm_changed (AdwaitaEngine *self)
+endlessos_engine_wm_changed (EndlessOSEngine *self)
 {
   gboolean is_fallback = TRUE;
 
@@ -136,9 +136,9 @@ adwaita_engine_wm_changed (AdwaitaEngine *self)
 }
 
 static void
-adwaita_engine_finalize (GObject *obj)
+endlessos_engine_finalize (GObject *obj)
 {
-  AdwaitaEngine *self = ADWAITA_ENGINE (obj);
+  EndlessOSEngine *self = ENDLESSOS_ENGINE (obj);
 
   if (self->wm_watch_id != 0)
     {
@@ -148,11 +148,11 @@ adwaita_engine_finalize (GObject *obj)
 
   fallback_provider_remove (self);
 
-  G_OBJECT_CLASS (adwaita_engine_parent_class)->finalize (obj);
+  G_OBJECT_CLASS (endlessos_engine_parent_class)->finalize (obj);
 }
 
 static void
-adwaita_engine_init (AdwaitaEngine *self)
+endlessos_engine_init (EndlessOSEngine *self)
 {
 #ifdef GDK_WINDOWING_X11
   GdkScreen *screen = gdk_screen_get_default ();
@@ -161,15 +161,15 @@ adwaita_engine_init (AdwaitaEngine *self)
     {
       self->wm_watch_id =
 	g_signal_connect_swapped (screen, "window-manager-changed",
-				  G_CALLBACK (adwaita_engine_wm_changed), self);
+				  G_CALLBACK (endlessos_engine_wm_changed), self);
     }
 #endif
 
-  adwaita_engine_wm_changed (self);
+  endlessos_engine_wm_changed (self);
 }
 
 static void
-adwaita_engine_render_arrow (GtkThemingEngine *engine,
+endlessos_engine_render_arrow (GtkThemingEngine *engine,
                              cairo_t          *cr,
                              gdouble           angle,
                              gdouble           x,
@@ -208,7 +208,7 @@ adwaita_engine_render_arrow (GtkThemingEngine *engine,
 }
 
 static void
-adwaita_engine_render_focus (GtkThemingEngine *engine,
+endlessos_engine_render_focus (GtkThemingEngine *engine,
                              cairo_t          *cr,
                              gdouble           x,
                              gdouble           y,
@@ -367,7 +367,7 @@ render_notebook_extension (GtkThemingEngine *engine,
                   width, is_active ? (height + 1.0) : (height));
   cairo_clip (cr);
 
-  GTK_THEMING_ENGINE_CLASS (adwaita_engine_parent_class)->render_background
+  GTK_THEMING_ENGINE_CLASS (endlessos_engine_parent_class)->render_background
     (engine, cr, 0, 0.5,
      width, is_active ? (height + 1.0) : (height));
 
@@ -398,7 +398,7 @@ render_notebook_extension (GtkThemingEngine *engine,
 }
 
 static void
-adwaita_engine_render_extension (GtkThemingEngine *engine,
+endlessos_engine_render_extension (GtkThemingEngine *engine,
                                  cairo_t          *cr,
                                  gdouble           x,
                                  gdouble           y,
@@ -413,34 +413,34 @@ adwaita_engine_render_extension (GtkThemingEngine *engine,
       return;
     }
 
-  GTK_THEMING_ENGINE_CLASS (adwaita_engine_parent_class)->render_extension
+  GTK_THEMING_ENGINE_CLASS (endlessos_engine_parent_class)->render_extension
     (engine, cr,
      x, y, width, height,
      gap_side);
 }
 
 static void
-adwaita_engine_class_init (AdwaitaEngineClass *klass)
+endlessos_engine_class_init (EndlessOSEngineClass *klass)
 {
   GtkThemingEngineClass *engine_class = GTK_THEMING_ENGINE_CLASS (klass);
   GObjectClass *oclass = G_OBJECT_CLASS (klass);
 
-  oclass->finalize = adwaita_engine_finalize;
+  oclass->finalize = endlessos_engine_finalize;
 
-  engine_class->render_arrow = adwaita_engine_render_arrow;
-  engine_class->render_focus = adwaita_engine_render_focus;
-  engine_class->render_extension = adwaita_engine_render_extension;
+  engine_class->render_arrow = endlessos_engine_render_arrow;
+  engine_class->render_focus = endlessos_engine_render_focus;
+  engine_class->render_extension = endlessos_engine_render_extension;
 }
 
 static void
-adwaita_engine_class_finalize (AdwaitaEngineClass *klass)
+endlessos_engine_class_finalize (EndlessOSEngineClass *klass)
 {
 }
 
 G_MODULE_EXPORT void
 theme_init (GTypeModule *module)
 {
-  adwaita_engine_register_types (module);
+  endlessos_engine_register_types (module);
 }
 
 G_MODULE_EXPORT void
@@ -451,7 +451,7 @@ theme_exit (void)
 G_MODULE_EXPORT GtkThemingEngine *
 create_engine (void)
 {
-  return GTK_THEMING_ENGINE (g_object_new (ADWAITA_TYPE_ENGINE,
-                                           "name", "adwaita",
+  return GTK_THEMING_ENGINE (g_object_new (ENDLESSOS_TYPE_ENGINE,
+                                           "name", "endlessos",
                                            NULL));
 }

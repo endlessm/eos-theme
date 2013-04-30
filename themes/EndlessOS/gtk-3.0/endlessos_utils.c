@@ -1,4 +1,4 @@
-/* Adwaita - a GTK+ engine
+/* EndlessOS - a GTK+ engine
  *
  * Copyright (C) 2011 Carlos Garnacho <carlosg@gnome.org>
  * Copyright (C) 2011 Red Hat, Inc.
@@ -23,7 +23,7 @@
  * Project contact: <gnome-themes-list@gnome.org>
  */
 
-#include "adwaita_utils.h"
+#include "endlessos_utils.h"
 
 void
 _cairo_round_rectangle_sides (cairo_t          *cr,

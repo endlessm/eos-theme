@@ -1,4 +1,4 @@
-/* Adwaita - a GTK+ engine
+/* EndlessOS - a GTK+ engine
  *
  * Copyright (C) 2012 Red Hat, Inc.
  *
@@ -30,24 +30,24 @@
 /***************************************/
 /* Register & Initialize Drawing Style */
 /***************************************/
-#define ADWAITA_TYPE_STYLE              (adwaita_style_get_type ())
-#define ADWAITA_STYLE(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), ADWAITA_TYPE_STYLE, AdwaitaStyle))
-#define ADWAITA_STYLE_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), ADWAITA_TYPE_STYLE, AdwaitaStyleClass))
-#define ADWAITA_IS_STYLE(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), ADWAITA_TYPE_STYLE))
-#define ADWAITA_IS_STYLE_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), ADWAITA_TYPE_STYLE))
-#define ADWAITA_STYLE_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), ADWAITA_TYPE_STYLE, AdwaitaStyleClass))
+#define ENDLESSOS_TYPE_STYLE              (endlessos_style_get_type ())
+#define ENDLESSOS_STYLE(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), ENDLESSOS_TYPE_STYLE, EndlessOSStyle))
+#define ENDLESSOS_STYLE_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), ENDLESSOS_TYPE_STYLE, EndlessOSStyleClass))
+#define ENDLESSOS_IS_STYLE(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), ENDLESSOS_TYPE_STYLE))
+#define ENDLESSOS_IS_STYLE_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), ENDLESSOS_TYPE_STYLE))
+#define ENDLESSOS_STYLE_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), ENDLESSOS_TYPE_STYLE, EndlessOSStyleClass))
  
 typedef struct
 {
   GtkStyle parent_instance;
-} AdwaitaStyle;
+} EndlessOSStyle;
  
 typedef struct
 {
   GtkStyleClass parent_class;
-} AdwaitaStyleClass;
+} EndlessOSStyleClass;
 
-G_DEFINE_DYNAMIC_TYPE (AdwaitaStyle, adwaita_style, GTK_TYPE_STYLE)
+G_DEFINE_DYNAMIC_TYPE (EndlessOSStyle, endlessos_style, GTK_TYPE_STYLE)
 
 static void
 do_toplevel_hack (GtkWidget   *widget,
@@ -55,12 +55,12 @@ do_toplevel_hack (GtkWidget   *widget,
 {
   gboolean tried_hack;
 
-  tried_hack = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (widget), "adwaita-toplevel-hack"));
+  tried_hack = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (widget), "endlessos-toplevel-hack"));
 
   if (!tried_hack)
     {
       g_object_set_data (G_OBJECT (widget),
-                         "adwaita-toplevel-hack", GINT_TO_POINTER (1));
+                         "endlessos-toplevel-hack", GINT_TO_POINTER (1));
       gtk_widget_set_name (widget, widget_name);
     }
 }
@@ -101,7 +101,7 @@ drawable_to_cairo (GdkDrawable  *window,
 }
 
 static void
-adwaita_draw_box (GtkStyle * style,
+endlessos_draw_box (GtkStyle * style,
                   GdkWindow * window,
                   GtkStateType state_type,
                   GtkShadowType shadow_type,
@@ -141,14 +141,14 @@ adwaita_draw_box (GtkStyle * style,
     }
   else
     {
-      GTK_STYLE_CLASS (adwaita_style_parent_class)->draw_box (style, window, state_type, shadow_type,
+      GTK_STYLE_CLASS (endlessos_style_parent_class)->draw_box (style, window, state_type, shadow_type,
                                                               area, widget, detail,
                                                               x, y, width, height);
     }
 }
 
 void
-adwaita_draw_flat_box (GtkStyle      *style,
+endlessos_draw_flat_box (GtkStyle      *style,
                        GdkWindow     *window,
                        GtkStateType   state_type,
                        GtkShadowType  shadow_type,
@@ -163,7 +163,7 @@ adwaita_draw_flat_box (GtkStyle      *style,
   gboolean tried_ooo_hack;
   const gchar *app_name;
 
-  GTK_STYLE_CLASS (adwaita_style_parent_class)->draw_flat_box (style, window, state_type, shadow_type,
+  GTK_STYLE_CLASS (endlessos_style_parent_class)->draw_flat_box (style, window, state_type, shadow_type,
                                                                area, widget, detail,
                                                                x, y, width, height);
 
@@ -180,67 +180,67 @@ adwaita_draw_flat_box (GtkStyle      *style,
 }
 
 static void
-adwaita_style_init (AdwaitaStyle *style)
+endlessos_style_init (EndlessOSStyle *style)
 {
 }
 
 static void
-adwaita_style_class_init (AdwaitaStyleClass * klass)
+endlessos_style_class_init (EndlessOSStyleClass * klass)
 {
   GtkStyleClass *style_class = GTK_STYLE_CLASS (klass);
  
-  style_class->draw_box = adwaita_draw_box;
-  style_class->draw_flat_box = adwaita_draw_flat_box;
+  style_class->draw_box = endlessos_draw_box;
+  style_class->draw_flat_box = endlessos_draw_flat_box;
 }
 
 static void
-adwaita_style_class_finalize (AdwaitaStyleClass * klass)
+endlessos_style_class_finalize (EndlessOSStyleClass * klass)
 {
 }
 
 /**********************************/ 
 /* Register & Initialize RC Style */ 
 /**********************************/ 
-#define ADWAITA_TYPE_RC_STYLE              (adwaita_rc_style_get_type ())
-#define ADWAITA_RC_STYLE(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), ADWAITA_TYPE_RC_STYLE, AdwaitaRcStyle))
-#define ADWAITA_RC_STYLE_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), ADWAITA_TYPE_RC_STYLE, AdwaitaRcStyleClass))
-#define ADWAITA_IS_RC_STYLE(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), ADWAITA_TYPE_RC_STYLE))
-#define ADWAITA_IS_RC_STYLE_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), ADWAITA_TYPE_RC_STYLE))
-#define ADWAITA_RC_STYLE_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), ADWAITA_TYPE_RC_STYLE, AdwaitaRcStyleClass))
+#define ENDLESSOS_TYPE_RC_STYLE              (endlessos_rc_style_get_type ())
+#define ENDLESSOS_RC_STYLE(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), ENDLESSOS_TYPE_RC_STYLE, EndlessOSRcStyle))
+#define ENDLESSOS_RC_STYLE_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), ENDLESSOS_TYPE_RC_STYLE, EndlessOSRcStyleClass))
+#define ENDLESSOS_IS_RC_STYLE(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), ENDLESSOS_TYPE_RC_STYLE))
+#define ENDLESSOS_IS_RC_STYLE_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), ENDLESSOS_TYPE_RC_STYLE))
+#define ENDLESSOS_RC_STYLE_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), ENDLESSOS_TYPE_RC_STYLE, EndlessOSRcStyleClass))
  
 typedef struct
 {
   GtkRcStyle parent_instance;
-} AdwaitaRcStyle;
+} EndlessOSRcStyle;
  
 typedef struct
 {
   GtkRcStyleClass parent_class;
-} AdwaitaRcStyleClass;
+} EndlessOSRcStyleClass;
 
-G_DEFINE_DYNAMIC_TYPE (AdwaitaRcStyle, adwaita_rc_style, GTK_TYPE_RC_STYLE)
+G_DEFINE_DYNAMIC_TYPE (EndlessOSRcStyle, endlessos_rc_style, GTK_TYPE_RC_STYLE)
 
 static GtkStyle *
-adwaita_rc_style_create_style (GtkRcStyle *rc_style)
+endlessos_rc_style_create_style (GtkRcStyle *rc_style)
 {
-  return g_object_new (ADWAITA_TYPE_STYLE, NULL);
+  return g_object_new (ENDLESSOS_TYPE_STYLE, NULL);
 }
 
 static void
-adwaita_rc_style_init (AdwaitaRcStyle *rc_style)
+endlessos_rc_style_init (EndlessOSRcStyle *rc_style)
 {
 }
 
 static void
-adwaita_rc_style_class_init (AdwaitaRcStyleClass * klass)
+endlessos_rc_style_class_init (EndlessOSRcStyleClass * klass)
 {
   GtkRcStyleClass *rc_class = GTK_RC_STYLE_CLASS (klass);
 
-  rc_class->create_style = adwaita_rc_style_create_style;
+  rc_class->create_style = endlessos_rc_style_create_style;
 }
 
 static void
-adwaita_rc_style_class_finalize (AdwaitaRcStyleClass * klass)
+endlessos_rc_style_class_finalize (EndlessOSRcStyleClass * klass)
 {
 }
 
@@ -250,8 +250,8 @@ adwaita_rc_style_class_finalize (AdwaitaRcStyleClass * klass)
 void
 theme_init (GTypeModule * module)
 {
-  adwaita_rc_style_register_type (module);
-  adwaita_style_register_type (module);
+  endlessos_rc_style_register_type (module);
+  endlessos_style_register_type (module);
 }
  
 void
@@ -262,5 +262,5 @@ theme_exit (void)
 GtkRcStyle *
 theme_create_rc_style (void)
 {
-  return g_object_new (ADWAITA_TYPE_RC_STYLE, NULL);
+  return g_object_new (ENDLESSOS_TYPE_RC_STYLE, NULL);
 }

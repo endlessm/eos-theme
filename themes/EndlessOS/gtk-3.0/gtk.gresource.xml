@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/adwaita">
+  <gresource prefix="/org/gnome/endlessos">
     <file preprocess="to-pixdata">assets/checkbox-checked-alt-dark.png</file>
     <file preprocess="to-pixdata">assets/checkbox-checked-alt.png</file>
     <file preprocess="to-pixdata">assets/checkbox-checked-backdrop-dark.png</file>

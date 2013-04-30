@@ -3,7 +3,7 @@
 # Yeah this script is pretty bad and ugly, so?
 #
 INKSCAPE=/usr/bin/inkscape
-SVG=adwaita-bits.svg
+SVG=endlessos-bits.svg
 LISTFILE=bits-list.txt
 for filename in `cat $LISTFILE`
 do
