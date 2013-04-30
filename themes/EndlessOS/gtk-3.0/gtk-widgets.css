@@ -1,5 +1,5 @@
 * {
-    engine: adwaita;
+    engine: endlessos;
     padding: 0;
 
     background-clip: padding-box;
@@ -44,7 +44,7 @@
     -GtkWindow-resize-grip-height: 0;   
 
     /* We use the outline properties to signal the focus properties
-     * to the adwaita engine: using real CSS properties is faster,
+     * to the endlessos engine: using real CSS properties is faster,
      * and we don't use any outlines for now.
      */
     outline-color: alpha(@theme_text_color, 0.3);
@@ -1818,7 +1818,7 @@ GtkLinkButton.button *:active {
 }
 
 .notebook tab.bottom {
-    /* FIXME: Adwaita engine arrogantly flips my gradients upside down! */
+    /* FIXME: EndlessOS engine arrogantly flips my gradients upside down! */
     background-image: linear-gradient(to top,
 				      @notebook_tab_gradient_b,
                                       @notebook_tab_gradient_a 3px,

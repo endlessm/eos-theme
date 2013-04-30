@@ -1,4 +1,4 @@
-/* Adwaita - a GTK+ engine
+/* EndlessOS - a GTK+ engine
  *
  * Copyright (C) 2011 Carlos Garnacho <carlosg@gnome.org>
  * Copyright (C) 2011 Red Hat, Inc.
@@ -25,8 +25,8 @@
 
 #include <gtk/gtk.h>
 
-#ifndef __ADWAITA_UTILS_H__
-#define __ADWAITA_UTILS_H__
+#ifndef __ENDLESSOS_UTILS_H__
+#define __ENDLESSOS_UTILS_H__
 
 enum {
   SIDE_LEFT   = 1,
@@ -46,4 +46,4 @@ _cairo_round_rectangle_sides (cairo_t          *cr,
                               guint             sides,
                               GtkJunctionSides  junction);
 
-#endif /* __ADWAITA_UTILS_H__ */
+#endif /* __ENDLESSOS_UTILS_H__ */
