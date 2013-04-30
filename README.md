@@ -13,7 +13,8 @@ sudo make install
 Or, if running eos-shell via JHBuild:
 ```
 jhbuild shell
-./autogen.sh --prefix=$HOME/gnome/install
+./autogen.sh --prefix=$HOME/gnome/install (for 32-bit systems)
+./autogen.sh --prefix=$HOME/gnome/install --libdir=$HOME/gnome/install/lib64 (for 64-bit systems)
 make
 make install
 ```
