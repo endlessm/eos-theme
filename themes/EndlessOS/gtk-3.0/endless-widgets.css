@@ -16,7 +16,7 @@
 }
 
 .top-bar .button:active
-/* .button *:active Needed to override Adwaita */ {
+/* .button *:active Needed to override EndlessOS */ {
     color: #464646;
     icon-shadow: none;
     /* TODO: In proper CSS the above line is done as follows:
