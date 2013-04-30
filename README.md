@@ -20,5 +20,5 @@ make install
 
 Note that any per-user settings configured with "gsettings set"
 will override the system settings in the schema file that is installed.
-Use "gsettings remove" for each field to restore the default
+Use "gsettings reset" for each field to restore the default
 and enable use of the settings schema.
