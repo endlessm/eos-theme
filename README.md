@@ -3,7 +3,7 @@ Gtk, window, and icon themes for eos-shell
 
 To build/install from this repo:
 ```
-sudo apt-get install librsvg2-dev
+sudo apt-get install gnome-common librsvg2-dev libgtk-3-dev libgtk2.0-dev
 cd ~/checkout/eos-theme
 ./autogen.sh --datadir=/usr/share --sysconfdir=/etc
 make
