@@ -42,7 +42,7 @@ class DesktopWriter:
     def _write_desktop_file(self, fields, locale, url):
         desktop_id = fields[0]
         desktop_path = os.path.join(self._desktop_dir,
-                                    desktop_id + self.locale_file(locale) +
+                                    'eos-' + desktop_id + self.locale_file(locale) +
                                     '.desktop')
         desktop_file = open(desktop_path, 'w')
         desktop_file.write('[Desktop Entry]\n')

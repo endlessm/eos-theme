@@ -17,26 +17,19 @@
   <!-- Read in overrides and child menus from applications-merged/ -->
   <DefaultMergeDirs/>
 
-  <!-- Bypass all default directories and show
-       only the EndlessOS folders and applications -->
-
-  <AppDir>/usr/share/EndlessOS/applications</AppDir>
-  <AppDir>/usr/share/EndlessOS/links</AppDir>
-  <DirectoryDir>/usr/share/EndlessOS/desktop-directories</DirectoryDir>
-
   <!-- Application shortcuts directly on the desktop -->
 
   <Menu>
     <Name>Desktop</Name>
     <Include>
-      <Filename>epiphany.desktop</Filename>
-      <Filename>facebook.desktop</Filename>
-      <Filename>youtube.desktop</Filename>
-      <Filename>skype.desktop</Filename>
-      <Filename>writer.desktop</Filename>
-      <Filename>grooveshark.desktop</Filename>
-      <Filename>photos.desktop</Filename>
-      <Filename>nautilus.desktop</Filename>
+      <Filename>eos-epiphany.desktop</Filename>
+      <Filename>eos-facebook.desktop</Filename>
+      <Filename>eos-youtube.desktop</Filename>
+      <Filename>eos-skype.desktop</Filename>
+      <Filename>eos-writer.desktop</Filename>
+      <Filename>eos-grooveshark.desktop</Filename>
+      <Filename>eos-photos.desktop</Filename>
+      <Filename>eos-nautilus.desktop</Filename>
     </Include>
   </Menu> <!-- End Desktop -->
 
@@ -44,67 +37,67 @@
 
   <Menu>
     <Name>Media</Name>
-    <Directory>Media.directory</Directory>
+    <Directory>eos-media.directory</Directory>
     <Include>
-      <Filename>shotwell.desktop</Filename>
-      <Filename>video.desktop</Filename>
-      <Filename>music.desktop</Filename>
-      <Filename>qBittorrent.desktop</Filename>
-      <Filename>photo-editor.desktop</Filename>
-      <Filename>ted.desktop</Filename>
+      <Filename>eos-shotwell.desktop</Filename>
+      <Filename>eos-video.desktop</Filename>
+      <Filename>eos-music.desktop</Filename>
+      <Filename>eos-qBittorrent.desktop</Filename>
+      <Filename>eos-photo-editor.desktop</Filename>
+      <Filename>eos-ted.desktop</Filename>
     </Include>
   </Menu> <!-- End Media -->
 
   <Menu>
     <Name>Games</Name>
-    <Directory>Games.directory</Directory>
+    <Directory>eos-games.directory</Directory>
     <Include>
-      <Filename>openarena.desktop</Filename>
-      <Filename>angrybirds.desktop</Filename>
-      <Filename>solitaire.desktop</Filename>
-      <Filename>freecell.desktop</Filename>
-      <Filename>supertux.desktop</Filename>
-      <Filename>chromium-bsu.desktop</Filename>
-      <Filename>tuxkart.desktop</Filename>
+      <Filename>eos-openarena.desktop</Filename>
+      <Filename>eos-angrybirds.desktop</Filename>
+      <Filename>eos-solitaire.desktop</Filename>
+      <Filename>eos-freecell.desktop</Filename>
+      <Filename>eos-supertux.desktop</Filename>
+      <Filename>eos-chromium-bsu.desktop</Filename>
+      <Filename>eos-tuxkart.desktop</Filename>
     </Include>
   </Menu> <!-- End Games -->
 
   <Menu>
     <Name>Work</Name>
-    <Directory>Work.directory</Directory>
+    <Directory>eos-work.directory</Directory>
     <Include>
-      <Filename>email.desktop</Filename>
-      <Filename>spreadsheet.desktop</Filename>
-      <Filename>impress.desktop</Filename>
-      <Filename>hotmail.desktop</Filename>
-      <Filename>gmail.desktop</Filename>
-      <Filename>calc.desktop</Filename>
-      <Filename>typing.desktop</Filename>
+      <Filename>eos-email.desktop</Filename>
+      <Filename>eos-spreadsheet.desktop</Filename>
+      <Filename>eos-impress.desktop</Filename>
+      <Filename>eos-hotmail.desktop</Filename>
+      <Filename>eos-gmail.desktop</Filename>
+      <Filename>eos-calc.desktop</Filename>
+      <Filename>eos-typing.desktop</Filename>
     </Include>
   </Menu> <!-- End Work -->
 
   <Menu>
     <Name>News</Name>
-    <Directory>News.directory</Directory>
+    <Directory>eos-news.directory</Directory>
     <Include>
-      <Filename>weather.desktop</Filename>
-      <Filename>cnn.desktop</Filename>
-      <Filename>nytimes.desktop</Filename>
-      <Filename>wsj.desktop</Filename>
-      <Filename>economist.desktop</Filename>
+      <Filename>eos-weather.desktop</Filename>
+      <Filename>eos-cnn.desktop</Filename>
+      <Filename>eos-nytimes.desktop</Filename>
+      <Filename>eos-wsj.desktop</Filename>
+      <Filename>eos-economist.desktop</Filename>
     </Include>
   </Menu> <!-- End News -->
 
   <Menu>
     <Name>Curiosity</Name>
-    <Directory>Curiosity.directory</Directory>
+    <Directory>eos-curiosity.directory</Directory>
     <Include>
-      <Filename>wikipedia.desktop</Filename>
-      <Filename>khanacademy.desktop</Filename>
-      <Filename>codeacademy.desktop</Filename>
-      <Filename>worldwonders.desktop</Filename>
-      <Filename>gcompris.desktop</Filename>
-      <Filename>stellarium.desktop</Filename>
+      <Filename>eos-wikipedia.desktop</Filename>
+      <Filename>eos-khanacademy.desktop</Filename>
+      <Filename>eos-codeacademy.desktop</Filename>
+      <Filename>eos-worldwonders.desktop</Filename>
+      <Filename>eos-gcompris.desktop</Filename>
+      <Filename>eos-stellarium.desktop</Filename>
     </Include>
   </Menu> <!-- End Curiosity -->
 
@@ -114,7 +107,7 @@
   <!-- TODO Is there a way we can hide this menu? -->
   <Menu>
     <Name>Settings</Name>
-    <Directory>Settings.directory</Directory>
+    <Directory>eos-settings.directory</Directory>
     <Include>
       <Category>X-GNOME-Settings-Panel</Category>
       <Filename>gnome-control-center.desktop</Filename>

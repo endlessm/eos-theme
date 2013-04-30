@@ -5,21 +5,17 @@ To build/install from this repo:
 ```
 sudo apt-get install librsvg2-dev
 cd ~/checkout/eos-theme
-./autogen.sh --datadir=/usr/share
+./autogen.sh --datadir=/usr/share --sysconfdir=/etc
 make
 sudo make install
 ```
 
-After installing, you will need to log out and back in
-for the icon directory to be indexed.
-
-If running eos-shell via JHBuild, you will also need the following
-to install the settings properly (in addition to the above,
-which is needed to install the icons):
+Or, if running eos-shell via JHBuild:
 ```
-./autogen.sh --datadir=/home/<username>/gnome/install/share
+jhbuild shell
+./autogen.sh --prefix=$HOME/gnome/install
 make
-sudo make install
+make install
 ```
 
 Note that any per-user settings configured with "gsettings set"
