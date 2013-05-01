@@ -7,3 +7,7 @@ include /usr/share/cdbs/1/class/gnome.mk
 include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
 DEB_MAKE_INSTALL_TARGET  := install DESTDIR=$(CURDIR)/debian/tmp/
+
+install/eos-theme::
+	ln -fs ../settings/com.endlessm.gschema.override debian/eos-theme.gsettings-override
+
