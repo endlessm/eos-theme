@@ -25,6 +25,8 @@ TAGS
 _libs
 aclocal.m4
 autom4te.cache
+backgrounds/endlessos.xml
+backgrounds/endlessos.xml.in
 compile
 config.cache
 config.guess
