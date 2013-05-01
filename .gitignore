@@ -25,6 +25,8 @@ TAGS
 _libs
 aclocal.m4
 autom4te.cache
+backgrounds/endlessos.xml
+backgrounds/endlessos.xml.in
 compile
 config.cache
 config.guess
@@ -60,6 +62,7 @@ po/Makefile.in.in
 po/POTFILES
 po/gnome-themes-standard.pot
 po/stamp-it
+settings/com.endlessm.gschema.override
 so_locations
 stamp-h1
 tags
