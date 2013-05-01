@@ -22,14 +22,14 @@
   <Menu>
     <Name>Desktop</Name>
     <Include>
-      <Filename>eos-epiphany.desktop</Filename>
-      <Filename>eos-facebook.desktop</Filename>
-      <Filename>eos-youtube.desktop</Filename>
-      <Filename>eos-skype.desktop</Filename>
-      <Filename>eos-writer.desktop</Filename>
-      <Filename>eos-grooveshark.desktop</Filename>
-      <Filename>eos-photos.desktop</Filename>
-      <Filename>eos-nautilus.desktop</Filename>
+      <Filename>eos-app-epiphany.desktop</Filename>
+      <Filename>eos-link-facebook.desktop</Filename>
+      <Filename>eos-app-youtube.desktop</Filename>
+      <Filename>eos-app-skype.desktop</Filename>
+      <Filename>eos-app-writer.desktop</Filename>
+      <Filename>eos-link-grooveshark.desktop</Filename>
+      <Filename>eos-app-photos.desktop</Filename>
+      <Filename>eos-app-nautilus.desktop</Filename>
     </Include>
   </Menu> <!-- End Desktop -->
 
@@ -39,12 +39,12 @@
     <Name>Media</Name>
     <Directory>eos-media.directory</Directory>
     <Include>
-      <Filename>eos-shotwell.desktop</Filename>
-      <Filename>eos-video.desktop</Filename>
-      <Filename>eos-music.desktop</Filename>
-      <Filename>eos-qBittorrent.desktop</Filename>
-      <Filename>eos-photo-editor.desktop</Filename>
-      <Filename>eos-ted.desktop</Filename>
+      <Filename>eos-app-shotwell.desktop</Filename>
+      <Filename>eos-app-video.desktop</Filename>
+      <Filename>eos-app-music.desktop</Filename>
+      <Filename>eos-app-qBittorrent.desktop</Filename>
+      <Filename>eos-app-photo-editor.desktop</Filename>
+      <Filename>eos-link-ted.desktop</Filename>
     </Include>
   </Menu> <!-- End Media -->
 
@@ -52,13 +52,13 @@
     <Name>Games</Name>
     <Directory>eos-games.directory</Directory>
     <Include>
-      <Filename>eos-openarena.desktop</Filename>
-      <Filename>eos-angrybirds.desktop</Filename>
-      <Filename>eos-solitaire.desktop</Filename>
-      <Filename>eos-freecell.desktop</Filename>
-      <Filename>eos-supertux.desktop</Filename>
-      <Filename>eos-chromium-bsu.desktop</Filename>
-      <Filename>eos-tuxkart.desktop</Filename>
+      <Filename>eos-app-openarena.desktop</Filename>
+      <Filename>eos-link-angrybirds.desktop</Filename>
+      <Filename>eos-app-solitaire.desktop</Filename>
+      <Filename>eos-app-freecell.desktop</Filename>
+      <Filename>eos-app-supertux.desktop</Filename>
+      <Filename>eos-app-chromium-bsu.desktop</Filename>
+      <Filename>eos-app-tuxkart.desktop</Filename>
     </Include>
   </Menu> <!-- End Games -->
 
@@ -66,13 +66,13 @@
     <Name>Work</Name>
     <Directory>eos-work.directory</Directory>
     <Include>
-      <Filename>eos-email.desktop</Filename>
-      <Filename>eos-spreadsheet.desktop</Filename>
-      <Filename>eos-impress.desktop</Filename>
-      <Filename>eos-hotmail.desktop</Filename>
-      <Filename>eos-gmail.desktop</Filename>
-      <Filename>eos-calc.desktop</Filename>
-      <Filename>eos-typing.desktop</Filename>
+      <Filename>eos-app-email.desktop</Filename>
+      <Filename>eos-app-spreadsheet.desktop</Filename>
+      <Filename>eos-app-impress.desktop</Filename>
+      <Filename>eos-link-hotmail.desktop</Filename>
+      <Filename>eos-link-gmail.desktop</Filename>
+      <Filename>eos-app-calc.desktop</Filename>
+      <Filename>eos-link-typing.desktop</Filename>
     </Include>
   </Menu> <!-- End Work -->
 
@@ -80,11 +80,11 @@
     <Name>News</Name>
     <Directory>eos-news.directory</Directory>
     <Include>
-      <Filename>eos-weather.desktop</Filename>
-      <Filename>eos-cnn.desktop</Filename>
-      <Filename>eos-nytimes.desktop</Filename>
-      <Filename>eos-wsj.desktop</Filename>
-      <Filename>eos-economist.desktop</Filename>
+      <Filename>eos-app-weather.desktop</Filename>
+      <Filename>eos-link-cnn.desktop</Filename>
+      <Filename>eos-link-nytimes.desktop</Filename>
+      <Filename>eos-link-wsj.desktop</Filename>
+      <Filename>eos-link-economist.desktop</Filename>
     </Include>
   </Menu> <!-- End News -->
 
@@ -92,12 +92,12 @@
     <Name>Curiosity</Name>
     <Directory>eos-curiosity.directory</Directory>
     <Include>
-      <Filename>eos-wikipedia.desktop</Filename>
-      <Filename>eos-khanacademy.desktop</Filename>
-      <Filename>eos-codeacademy.desktop</Filename>
-      <Filename>eos-worldwonders.desktop</Filename>
-      <Filename>eos-gcompris.desktop</Filename>
-      <Filename>eos-stellarium.desktop</Filename>
+      <Filename>eos-link-wikipedia.desktop</Filename>
+      <Filename>eos-link-khanacademy.desktop</Filename>
+      <Filename>eos-link-codeacademy.desktop</Filename>
+      <Filename>eos-link-worldwonders.desktop</Filename>
+      <Filename>eos-app-gcompris.desktop</Filename>
+      <Filename>eos-app-stellarium.desktop</Filename>
     </Include>
   </Menu> <!-- End Curiosity -->
 
