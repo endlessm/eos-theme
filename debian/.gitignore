@@ -6,3 +6,4 @@ files
 stamp-*
 autoreconf.*
 *.debhelper
+eos-theme.gsettings-override
