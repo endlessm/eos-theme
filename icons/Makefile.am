@@ -1,4 +1,4 @@
-SUBDIRS = apps appstore folders mini shell
+SUBDIRS = apps appstore folders mini scalable shell
 
 themedir = $(datadir)/icons/EndlessOS
 
