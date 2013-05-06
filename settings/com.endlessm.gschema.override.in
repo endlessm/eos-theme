@@ -42,3 +42,7 @@ picture-uri='file://@DATA_DIR@/EndlessOS/backgrounds/default_background.jpg'
 # Specify the folders for the app selector
 [org.gnome.shell]
 app-folder-categories=['Media', 'Games', 'Work', 'News', 'Curiosity', 'Settings']
+
+# Specify the favorites on the dash
+[org.gnome.shell]
+favorite-apps=['eos-app-epiphany.desktop', 'eos-link-facebook.desktop', 'eos-app-youtube.desktop', 'eos-app-skype.desktop', 'eos-app-writer.desktop', 'eos-link-grooveshark.desktop', 'eos-app-shotwell.desktop', 'eos-app-nautilus.desktop']
