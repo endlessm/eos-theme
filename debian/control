@@ -20,7 +20,7 @@ Standards-Version: 3.9.3
 Homepage: http://www.endlessm.com
 
 Package: eos-theme
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          eos-shell
