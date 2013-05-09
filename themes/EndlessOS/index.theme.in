@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+_Name=EndlessOS
+Type=X-GNOME-Metatheme
+_Comment=EndlessOS theme
+Encoding=UTF-8
+GtkTheme=EndlessOS
+MetacityTheme=EndlessOS
+IconTheme=EndlessOS
+CursorTheme=EndlessOS
+CursorSize=24

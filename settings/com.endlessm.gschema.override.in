@@ -1,0 +1,48 @@
+# Disable dynamic workspaces and set default number of workspaces to 1
+# (required for the current solution to keeping the desktop always active)
+[org.gnome.shell.overrides]
+dynamic-workspaces=false
+
+[org.gnome.desktop.wm.preferences]
+num-workspaces=1
+
+# Force the app menu to be on the application window rather than the shell panel
+# (required due to removal of the app menu from the panel)
+[org.gnome.settings-daemon.plugins.xsettings]
+overrides={"Gtk/ShellShowsAppMenu": <int32 0>}
+
+# Select the GTK theme
+[org.gnome.desktop.interface]
+gtk-theme='EndlessOS'
+
+# Select the window theme
+[org.gnome.desktop.wm.preferences]
+theme='EndlessOS'
+
+# Select the icon theme
+[org.gnome.desktop.interface]
+icon-theme='EndlessOS'
+
+# Select the cursor theme
+[org.gnome.desktop.interface]
+cursor-theme='EndlessOS'
+
+# Remove the Ubuntu overlay scrollbars
+[com.canonical.desktop.interface]
+scrollbar-mode='normal'
+
+# Enable the minimize button (but not maximize)
+[org.gnome.shell.overrides]
+button-layout=':minimize,close'
+
+# Specify the default background image
+[org.gnome.desktop.background]
+picture-uri='file://@DATA_DIR@/EndlessOS/backgrounds/default_background.jpg'
+
+# Specify the folders for the app selector
+[org.gnome.shell]
+app-folder-categories=['Media', 'Games', 'Work', 'News', 'Curiosity', 'Settings']
+
+# Specify the favorites on the dash
+[org.gnome.shell]
+favorite-apps=['eos-app-epiphany.desktop', 'eos-link-facebook.desktop', 'eos-app-youtube.desktop', 'eos-app-skype.desktop', 'eos-app-writer.desktop', 'eos-link-grooveshark.desktop', 'eos-app-photos.desktop', 'eos-app-nautilus.desktop']
