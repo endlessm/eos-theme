@@ -1,3 +1,9 @@
+eos-theme (1.1.0) unstable; urgency=low
+
+  * Updating version to 1.1.0
+
+ -- Roddy Shuler <roddy@endlessm.com>  Thu, 09 May 2013 01:34:34 -0700
+
 eos-theme (1.0.0) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #XXXXXX)
