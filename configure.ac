@@ -84,7 +84,6 @@ icons/folders/Makefile
 icons/mini/Makefile
 icons/scalable/Makefile
 icons/shell/Makefile
-menus/Makefile
 settings/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile
