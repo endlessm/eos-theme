@@ -2,26 +2,46 @@
 
 .top-bar {
     background-image: -gtk-gradient(linear, center top, center bottom,
-        from(#343434), to(#262624));
+        from(#3c3c3c), to(#292929));
 }
 
 .top-bar .button {
-    color: #8a8a8a;
-    icon-shadow: 0 1px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    background-image: none;
+    border-width: 0px;
+    border-radius: 2px;
+    border-image: none;
 }
 
 .top-bar .button:hover {
-    color: #ffffff;
-    icon-shadow: 0 1px rgba(0, 0, 0, 0.5);
+    background-image: -gtk-gradient(linear, left bottom, left top,
+        color-stop(0.98, rgb(131,131,131)),
+        color-stop(0.95, rgb(108,108,108)),
+        color-stop(0, rgb(68,68,68)));
 }
 
-.top-bar .button:active
-/* .button *:active Needed to override EndlessOS */ {
-    color: #464646;
-    icon-shadow: none;
-    /* TODO: In proper CSS the above line is done as follows:
-    position: relative;
-    top: 1px;
-    Replace the style property below when they are supported in GTK. */
-    -GtkButton-child-displacement-y: 1px;
+.top-bar .button:active {
+    background-image: -gtk-gradient(linear, left bottom, left top,
+        color-stop(0.98, rgb(79,79,79)),
+        color-stop(0.95, rgb(71,71,71)),
+        color-stop(0, rgb(67,67,67)));
+}
+
+.top-bar .button:backdrop {
+    color: #8a8a8a;
+    background-image: none;
+    background-color: transparent;
+}
+
+/* Topbar icon colors */
+.top-bar .button * {
+    color: #8a8a8a;
+}
+
+.top-bar .button *:hover {
+    color: #ffffff;
+}
+
+.top-bar .button *:active {
+    color: #8a8a8a;
 }
