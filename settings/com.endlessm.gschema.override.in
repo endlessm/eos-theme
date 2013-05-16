@@ -27,6 +27,16 @@ icon-theme='EndlessOS'
 [org.gnome.desktop.interface]
 cursor-theme='EndlessOS'
 
+# Specify the font and related settings
+# For now, we are using Ubuntu defaults
+# Setting the values here ensures consistency when testing under jhbuild
+[org.gnome.desktop.interface]
+font-name='Ubuntu 11'
+monospace-font-name='Ubuntu Mono 13'
+[org.gnome.settings-daemon.plugins.xsettings]
+antialiasing='rgba'
+hinting='slight'
+
 # Remove the Ubuntu overlay scrollbars
 [com.canonical.desktop.interface]
 scrollbar-mode='normal'
