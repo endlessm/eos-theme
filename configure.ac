@@ -83,7 +83,6 @@ icons/appstore/Makefile
 icons/folders/Makefile
 icons/mini/Makefile
 icons/scalable/Makefile
-icons/shell/Makefile
 settings/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile
