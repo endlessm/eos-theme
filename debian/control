@@ -1,7 +1,7 @@
 Source: eos-theme
 Section: gnome
 Priority: optional
-Maintainer: EndlessMobile <asynchrony@endlessm.com>
+Maintainer: Endless Mobile <maintainers@endlessm.com>
 Uploaders: Srdjan Grubor <sgnn7@sgnn7.org>
 Build-Depends: debhelper (>= 8),
                cdbs (>= 0.4.41),
