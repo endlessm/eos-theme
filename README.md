@@ -5,7 +5,7 @@ To build/install from this repo:
 ```
 sudo apt-get install gnome-common librsvg2-dev libgtk-3-dev libgtk2.0-dev
 cd ~/checkout/eos-theme
-./autogen.sh --datadir=/usr/share --sysconfdir=/etc
+./autogen.sh --prefix=/usr --sysconfdir=/etc
 make
 sudo make install
 ```
