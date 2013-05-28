@@ -80,7 +80,7 @@ desktop/directories/Makefile
 icons/Makefile
 icons/apps/Makefile
 icons/appstore/Makefile
-icons/folders/Makefile
+icons/categories/Makefile
 icons/mini/Makefile
 icons/scalable/Makefile
 settings/Makefile

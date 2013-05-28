@@ -1,3 +1,3 @@
-folderdir = $(datadir)/icons/EndlessOS/64x64/folders
-folder_DATA = \
+icondir = $(datadir)/icons/EndlessOS/64x64/categories
+icon_DATA = \
 	*.png
