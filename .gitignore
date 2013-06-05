@@ -41,8 +41,10 @@ configure
 configure.lineno
 depcomp
 desktop/.apps_dot_desktop_files_timestamp
+desktop/.folders_dot_directory_files_timestamp
 desktop/.links_dot_desktop_files_timestamp
 desktop/applications
+desktop/folders
 desktop/links
 install-sh
 intltool-*.in
