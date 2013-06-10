@@ -18,8 +18,21 @@ jhbuild shell
 make
 make install
 ```
+Note that for jhbuild to show the full theme, you need to create a new
+xsessions file (ex: /usr/share/xsessions/eos-session.desktop) with the
+following
+content:
+```
+[Desktop Entry]
+Name=EOS
+Comment=This session logs you into GNOME
+Exec=jhbuild run gnome-session --session=eos-shell
+Icon=
+Type=Application
+X-Ubuntu-Gettext-Domain=gnome-session-3.0
+```
 
-Note that any per-user settings configured with "gsettings set"
+Note also that any per-user settings configured with "gsettings set"
 will override the system settings in the schema file that is installed.
 Use "gsettings reset" for each field to restore the default
 and enable use of the settings schema.
