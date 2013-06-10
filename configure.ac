@@ -79,7 +79,6 @@ desktop/Makefile
 icons/Makefile
 icons/apps/Makefile
 icons/categories/Makefile
-icons/mini/Makefile
 icons/scalable/Makefile
 settings/Makefile
 themes/Makefile
