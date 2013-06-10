@@ -78,7 +78,6 @@ backgrounds/Makefile
 desktop/Makefile
 icons/Makefile
 icons/apps/Makefile
-icons/appstore/Makefile
 icons/categories/Makefile
 icons/mini/Makefile
 icons/scalable/Makefile
