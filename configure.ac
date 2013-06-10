@@ -77,9 +77,6 @@ Makefile
 backgrounds/Makefile
 desktop/Makefile
 icons/Makefile
-icons/apps/Makefile
-icons/categories/Makefile
-icons/scalable/Makefile
 settings/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile
