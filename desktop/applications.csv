@@ -32,7 +32,7 @@ supertux,,,,,X,X,X,X,Super Tux,,,,,Super Tux,,,,,supertux2 --fullscreen,,,,,supe
 teeworlds,,,,,X,X,X,X,Teeworlds,,Teelandia,Teelândia,,Multiplayer game,,,,,teeworlds,,,,,teelandia,,,,,Games;
 tuxkart,,,,,X,X,X,X,Tux Kart,,,,,Tux Kart,,,,,supertuxkart --fullscreen,,,,,supertuxkart,,,,,Games;
 tuxmath,,,,,X,X,X,X,Tux Math,,123 Tux,123 Tux,,Math Games,,,,,tuxmath,,,,,123tux,,,,,Games;Education;
-tuxtyping,,,,,X,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,tuxtype,,,,,tuxtyping,,,,,Games;
+tuxtyping,,,,,X,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,tuxtype -t,,tuxtype -t espanol,tuxtype -t brazilian-portuguese,,tuxtyping,,,,,Games;
 video,,,,,X,X,X,X,Videos,,Vídeos,Vídeos,,Video,,,,,totem %U,,,,,video,,,,,Video;
 weather,,,,,X,X,X,X,Weather,,Tiempo,Tempo,,See the weather forecast,,,,,endless-os-weather,,,,,weather,,,,,Network;News;
 writer,,,,,X,X,X,X,Writer,,Escritor,Redator,,Writer,,,,,libreoffice --writer %U,,,,,office_text,,,,,Office;
