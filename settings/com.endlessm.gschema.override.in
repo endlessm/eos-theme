@@ -63,3 +63,6 @@ icon-grid-layout={ '': ['eos-app-epiphany.desktop', 'eos-link-facebook.desktop',
 [org.gnome.nautilus.preferences]
 default-folder-viewer='list-view'
 
+# Disable reporting of Ubuntu internal error messages
+[com.ubuntu.update-notifier]
+show-apport-crashes=false
