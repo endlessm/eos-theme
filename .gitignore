@@ -69,3 +69,5 @@ so_locations
 stamp-h1
 tags
 themes/EndlessOS/index.theme
+icons/index.theme
+icons/index.theme.in
