@@ -2,3 +2,6 @@
 _Name=EndlessOS
 _Comment=EndlessOS icon theme
 Inherits=gnome
+
+# Directory list
+Directories=@THEME_DIRS@
