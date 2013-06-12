@@ -1,0 +1,9 @@
+*.log
+*.substvars
+tmp/*
+eos-theme/*
+files
+stamp-*
+autoreconf.*
+*.debhelper
+eos-theme.gsettings-override
