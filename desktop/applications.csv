@@ -6,12 +6,14 @@ blockout,,,,,X,X,X,X,BlockOut 2,,BlockOut 2,BlockOut 2,,3D Tetris-style game,,,,
 calc,,,,,X,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,gnome-calculator,,,,,calculator,,,,,Utility;Calculator;
 chromium-bsu,,,,,X,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,chromium-bsu --fullscreen,,,,,chromium-bsu,,,,,Games;
 email,,,,,X,X,X,X,E-mail,,,,,E-mail,,,,,evolution %U,,,,,email,,,,,Mail;Email;
+english,,,,,X,X,X,X,Learn English,,Aprender Inglés,Aprender Inglês,,Learn English,,,,,gjs /usr/share/eos-english/english_app.js,,,,,english-app,,,,,Education;
 freecell,,,,,X,X,X,X,Freecell,,,,,Freecell,,,,,/usr/games/sol --freecell --class sol-freecell,,,,,freecell,,,,,Games;
 gbrainy,,,,,X,X,X,X,Brain Teasers,,Rompecabezas,Quebra-cabeça,,GBrainy,,,,,gbrainy,,,,,gbrainy,,,,,Games;
 gcompris,,,,,X,X,X,X,GCompris,,,,,Childrens games,,,,,gcompris,,,,,gcompris,,,,,Games;Education;
 geniusmath,,,,,X,X,X,X,Math,,Matemáticas,Matemática,,Genius Math,,,,,gnome-genius,,,,,geniusmath,,,,,Utility;Calculator;
 goldendict,,,,,X,X,X,X,Dictionary,,Dicionário,Dicionário,,GoldenDict,,,,,goldendict,,,,,goldendict,,,,,Utility;
 impress,,,,,X,X,X,X,Presentation,,Presentación,Apresentação,,Impress,,,,,libreoffice --impress %U,,,,,office_presentation,,,,,Office;
+khanacademy,,,,,X,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,epiphany file:///usr/share/eos-khanacademy/index.html,,,,,khanacademy-app,,,,,Education;
 kobodeluxe,,,,,X,X,X,X,Kobo Deluxe,,Kobo Deluxe,Kobo Deluxe,,Destroy enemy bases in space,,,,,kobodl,,,,,kobodeluxe,,,,,Games;
 lbreakout,,,,,X,X,X,X,Breakout,,El Escape,Fuga,,LBreakout2 game,,,,,lbreakout2,,,,,lbreakout,,,,,Games;
 music,,,,,X,X,X,X,Music,,Música,Música,,Music,,,,,beatbox %U,,,,,music,,,,,Audio;
@@ -35,6 +37,7 @@ tuxmath,,,,,X,X,X,X,Tux Math,,123 Tux,123 Tux,,Math Games,,,,,tuxmath,,,,,123tux
 tuxtyping,,,,,X,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,tuxtype,,,,,tuxtyping,,,,,Games;
 video,,,,,X,X,X,X,Videos,,Vídeos,Vídeos,,Video,,,,,totem %U,,,,,video,,,,,Video;
 weather,,,,,X,X,X,X,Weather,,Tiempo,Tempo,,See the weather forecast,,,,,endless-os-weather,,,,,weather,,,,,Network;News;
+wikipedia,,,,,X,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,epiphany file:///usr/share/eos-wikipedia/index.html,,,,,wikipedia-app,,,,,Education;
 writer,,,,,X,X,X,X,Writer,,Escritor,Redator,,Writer,,,,,libreoffice --writer %U,,,,,office_text,,,,,Office;
-youtube,,,,,X,X,X,X,YouTube,,YouTube,YouTube,,YouTube,,,,,endless-os-youtube,,,,,youtube-app,,,,,Media;
+youtube,,,,,X,X,X,X,YouTube,,,,,YouTube,,,,,endless-os-youtube,,,,,youtube-app,,,,,Media;
 epiphany,,,,,X,X,X,X,Internet,,,,,Browse the Web,,,,,epiphany file:///usr/share/EndlessOS/exploration_center/index.html,,,,,browser,,,,,Internet;
