@@ -32,6 +32,7 @@ stellarium,,,,,X,X,X,X,Stellarium,,Constelaciones,Constelação,,Stellarium,,,,,
 sudoku,,,,,X,X,X,X,Sudoku,,,,,Sudoku,,,,,/usr/games/gnome-sudoku,,,,,sudoku,,,,,Games;
 supertux,,,,,X,X,X,X,Super Tux,,,,,Super Tux,,,,,supertux2 --fullscreen,,,,,supertux,,,,,Games;
 teeworlds,,,,,X,X,X,X,Teeworlds,,Teelandia,Teelândia,,Multiplayer game,,,,,teeworlds,,,,,teelandia,,,,,Games;
+translate,,,,,X,X,X,X,Translate,,Traductor,Tradutor,翻译,Translate,,,,,eos-translate,,,,,translate,,,,,Education;Office;
 tuxkart,,,,,X,X,X,X,Tux Kart,,,,,Tux Kart,,,,,supertuxkart --fullscreen,,,,,supertuxkart,,,,,Games;
 tuxmath,,,,,X,X,X,X,Tux Math,,123 Tux,123 Tux,,Math Games,,,,,tuxmath,,,,,123tux,,,,,Games;Education;
 tuxtyping,,,,,X,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,tuxtype -t,,tuxtype -t espanol,tuxtype -t brazilian-portuguese,,tuxtyping,,,,,Games;
