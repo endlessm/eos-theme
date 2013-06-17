@@ -6,7 +6,7 @@ blockout,,,,,X,X,X,X,BlockOut 2,,BlockOut 2,BlockOut 2,,3D Tetris-style game,,,,
 calc,,,,,X,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,gnome-calculator,,,,,calculator,,,,,Utility;Calculator;
 chromium-bsu,,,,,X,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,chromium-bsu --fullscreen,,,,,chromium-bsu,,,,,Games;
 email,,,,,X,X,X,X,E-mail,,,,,E-mail,,,,,evolution %U,,,,,email,,,,,Mail;Email;
-english,,,,,X,X,X,X,Learn English,,Aprender Inglés,Aprender Inglês,,Learn English,,,,,gjs /usr/share/eos-english/english_app.js,,,,,english-app,,,,,Education;
+english,,,,,X,X,X,X,Learn English,,Aprende Inglés,Aprender Inglês,,Learn English,,,,,gjs /usr/share/eos-english/english_app.js,,,,,english-app,,,,,Education;
 freecell,,,,,X,X,X,X,Freecell,,,,,Freecell,,,,,/usr/games/sol --freecell --class sol-freecell,,,,,freecell,,,,,Games;
 gbrainy,,,,,X,X,X,X,Brain Teasers,,Rompecabezas,Quebra-cabeça,,GBrainy,,,,,gbrainy,,,,,gbrainy,,,,,Games;
 gcompris,,,,,X,X,X,X,GCompris,,,,,Childrens games,,,,,gcompris,,,,,gcompris,,,,,Games;Education;
