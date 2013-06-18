@@ -13,7 +13,7 @@ gcompris,,,,,X,X,X,X,GCompris,,,,,Childrens games,,,,,gcompris,,,,,gcompris,,,,,
 geniusmath,,,,,X,X,X,X,Math,,Matemáticas,Matemática,,Genius Math,,,,,gnome-genius,,,,,geniusmath,,,,,Utility;Calculator;
 goldendict,,,,,X,X,X,X,Dictionary,,Dicionário,Dicionário,,GoldenDict,,,,,goldendict,,,,,goldendict,,,,,Utility;
 impress,,,,,X,X,X,X,Presentation,,Presentación,Apresentação,,Impress,,,,,libreoffice --impress %U,,,,,office_presentation,,,,,Office;
-khanacademy,,,,,X,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,epiphany file:///usr/share/eos-khanacademy/index.html,,,,,khanacademy-app,,,,,Education;
+khanacademy,,,,,X,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,eos-khanacademy,,,,,khanacademy-app,,,,,Education;
 kobodeluxe,,,,,X,X,X,X,Kobo Deluxe,,Kobo Deluxe,Kobo Deluxe,,Destroy enemy bases in space,,,,,kobodl,,,,,kobodeluxe,,,,,Games;
 lbreakout,,,,,X,X,X,X,Breakout,,El Escape,Fuga,,LBreakout2 game,,,,,lbreakout2,,,,,lbreakout,,,,,Games;
 music,,,,,X,X,X,X,Music,,Música,Música,,Music,,,,,beatbox %U,,,,,music,,,,,Audio;
@@ -37,7 +37,7 @@ tuxmath,,,,,X,X,X,X,Tux Math,,123 Tux,123 Tux,,Math Games,,,,,tuxmath,,,,,123tux
 tuxtyping,,,,,X,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,tuxtype -t,,tuxtype -t espanol,tuxtype -t brazilian-portuguese,,tuxtyping,,,,,Games;
 video,,,,,X,X,X,X,Videos,,Vídeos,Vídeos,,Video,,,,,totem %U,,,,,video,,,,,Video;
 weather,,,,,X,X,X,X,Weather,,Tiempo,Tempo,,See the weather forecast,,,,,endless-os-weather,,,,,weather,,,,,Network;News;
-wikipedia,,,,,X,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,epiphany file:///usr/share/eos-wikipedia/index.html,,,,,wikipedia-app,,,,,Education;
+wikipedia,,,,,X,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,eos-wikipedia,,,,,wikipedia-app,,,,,Education;
 writer,,,,,X,X,X,X,Writer,,Escritor,Redator,,Writer,,,,,libreoffice --writer %U,,,,,office_text,,,,,Office;
 youtube,,,,,X,X,X,X,YouTube,,,,,YouTube,,,,,eos-youtube,,,,,youtube-app,,,,,Media;
 epiphany,,,,,X,X,X,X,Internet,,,,,Browse the Web,,,,,epiphany file:///usr/share/EndlessOS/exploration_center/index.html,,,,,browser,,,,,Internet;
