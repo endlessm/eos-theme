@@ -34,6 +34,9 @@ links_DATA = $(wildcard links/*.desktop)
 foldersdir = $(datadir)/desktop-directories
 folders_DATA = $(wildcard folders/*.directory)
 
+autostartdir = $(sysconfdir)/xdg/autostart
+autostart_DATA = applications/eos-app-epiphany.desktop
+
 clean-local:
 	rm -rf applications
 	rm .apps_dot_desktop_files_timestamp
