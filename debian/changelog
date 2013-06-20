@@ -1,3 +1,9 @@
+eos-theme (1.1.1) unstable; urgency=low
+
+  * Updating version to 1.1.1
+
+ -- Roddy Shuler <roddy@endlessm.com>  Thu, 20 Jun 2013 13:55:29 -0500
+
 eos-theme (1.1.1~rc15) unstable; urgency=low
 
   * Updating version to 1.1.1~rc15
