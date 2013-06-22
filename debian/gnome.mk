@@ -43,7 +43,10 @@ clean::
 $(patsubst %,binary-install/%,$(DEB_PACKAGES)) :: binary-install/%:
 	$(if $(wildcard /usr/bin/dh_gconf),dh_gconf -p$(cdbs_curpkg) $(DEB_DH_GCONF_ARGS))
 	$(if $(wildcard /usr/bin/dh_icons),dh_icons -p$(cdbs_curpkg) $(DEB_DH_ICONS_ARGS))
-	$(if $(wildcard /usr/bin/dh_translations),dh_translations -p$(cdbs_curpkg) $(DEB_DH_TRANSLATIONS_ARGS))
+
+# Don't call dh_translations, as it discards the translations
+# in the .desktop files
+#	$(if $(wildcard /usr/bin/dh_translations),dh_translations -p$(cdbs_curpkg) $(DEB_DH_TRANSLATIONS_ARGS))
 
 # Use xz compression.
 DEB_DH_BUILDDEB_ARGS ?= -u-Zxz
