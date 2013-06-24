@@ -8,6 +8,7 @@ chromium-bsu,,,,,X,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,chromium-bsu --fullsc
 email,,,,,X,X,X,X,E-mail,,,,,E-mail,,,,,evolution %U,,,,,email,,,,,Mail;Email;
 english,,,,,X,X,X,X,Learn English,,Aprende Inglés,Aprender Inglês,,Learn English,,,,,gjs /usr/share/eos-english/english_app.js,,,,,english-app,,,,,Education;
 freecell,,,,,X,X,X,X,Freecell,,,,,Freecell,,,,,/usr/games/sol --freecell --class sol-freecell,,,,,freecell,,,,,Games;
+frostwire,,,,,X,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,frostwire,,,,,frostwire,,,,,Network;
 gbrainy,,,,,X,X,X,X,Brain Teasers,,Rompecabezas,Quebra-cabeça,,GBrainy,,,,,gbrainy,,,,,gbrainy,,,,,Games;
 gcompris,,,,,X,X,X,X,GCompris,,,,,Childrens games,,,,,gcompris,,,,,gcompris,,,,,Games;Education;
 geniusmath,,,,,X,X,X,X,Math,,Matemáticas,Matemática,,Genius Math,,,,,gnome-genius,,,,,geniusmath,,,,,Utility;Calculator;
@@ -23,7 +24,6 @@ openarena,,,,,X,X,X,X,Open Arena,,,,,Open Arena,,,,,/usr/games/openarena,,,,,ope
 photo-editor,,,,,X,X,X,X,GIMP,,,,,Photo Editor,,Editor de Imágenes,Editor de Imagens,图像编辑器,gimp %U,,,,,gimp,,,,,Photos;
 photos,,,,,X,X,X,X,Photo Editor,,Editor de Fotos,Editor de Fotos,照片编辑器,Endless Photo App,,,,,endless-os-photos %f,,,,,photo,,,,,Photos;
 pingus,,,,,X,X,X,X,Pingus,,,,,Penguin Game,,,,,pingus,,,,,pingus,,,,,Games;
-qBittorrent,,,,,X,X,X,X,Media Download,,Descargar,Baixar Mídia,,qBittorrent,,,,,qbittorrent %U,,,,,qbittorrent,,,,,Network;
 shotwell,,,,,X,X,X,X,Photos,,Fotos,Fotos,,Shotwell Photo Organizer,,,,,shotwell %U,,,,,shotwell,,,,,Photos;
 skype,,,,,X,X,X,X,Skype,,,,,Skype,,,,,skype %U,,,,,skype,,,,,Network;
 solitaire,,,,,X,X,X,X,Solitaire,,,,,Solitaire,,,,,/usr/games/sol,,,,,solitaire,,,,,Games;
