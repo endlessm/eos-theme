@@ -66,3 +66,7 @@ default-folder-viewer='list-view'
 # Disable reporting of Ubuntu internal error messages
 [com.ubuntu.update-notifier]
 show-apport-crashes=false
+
+# Do not restore Epiphany previous session (unless crashed)
+[org.gnome.Epiphany]
+restore-session-policy='crashed'
