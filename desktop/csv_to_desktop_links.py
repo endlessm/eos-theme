@@ -24,11 +24,9 @@ class DesktopWriter:
         else:
             return '[' + locale + ']'
 
-    def locale_file(self, locale):
-        if locale == 'default':
-            return ''
-        else:
-            return '.' + locale
+    def url_to_exec(self, url):
+        exec_string = 'epiphany-browser %s' % url
+        return exec_string
 
     def _write_key(self, desktop_file, fields, key):
         # Write a line for each localized version of the key
@@ -39,10 +37,10 @@ class DesktopWriter:
                 line = '%s%s=%s\n' % (key, self.locale_string(locale), field)
                 desktop_file.write(line)
 
-    def _write_desktop_file(self, fields, locale, url):
+    def _write_desktop_file(self, fields):
         desktop_id = fields[0]
         desktop_path = os.path.join(self._desktop_dir,
-                                    'eos-link-' + desktop_id + self.locale_file(locale) +
+                                    'eos-link-' + desktop_id +
                                     '.desktop')
         desktop_file = open(desktop_path, 'w')
         desktop_file.write('[Desktop Entry]\n')
@@ -50,7 +48,32 @@ class DesktopWriter:
         self._write_key(desktop_file, fields, 'Name')
         self._write_key(desktop_file, fields, 'Comment')
 	desktop_file.write('Type=Application\n')
-	desktop_file.write('Exec=epiphany-browser %s\n' % url)
+
+        have_localized_url = False
+        for locale in self._locales:
+            index = self._indexes['URL'][locale]
+            localized_url = fields[index]
+            if localized_url and locale != 'default':
+                have_localized_url = True
+                break
+
+        if have_localized_url:
+            exec_string = 'eos-exec-localized'
+            index = self._indexes['URL']['default']
+            url = fields[index]
+            exec_string += " '" + self.url_to_exec(url) + "'"
+            for locale in self._locales:
+                index = self._indexes['URL'][locale]
+                localized_url = fields[index]
+                if localized_url and locale != 'default':
+                    localized_exec = self.url_to_exec(localized_url)
+                    exec_string += " " + locale + ":'" + localized_exec + "'"
+        else:
+            index = self._indexes['URL']['default']
+            url = fields[index]
+            exec_string = self.url_to_exec(url)
+
+ 	desktop_file.write('Exec=%s\n' % exec_string)
         self._write_key(desktop_file, fields, 'Icon')
 
     def _add_index(self, key, locale, index):
@@ -109,15 +132,7 @@ class DesktopWriter:
         # For each remaining line after the header
         for line in csv_file:
             fields = line.rstrip().split(',')
-
-            # Create a .desktop file for each localized URL
-            # (The desktop entry spec does not allow localized URLs
-            # within a single .desktop file)
-            for locale in self._locales:
-                index = self._indexes['URL'][locale]
-                url = fields[index]
-                if url:
-                    self._write_desktop_file(fields, locale, url)
+            self._write_desktop_file(fields)
     
         csv_file.close()
 
