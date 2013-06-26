@@ -109,7 +109,6 @@ class DesktopWriter:
         # For each remaining line after the header
         for line in csv_file:
             fields = line.rstrip().split(',')
-            name_id = fields[0]
 
             # Create a .desktop file for each localized URL
             # (The desktop entry spec does not allow localized URLs

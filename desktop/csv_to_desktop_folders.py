@@ -101,7 +101,6 @@ class DesktopWriter:
         # For each remaining line after the header
         for line in csv_file:
             fields = line.rstrip().split(',')
-            name_id = fields[0]
             self._write_desktop_file(fields)
     
         csv_file.close()

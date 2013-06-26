@@ -37,6 +37,8 @@ folders_DATA = $(wildcard folders/*.directory)
 autostartdir = $(sysconfdir)/xdg/autostart
 autostart_DATA = applications/eos-app-epiphany.desktop
 
+bin_SCRIPTS = eos-exec-localized
+
 clean-local:
 	rm -rf applications
 	rm .apps_dot_desktop_files_timestamp
