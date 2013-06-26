@@ -24,12 +24,6 @@ class DesktopWriter:
         else:
             return '[' + locale + ']'
 
-    def locale_file(self, locale):
-        if locale == 'default':
-            return ''
-        else:
-            return '.' + locale
-
     def _write_key(self, desktop_file, fields, key):
         # Write a line for each localized version of the key
         for locale in self._locales:
@@ -39,10 +33,10 @@ class DesktopWriter:
                 line = '%s%s=%s\n' % (key, self.locale_string(locale), field)
                 desktop_file.write(line)
 
-    def _write_desktop_file(self, fields, locale, exec_string):
+    def _write_desktop_file(self, fields):
         desktop_id = fields[0]
         desktop_path = os.path.join(self._desktop_dir,
-                                    'eos-app-' + desktop_id + self.locale_file(locale) +
+                                    'eos-app-' + desktop_id +
                                     '.desktop')
         desktop_file = open(desktop_path, 'w')
         desktop_file.write('[Desktop Entry]\n')
@@ -50,6 +44,28 @@ class DesktopWriter:
         self._write_key(desktop_file, fields, 'Name')
         self._write_key(desktop_file, fields, 'Comment')
         desktop_file.write('Type=Application\n')
+
+        have_localized_exec = False
+        for locale in self._locales:
+            index = self._indexes['Exec'][locale]
+            localized_exec = fields[index]
+            if localized_exec and locale != 'default':
+                have_localized_exec = True
+                break
+
+        if have_localized_exec:
+            exec_string = 'eos-exec-localized'
+            index = self._indexes['Exec']['default']
+            exec_string += " '" + fields[index] + "'"
+            for locale in self._locales:
+                index = self._indexes['Exec'][locale]
+                localized_exec = fields[index]
+                if localized_exec and locale != 'default':
+                    exec_string += " " + locale + ":'" + localized_exec + "'"
+        else:
+            index = self._indexes['Exec']['default']
+            exec_string = fields[index]
+
         desktop_file.write('Exec=%s\n' % exec_string)
         self._write_key(desktop_file, fields, 'Icon')
         # Note: Categories is not localized
@@ -112,16 +128,8 @@ class DesktopWriter:
         # For each remaining line after the header
         for line in csv_file:
             fields = line.rstrip().split(',')
+            self._write_desktop_file(fields)
 
-            # Create a .desktop file for each localized Exec
-            # (The desktop entry spec does not allow localized Exec strings
-            # within a single .desktop file)
-            for locale in self._locales:
-                index = self._indexes['Exec'][locale]
-                exec_string = fields[index]
-                if exec_string:
-                    self._write_desktop_file(fields, locale, exec_string)
-    
         csv_file.close()
 
 if __name__ == '__main__':
