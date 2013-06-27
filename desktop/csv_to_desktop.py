@@ -20,7 +20,7 @@ class DesktopWriter:
             'prefix': 'eos-link-',
             'suffix': '.desktop',
             'desktop_type': 'Application',
-            'locale_keys': ['Name', 'Comment', 'URL', 'Icon'] },
+            'locale_keys': ['Name', 'Comment', 'URL', 'Icon', 'Categories'] },
         'folders': {
             'csv_path': 'folders.csv',
             'desktop_dir': 'folders',
