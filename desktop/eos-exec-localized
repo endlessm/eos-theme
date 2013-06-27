@@ -25,7 +25,10 @@ const parseExecStrings = function(args) {
             execStrings[DEFAULT_KEY] = arg;
         } else {
             // Subsequent arguments are of the form language:exec
-            let [key, value] = arg.split(':');
+            // (Don't clobber any subsequent colons in the exec string)
+            let tokens = arg.split(':');
+            let key = tokens.shift();
+            let value = tokens.join(':');
             execStrings[key] = value;
         }
     }
