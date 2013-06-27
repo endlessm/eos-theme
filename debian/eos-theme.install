@@ -7,3 +7,4 @@ usr/share/desktop-directories
 usr/share/gnome-background-properties
 usr/lib/*/gtk-2.0/*/engines/*.so
 usr/lib/*/gtk-3.0/*/theming-engines/*.so
+usr/bin
