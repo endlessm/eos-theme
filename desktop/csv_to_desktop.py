@@ -4,6 +4,13 @@ import os
 import errno
 import re
 
+def make_sure_path_exists(path):
+    try:
+        os.makedirs(path)
+    except OSError as exception:
+        if exception.errno != errno.EEXIST:
+            raise
+
 class DesktopWriter:
 
     CONFIGS = {
@@ -47,14 +54,7 @@ class DesktopWriter:
         self._locale_keys = self._config['locale_keys']
 
         if self._desktop_dir:
-            self.make_sure_path_exists(self._desktop_dir)
-
-    def make_sure_path_exists(self, path):
-        try:
-            os.makedirs(path)
-        except OSError as exception:
-            if exception.errno != errno.EEXIST:
-                raise
+            make_sure_path_exists(self._desktop_dir)
 
     def locale_string(self, locale):
         if locale == 'default':
@@ -141,6 +141,8 @@ class DesktopWriter:
             # Note: Categories is not localized
             desktop_file.write('Categories=%s\n' %
                                fields[self._indexes['Categories']['default']])
+
+        desktop_file.close()
 
     def _add_index(self, key, qualifier, index):
         try:
@@ -268,10 +270,56 @@ class DesktopLayout:
                 exit(1)
             desktop[position] = item
 
+    def write_settings(self):
+        settings_dir = 'settings'
+        prefix = 'com.endlessm.desktop.'
+        suffix = '.gschema.override'
+        make_sure_path_exists(settings_dir)
+        for [personality, layout] in self._layouts.items():
+            settings_path = os.path.join(settings_dir,
+                                         prefix + personality + suffix)
+            settings_file = open(settings_path, 'w')
+            settings_file.write('# Default desktop layout for %s\n' %
+                                personality)
+            settings_file.write('[org.gnome.shell]\n')
+            settings_file.write("icon-grid-layout={ '': [")
+
+            desktop = layout['desktop']
+            sorted_desktop = sorted(desktop, key = lambda val: int(val))
+            first_item = True
+            for item in sorted_desktop:
+                if first_item:
+                    first_item = False
+                else:
+                    settings_file.write(", ")
+                settings_file.write("'" + desktop[item] + "'")
+            settings_file.write("]")
+
+            # Process the folders in the order that they appear on the desktop
+            folders = layout['folders']
+            for item in sorted_desktop:
+                folder = desktop[item]
+                if folder in folders:
+                    settings_file.write(", '" + folder + "': [")
+                    entries = folders[folder]
+                    sorted_entries = sorted(entries, key = lambda val: int(val))
+                    first_entry = True
+                    for entry in sorted_entries:
+                        if first_entry:
+                            first_entry = False
+                        else:
+                            settings_file.write(", ")
+                        settings_file.write("'" + entries[entry] + "'")
+                    settings_file.write("]")
+                
+            settings_file.write(" }\n")
+            settings_file.close()
+
 if __name__ == '__main__':
     desktop_layout = DesktopLayout()
     for asset_type in ['apps', 'links', 'folders', 'extras']:
         desktop_writer = DesktopWriter(asset_type)
         desktop_writer.process_all(desktop_layout)
 
-    # TODO Sort the desktop layouts and generate gsettings override files
+    desktop_layout.write_settings()
+
