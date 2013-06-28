@@ -67,6 +67,6 @@ default-folder-viewer='list-view'
 [com.ubuntu.update-notifier]
 show-apport-crashes=false
 
-# Do not restore Epiphany previous session (unless crashed)
+# Do not restore Epiphany previous session
 [org.gnome.Epiphany]
-restore-session-policy='crashed'
+restore-session-policy='never'
