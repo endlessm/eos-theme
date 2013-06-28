@@ -28,7 +28,7 @@ pingus,,,,,X,X,X,X,Pingus,,,,,Penguin Game,,,,,pingus,,,,,pingus,,,,,Games;
 shotwell,media:10,media:10,media:10,media:10,X,X,X,X,Photos,,Fotos,Fotos,,Shotwell Photo Organizer,,,,,shotwell %U,,,,,shotwell,,,,,Photos;
 skype,40,40,40,40,X,X,X,X,Skype,,,,,Skype,,,,,skype %U,,,,,skype,,,,,Network;
 solitaire,games:30,games:30,games:30,games:30,X,X,X,X,Solitaire,,,,,Solitaire,,,,,/usr/games/sol,,,,,solitaire,,,,,Games;
-spreadsheet,work;20,work:20,work:20,work:20,X,X,X,X,Spreadsheet,,Hoja de Cálculo,Planilha,,Spreadsheet,,,,,libreoffice --calc %U,,,,,office_spreadsheet,,,,,Office;
+spreadsheet,work:20,work:20,work:20,work:20,X,X,X,X,Spreadsheet,,Hoja de Cálculo,Planilha,,Spreadsheet,,,,,libreoffice --calc %U,,,,,office_spreadsheet,,,,,Office;
 stellarium,curiosity:80,curiosity:80,curiosity:80,curiosity:80,X,X,X,X,Stellarium,,Constelaciones,Constelação,,Stellarium,,,,,stellarium,,,,,stellarium,,,,,Astronomy;Education;Science;
 sudoku,,,,,X,X,X,X,Sudoku,,,,,Sudoku,,,,,/usr/games/gnome-sudoku,,,,,sudoku,,,,,Games;
 supertux,games:50,games:50,games:50,games:50,X,X,X,X,Super Tux,,,,,Super Tux,,,,,supertux2 --fullscreen,,,,,supertux,,,,,Games;
