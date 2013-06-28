@@ -1,0 +1,10 @@
+Id,Desktop[en_US],Desktop[es_GT],Desktop[pt_BR],Desktop[zh_CN],AppStore[en_US],AppStore[es_GT],AppStore[pt_BR],AppStore[zh_CN]
+gnome-background-panel,settings:20,settings:20,settings:20,settings:20,X,X,X,X
+gnome-control-center,settings:10,settings:10,settings:10,settings:10,X,X,X,X
+gnome-datetime-panel,settings:80,settings:80,settings:80,settings:80,X,X,X,X
+gnome-display-panel,settings:40,settings:40,settings:40,settings:40,X,X,X,X
+gnome-mouse-panel,settings:50,settings:50,settings:50,settings:50,X,X,X,X
+gnome-network-panel,settings:60,settings:60,settings:60,settings:60,X,X,X,X
+gnome-printers-panel,settings:70,settings:70,settings:70,settings:70,X,X,X,X
+gnome-region-panel,settings:30,settings:30,settings:30,settings:30,X,X,X,X
+gnome-user-accounts-panel,settings:90,settings:90,settings:90,settings:90,X,X,X,X
