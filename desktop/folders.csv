@@ -1,7 +1,7 @@
-Id,Desktop[en_US],Desktop[es_GT],Desktop[pt_BR],Desktop[zh_CN],Name,Name[en],Name[es],Name[pt],Name[zh],Icon,Icon[en],Icon[es],Icon[pt],Icon[zh]
-curiosity,140,140,140,140,Curiosity,,Curiosidades,Curiosidade,,eos-folder-curiosity,,,,
-games,110,110,110,110,Games,,Juegos,Jogos,,eos-folder-games,,,,
-media,100,100,100,100,Media,,Multimedia,Mídia,,eos-folder-media,,,,
-news,130,130,130,130,News,,Noticias,Notícias,,eos-folder-news,,,,
-settings,150,150,150,150,Settings,,Definiciones,Preferências,,eos-folder-settings,,,,
-work,120,120,120,120,Work,,Trabajo,Trabalho,,eos-folder-work,,,,
+Id,Desktop,Desktop[Brazil],Desktop[Guatemala],Name,Name[en],Name[es],Name[pt],Name[zh],Icon,Icon[en],Icon[es],Icon[pt],Icon[zh]
+curiosity,140,140,140,Curiosity,,Curiosidades,Curiosidade,,eos-folder-curiosity,,,,
+games,110,110,110,Games,,Juegos,Jogos,,eos-folder-games,,,,
+media,100,100,100,Media,,Multimedia,Mídia,,eos-folder-media,,,,
+news,130,130,130,News,,Noticias,Notícias,,eos-folder-news,,,,
+settings,150,150,150,Settings,,Definiciones,Preferências,,eos-folder-settings,,,,
+work,120,120,120,Work,,Trabajo,Trabalho,,eos-folder-work,,,,

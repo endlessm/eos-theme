@@ -182,8 +182,10 @@ class DesktopWriter:
             for key in ['Desktop', 'AppStore']:
                 if field.startswith(key):
                     if field == key:
-                        print 'Invalid non-localized field header:', field
+                        # Non-personalized field
+                        personality = 'default'
                     else:
+                        # Personalized field
                         regex = '^' + key + '\[(.+)\]$'
                         match_result = re.match(regex, field)
                         if match_result:
@@ -272,15 +274,22 @@ class DesktopLayout:
 
     def write_settings(self):
         settings_dir = 'settings'
-        prefix = 'com.endlessm.desktop.'
+        prefix = 'com.endlessm.desktop'
         suffix = '.gschema.override'
         make_sure_path_exists(settings_dir)
         for [personality, layout] in self._layouts.items():
-            settings_path = os.path.join(settings_dir,
-                                         prefix + personality + suffix)
+            if personality == 'default':
+                settings_path = os.path.join(settings_dir,
+                                             prefix + suffix)
+            else:
+                settings_path = os.path.join(settings_dir,
+                                             prefix + '.' + personality + suffix)
             settings_file = open(settings_path, 'w')
-            settings_file.write('# Default desktop layout for %s\n' %
-                                personality)
+            if personality == 'default':
+                settings_file.write('# Default desktop layout\n')
+            else:
+                settings_file.write('# Default desktop layout for %s\n' %
+                                    personality)
             settings_file.write('[org.gnome.shell]\n')
             settings_file.write("icon-grid-layout={ '': [")
 
