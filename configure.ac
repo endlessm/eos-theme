@@ -26,6 +26,8 @@ IT_PROG_INTLTOOL([0.40.0])
 GETTEXT_PACKAGE="${PACKAGE}"
 AC_SUBST(GETTEXT_PACKAGE)
 
+GLIB_GSETTINGS
+
 AC_ARG_ENABLE([gtk3-engine],
               AC_HELP_STRING([--disable-gtk3-engine],
                              [Disable Gtk+ 3.x engine [default=no]]),

@@ -44,6 +44,7 @@ desktop/.dot_desktop_files_timestamp
 desktop/applications
 desktop/folders
 desktop/links
+desktop/settings
 install-sh
 intltool-*.in
 intltool-extract.in

@@ -4,6 +4,13 @@ import os
 import errno
 import re
 
+def make_sure_path_exists(path):
+    try:
+        os.makedirs(path)
+    except OSError as exception:
+        if exception.errno != errno.EEXIST:
+            raise
+
 class DesktopWriter:
 
     CONFIGS = {
@@ -27,7 +34,14 @@ class DesktopWriter:
             'prefix': 'eos-folder-',
             'suffix': '.directory',
             'desktop_type': 'Directory',
-            'locale_keys': ['Name', 'Icon'] } }
+            'locale_keys': ['Name', 'Icon'] },
+        'extras': {
+            'csv_path': 'extras.csv',
+            'desktop_dir': None,
+            'prefix': '',
+            'suffix': '.desktop',
+            'desktop_type': 'Application',
+            'locale_keys': [] } }
 
     def __init__(self, asset_type):
         self._asset_type = asset_type
@@ -38,14 +52,9 @@ class DesktopWriter:
         self._suffix = self._config['suffix']
         self._desktop_type = self._config['desktop_type']
         self._locale_keys = self._config['locale_keys']
-        self.make_sure_path_exists(self._desktop_dir)
 
-    def make_sure_path_exists(self, path):
-        try:
-            os.makedirs(path)
-        except OSError as exception:
-            if exception.errno != errno.EEXIST:
-                raise
+        if self._desktop_dir:
+            make_sure_path_exists(self._desktop_dir)
 
     def locale_string(self, locale):
         if locale == 'default':
@@ -133,21 +142,28 @@ class DesktopWriter:
             desktop_file.write('Categories=%s\n' %
                                fields[self._indexes['Categories']['default']])
 
-    def _add_index(self, key, locale, index):
-        self._locales.add(locale)
+        desktop_file.close()
 
+    def _add_index(self, key, qualifier, index):
         try:
             inner_dict = self._indexes[key]
         except:
             inner_dict = {}
         
-        inner_dict[locale] = index
+        inner_dict[qualifier] = index
         self._indexes[key] = inner_dict
 
+    def _add_locale_index(self, key, locale, index):
+        self._locales.add(locale)
+        self._add_index(key, locale, index)
+
+    def _add_personality_index(self, key, personality, index):
+        self._personalities.add(personality)
+        self._add_index(key, personality, index)
+
     def _parse_header(self, header):
-        # Note: for now, the Desktop and AppStore columns are ignored
-        # They will be used later to specify what is available by default
-        # on the desktop and in the app store for each user personality
+        # Set of all personalities
+        self._personalities = set()
 
         # Set of all locales
         self._locales = set()
@@ -155,12 +171,31 @@ class DesktopWriter:
         # Dictionary that relates keys and locales to indexes
         self._indexes = {}
 
-        # Find all the locales specified in the header
+        # Find all the personalities and locales specified in the header
         index = 0
 
         # For each field in the header
         fields = header.split(',')
         for field in fields:
+
+            # Check if this is a personalized field
+            for key in ['Desktop', 'AppStore']:
+                if field.startswith(key):
+                    if field == key:
+                        # Non-personalized field
+                        personality = 'default'
+                    else:
+                        # Personalized field
+                        regex = '^' + key + '\[(.+)\]$'
+                        match_result = re.match(regex, field)
+                        if match_result:
+                            personality = match_result.group(1)
+                        else:
+                            print 'Invalid personalized field header:', field
+                            exit(1)
+                    self._add_personality_index(key, personality, index)
+
+            # Check if this is a localized field
             for key in self._locale_keys:
                 if field.startswith(key):
                     if field == key:
@@ -175,10 +210,22 @@ class DesktopWriter:
                         else:
                             print 'Invalid localized field header:', field
                             exit(1)
-                    self._add_index(key, locale, index)
+                    self._add_locale_index(key, locale, index)
+
             index += 1
 
-    def write_desktop_files(self):
+    def _add_to_layout(self, fields, desktop_layout):
+        # Note: for now, we don't do anything with the AppStore column
+        
+        for personality in self._personalities:
+            index = self._indexes['Desktop'][personality]
+            position = fields[index]
+            if position:
+                id = fields[0]
+                item = self._prefix + id + self._suffix 
+                desktop_layout.add_item(personality, item, position)
+
+    def process_all(self, desktop_layout):
         csv_file = open(self._csv_path, 'r')
 
         # Parse the first line header
@@ -188,11 +235,100 @@ class DesktopWriter:
         # For each remaining line after the header
         for line in csv_file:
             fields = line.rstrip().split(',')
-            self._write_desktop_file(fields)
+            self._add_to_layout(fields, desktop_layout)
+            if (self._desktop_dir):
+                self._write_desktop_file(fields)
 
         csv_file.close()
 
+class DesktopLayout:
+
+    def __init__(self):
+        self._layouts  = {}
+
+    def add_item(self, personality, item, position):
+        if personality not in self._layouts:
+            self._layouts[personality] = { 'desktop': {}, 'folders': {} }
+        layout = self._layouts[personality]
+        desktop = layout['desktop']
+        folders = layout['folders']
+
+        if ':' in position:
+            # Add to a folder
+            [name, index] = position.split(':')
+            folder = 'eos-folder-' + name + '.directory'
+            if folder not in folders:
+                folders[folder] = {}
+            if index in folders[folder]:
+                print 'Duplicate entry adding ' + item + ' to ' + position + \
+                    '; conflicts with ' + folders[folder][index]
+                exit(1)
+            folders[folder][index] = item
+        else:
+            # Add to desktop
+            if position in desktop:
+                print 'Duplicate entry adding ' + item + ' to ' + position + \
+                    '; conflicts with ' + desktop[position]
+                exit(1)
+            desktop[position] = item
+
+    def write_settings(self):
+        settings_dir = 'settings'
+        prefix = 'com.endlessm.desktop'
+        suffix = '.gschema.override'
+        make_sure_path_exists(settings_dir)
+        for [personality, layout] in self._layouts.items():
+            if personality == 'default':
+                settings_path = os.path.join(settings_dir,
+                                             prefix + suffix)
+            else:
+                settings_path = os.path.join(settings_dir,
+                                             prefix + '.' + personality + suffix)
+            settings_file = open(settings_path, 'w')
+            if personality == 'default':
+                settings_file.write('# Default desktop layout\n')
+            else:
+                settings_file.write('# Default desktop layout for %s\n' %
+                                    personality)
+            settings_file.write('[org.gnome.shell]\n')
+            settings_file.write("icon-grid-layout={ '': [")
+
+            desktop = layout['desktop']
+            sorted_desktop = sorted(desktop, key = lambda val: int(val))
+            first_item = True
+            for item in sorted_desktop:
+                if first_item:
+                    first_item = False
+                else:
+                    settings_file.write(", ")
+                settings_file.write("'" + desktop[item] + "'")
+            settings_file.write("]")
+
+            # Process the folders in the order that they appear on the desktop
+            folders = layout['folders']
+            for item in sorted_desktop:
+                folder = desktop[item]
+                if folder in folders:
+                    settings_file.write(", '" + folder + "': [")
+                    entries = folders[folder]
+                    sorted_entries = sorted(entries, key = lambda val: int(val))
+                    first_entry = True
+                    for entry in sorted_entries:
+                        if first_entry:
+                            first_entry = False
+                        else:
+                            settings_file.write(", ")
+                        settings_file.write("'" + entries[entry] + "'")
+                    settings_file.write("]")
+                
+            settings_file.write(" }\n")
+            settings_file.close()
+
 if __name__ == '__main__':
-    for asset_type in ['apps', 'links', 'folders']:
+    desktop_layout = DesktopLayout()
+    for asset_type in ['apps', 'links', 'folders', 'extras']:
         desktop_writer = DesktopWriter(asset_type)
-        desktop_writer.write_desktop_files()
+        desktop_writer.process_all(desktop_layout)
+
+    desktop_layout.write_settings()
+
