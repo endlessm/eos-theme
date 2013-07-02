@@ -236,7 +236,7 @@ class DesktopWriter:
         for line in csv_file:
             fields = line.rstrip().split(',')
             self._add_to_layout(fields, desktop_layout)
-            if (self._asset_type != 'extras'):
+            if (self._desktop_dir):
                 self._write_desktop_file(fields)
 
         csv_file.close()
