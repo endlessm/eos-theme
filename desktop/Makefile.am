@@ -22,9 +22,6 @@ links_DATA = $(wildcard links/*.desktop)
 foldersdir = $(datadir)/desktop-directories
 folders_DATA = $(wildcard folders/*.directory)
 
-settingsdir = $(datadir)/glib-2.0/schemas
-settings_DATA = settings/com.endlessm.desktop.gschema.override
-
 desktopsdir = $(datadir)/EndlessOS/desktops
 desktops_DATA = $(wildcard settings/com.endlessm.desktop.*.gschema.override)
 
@@ -32,8 +29,6 @@ autostartdir = $(sysconfdir)/xdg/autostart
 autostart_DATA = applications/eos-app-epiphany.desktop
 
 bin_SCRIPTS = eos-exec-localized
-
-@GSETTINGS_RULES@
 
 clean-local:
 	rm -rf applications
