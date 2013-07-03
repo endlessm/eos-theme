@@ -25,9 +25,6 @@ folders_DATA = $(wildcard folders/*.directory)
 desktopsdir = $(datadir)/EndlessOS/desktops
 desktops_DATA = $(wildcard settings/com.endlessm.desktop.*.gschema.override)
 
-autostartdir = $(sysconfdir)/xdg/autostart
-autostart_DATA = applications/eos-app-epiphany.desktop
-
 bin_SCRIPTS = eos-exec-localized
 
 clean-local:
