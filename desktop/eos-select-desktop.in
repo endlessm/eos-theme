@@ -1,0 +1,125 @@
+#!/usr/bin/gjs
+// -*- mode: js; js-indent-level: 4; indent-tabs-mode: nil -*-
+
+// Script to select the desktop personality
+//
+// Usage:
+//   eos-select-desktop [default | <personality>]
+//
+// For example:
+//   eos-select-desktop            -- prompts user to select personality
+//   eos-select-desktop default    -- reset to the default personality
+//   eos-select-desktop Brazil     -- select the Brazil personality
+
+const Gio = imports.gi.Gio;
+const GLib = imports.gi.GLib;
+
+const INSTALL_PATH = '@DATA_DIR@';
+const EOS_SHELL_SCHEMA = 'org.gnome.shell';
+const ICON_GRID_LAYOUT_SETTING = 'icon-grid-layout';
+const OVERRIDES_PRIORITY = 90;
+
+const selectPersonality = function() {
+    let command = 'zenity --list --title="Desktop configuration" --text="Select an option and hit OK\n(Cancel to keep existing configuration)" --radiolist --hide-header --column=button --column=selection TRUE default';
+
+    let path = INSTALL_PATH + '/EndlessOS/desktops';
+    let dir = Gio.File.new_for_path(path);
+
+    let files;
+    try {
+        files = dir.enumerate_children('standard::name,standard::type',
+                                       Gio.FileQueryInfoFlags.NONE, null);
+    } catch (e) {
+        logError(e, 'Missing desktop configuration files in ' + path);
+        return null;
+    }
+
+    let file = files.next_file(null);
+
+    while (file) {
+        let name = file.get_name();
+        // Example: com.endlessm.desktop.Brazil.gschema.override
+        let tokens = name.split('.');
+        const PERSONALITY_INDEX = 3;
+        let option = tokens[PERSONALITY_INDEX];
+        command += ' FALSE ' + option;
+        file = files.next_file(null);
+    }
+
+    let response;
+    try {
+        response = GLib.spawn_command_line_sync(command);
+    } catch (e) {
+        logError(e, 'Error executing \'' + localizedExec + '\'');
+        return null;
+    }
+
+    const STATUS = 3;
+    const SELECTION = 1;
+    let status = response[STATUS];
+    let personality;
+    if (status == 0) {
+        // User hit OK
+        let selection = response[SELECTION];
+        // Convert to string and trim the new line
+        personality = String(selection).trim();
+    } else {
+        // User canceled
+        personality = null;
+    }
+    return personality;
+}
+    
+const getPersonality = function(args) {
+    let personality;
+    if (args.length == 0) {
+        personality = selectPersonality();
+    } else if (args.length == 1) {
+        personality = args[0];
+    } else {
+        throw new Error('Invalid command-line: only 0 or 1 argument allowed');
+    }
+    return personality;
+}
+
+const getCommand = function(personality) {
+    let command;
+    if (personality == 'default') {
+        command = 'rm -f ' + INSTALL_PATH +
+            '/glib-2.0/schemas/' + OVERRIDES_PRIORITY +
+            '_eos-desktop.gschema.override';
+    } else {
+        command = 'ln -sf ' + INSTALL_PATH +
+            '/EndlessOS/desktops/com.endlessm.desktop.' +
+            personality + '.gschema.override ' + INSTALL_PATH +
+            '/glib-2.0/schemas/' + OVERRIDES_PRIORITY +
+            '_eos-desktop.gschema.override';
+    }
+    return command;
+}
+
+let personality = getPersonality(ARGV);
+
+if (personality) {
+    // Set the personality
+    let command = getCommand(personality);
+    try {
+        GLib.spawn_command_line_async(command);
+    } catch (e) {
+        logError(e, 'Error executing \'' + command + '\'');
+    }
+
+    // Reset any previous user customization of the desktop
+    // so that the new configuration will be used
+    let settings = Gio.Settings.new(EOS_SHELL_SCHEMA);
+    settings.reset(ICON_GRID_LAYOUT_SETTING);
+    settings.sync();
+
+    // Load the latest schema overrides
+    command = 'glib-compile-schemas ' + INSTALL_PATH + '/glib-2.0/schemas';
+    try {
+        GLib.spawn_command_line_async(command);
+    } catch (e) {
+        logError(e, 'Error executing \'' + command + '\'');
+    }
+}
