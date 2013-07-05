@@ -64,7 +64,7 @@ po/Makefile.in.in
 po/POTFILES
 po/gnome-themes-standard.pot
 po/stamp-it
-settings/com.endlessm.gschema.override
+settings/50_eos-theme.gschema.override
 settings/com.endlessm.settings.gschema.override
 so_locations
 stamp-h1
