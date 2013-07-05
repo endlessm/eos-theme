@@ -13,6 +13,4 @@ CLEANFILES = \
 	$(settings_DATA) \
 	com.endlessm.settings.gschema.override
 
-EXTRA_DIST = com.endless.gschema.override.in
-
 @GSETTINGS_RULES@
