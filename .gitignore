@@ -42,6 +42,7 @@ configure.lineno
 depcomp
 desktop/.dot_desktop_files_timestamp
 desktop/applications
+desktop/eos-select-desktop
 desktop/folders
 desktop/links
 desktop/settings
@@ -63,7 +64,8 @@ po/Makefile.in.in
 po/POTFILES
 po/gnome-themes-standard.pot
 po/stamp-it
-settings/com.endlessm.gschema.override
+settings/50_eos-theme.gschema.override
+settings/com.endlessm.settings.gschema.override
 so_locations
 stamp-h1
 tags
