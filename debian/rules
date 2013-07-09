@@ -11,4 +11,4 @@ DEB_DH_INSTALLGSETTINGS_ARGS_eos-theme += --priority=50
 DEB_CONFIGURE_EXTRA_FLAGS += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
 install/eos-theme::
-	cp settings/com.endlessm.gschema.override debian/eos-theme.gsettings-override
+	ln -fs ../settings/50_eos-theme.gschema.override debian/eos-theme.gsettings-override
