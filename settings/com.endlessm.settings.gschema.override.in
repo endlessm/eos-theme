@@ -69,3 +69,7 @@ show-apport-crashes=false
 [org.gnome.Epiphany]
 restore-session-policy='never'
 
+# Decrease the likelihood that an unsteady click is interpreted as a drag
+[org.gnome.settings-daemon.peripherals.mouse]
+drag-threshold=10
+
