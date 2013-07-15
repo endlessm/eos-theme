@@ -1,7 +1,6 @@
 Id,Desktop,Desktop[Brazil],Desktop[Guatemala],AppStore,AppStore[Brazil],AppStore[Guatemala],Name,Name[en],Name[es],Name[pt],Name[zh],Comment,Comment[en],Comment[es],Comment[pt],Comment[zh],Exec,Exec[en],Exec[es],Exec[pt],Exec[zh],Icon,Icon[en],Icon[es],Icon[pt],Icon[zh],Categories
 armagetron,,,,X,X,X,Armagetron,,Armagetron,Armagetron,,3d light cycle game,,,,,armagetronad,,,,,armagetron-adv,,,,,Games;
 audacity,,,,X,X,X,Audio Editor,,Señor DJ,Edita Som,,Audacity,,,,,audacity,,,,,audacity,,,,,Audio;
-beatbox,media:30,media:30,media:30,X,X,X,Music,,Música,Música,,Music,,,,,beatbox %U,,,,,music,,,,,Audio;
 billard-gl,,,,X,X,X,Billiards,,Billar,Sinuca,,BillardGL,,,,,billard-gl,,,,,billardgl,,,,,Games;
 blockout2,,,,X,X,X,BlockOut 2,,BlockOut 2,BlockOut 2,,3D Tetris-style game,,,,,blockout2,,,,,blockout2,,,,,Games;
 chromium-bsu,games:60,games:60,games:60,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,chromium-bsu --fullscreen,,,,,chromium-bsu,,,,,Games;
@@ -27,6 +26,7 @@ numptyphysics,,,,X,X,X,Physics,,Retos,Fisicando,,Numpty Physics game,,,,,numptyp
 openarena,games:10,games:10,games:10,X,X,X,Open Arena,,,,,Open Arena,,,,,/usr/games/openarena,,,,,openarena,,,,,Games;
 photos,70,70,70,X,X,X,Photo Editor,,Editor de Fotos,Editor de Fotos,照片编辑器,Endless Photo App,,,,,endless-os-photos %f,,,,,photo,,,,,Photos;
 pingus,,,,X,X,X,Pingus,,,,,Penguin Game,,,,,pingus,,,,,pingus,,,,,Games;
+rhythmbox,media:30,media:30,media:30,X,X,X,Music,,Música,Música,,Music,,,,,rhythmbox %U,,,,,music,,,,,Audio;
 shotwell,media:10,media:10,media:10,X,X,X,Photos,,Fotos,Fotos,,Shotwell Photo Organizer,,,,,shotwell %U,,,,,shotwell,,,,,Photos;
 skype,40,40,40,X,X,X,Skype,,,,,Skype,,,,,skype %U,,,,,skype,,,,,Network;
 sol,games:40,games:40,games:40,X,X,X,Freecell,,,,,Freecell,,,,,/usr/games/sol --freecell --class sol-freecell,,,,,freecell,,,,,Games;
