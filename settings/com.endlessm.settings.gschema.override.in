@@ -73,3 +73,7 @@ restore-session-policy='never'
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
 
+# Do not let Nautilus manage the desktop
+[org.gnome.desktop.background]
+show-desktop-icons=false
+
