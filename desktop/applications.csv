@@ -8,7 +8,6 @@ english,curiosity:30,curiosity:30,curiosity:30,X,X,X,Learn English,,Aprende Ingl
 epiphany,10,10,10,X,X,X,Internet,,,,,Browse the Web,,,,,epiphany file:///usr/share/EndlessOS/exploration_center/index.html,,,,,browser,,,,,Internet;
 evolution,work:10,work:10,work:10,X,X,X,E-mail,,,,,E-mail,,,,,evolution %U,,,,,email,,,,,Mail;Email;
 frostwire,media:40,media:40,media:40,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,frostwire,,,,,frostwire,,,,,Network;
-gbrainy,,,,X,X,X,Brain Teasers,,Rompecabezas,Quebra-cabeça,,GBrainy,,,,,gbrainy,,,,,gbrainy,,,,,Games;
 gcalctool,work:50,work:50,work:50,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,gnome-calculator,,,,,calculator,,,,,Utility;Calculator;
 gcompris,curiosity:70,curiosity:70,curiosity:70,X,X,X,GCompris,,,,,Childrens games,,,,,gcompris,,,,,gcompris,,,,,Games;Education;
 gimp,media:50,media:50,media:50,X,X,X,GIMP,,,,,Photo Editor,,Editor de Imágenes,Editor de Imagens,图像编辑器,gimp %U,,,,,gimp,,,,,Photos;
