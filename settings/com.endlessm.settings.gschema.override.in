@@ -77,3 +77,7 @@ drag-threshold=10
 [org.gnome.desktop.background]
 show-desktop-icons=false
 
+# Do not display a notification when updates are available
+[com.ubuntu.update-notifier]
+no-show-notifications=true
+
