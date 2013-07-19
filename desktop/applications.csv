@@ -30,7 +30,7 @@ shotwell,media:10,media:10,media:10,X,X,X,Photos,,Fotos,Fotos,,Shotwell Photo Or
 skype,40,40,40,X,X,X,Skype,,,,,Skype,,,,,skype %U,,,,,skype,,,,,Network;
 sol,games:40,games:40,games:40,X,X,X,Freecell,,,,,Freecell,,,,,/usr/games/sol --freecell,,,,,freecell,,,,,Games;
 solitaire,games:30,games:30,games:30,X,X,X,Solitaire,,,,,Solitaire,,,,,/usr/games/sol --class=solitaire,,,,,solitaire,,,,,Games;
-stellarium,curiosity:80,curiosity:80,curiosity:80,X,X,X,Stellarium,,Constelaciones,Constelação,,Stellarium,,,,,stellarium,,,,,stellarium,,,,,Astronomy;Education;Science;
+stellarium,curiosity:80,curiosity:80,curiosity:80,X,X,X,Stellarium,,Constelaciones,Constelação,,Stellarium,,,,,stellarium -f no,,,,,stellarium,,,,,Astronomy;Education;Science;
 supertux2,games:50,games:50,games:50,X,X,X,Super Tux,,,,,Super Tux,,,,,supertux2 --fullscreen,,,,,supertux,,,,,Games;
 supertuxkart,games:70,games:70,games:70,X,X,X,Tux Kart,,,,,Tux Kart,,,,,supertuxkart --fullscreen,,,,,supertuxkart,,,,,Games;
 teeworlds,,,,X,X,X,Teeworlds,,Teelandia,Teelândia,,Multiplayer game,,,,,teeworlds,,,,,teelandia,,,,,Games;
