@@ -25,7 +25,8 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          eos-shell
-Recommends: eos-shell,
-            gtk2-engines
+Recommends: gtk2-engines,
+            eos-plymouth-theme,
+            eos-shell
 Description: Custom theme for eos-shell
  Custom theme along with icons and images
