@@ -81,3 +81,7 @@ show-desktop-icons=false
 [com.ubuntu.update-notifier]
 no-show-notifications=true
 
+# Use 'Alt-Tab' to switch windows
+[org.gnome.desktop.wm.keybindings]
+switch-applications=['<Super>Tab']
+switch-windows=['<Alt>Tab']
