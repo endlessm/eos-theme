@@ -63,7 +63,7 @@ class DesktopWriter:
             return '[' + locale + ']'
 
     def url_to_exec(self, url):
-        exec_string = 'epiphany-browser %s' % url
+        exec_string = 'eos-browser %s' % url
         return exec_string
 
     def _write_key(self, desktop_file, fields, key):
