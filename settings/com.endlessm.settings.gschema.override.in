@@ -85,3 +85,7 @@ no-show-notifications=true
 [org.gnome.desktop.wm.keybindings]
 switch-applications=['<Super>Tab']
 switch-windows=['<Alt>Tab']
+
+# Set Exploration Center as browser homepage
+[com.endlessm.eos-browser]
+homepage-url='file:///usr/share/EndlessOS/exploration_center/index.html'
