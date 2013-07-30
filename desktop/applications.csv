@@ -5,7 +5,7 @@ billard-gl,,,,X,X,X,Billiards,,Billar,Sinuca,,BillardGL,,,,,billard-gl,,,,,billa
 blockout2,,,,X,X,X,BlockOut 2,,BlockOut 2,BlockOut 2,,3D Tetris-style game,,,,,blockout2,,,,,blockout2,,,,,Games;
 chromium-bsu,games:60,games:60,games:60,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,chromium-bsu --fullscreen,,,,,chromium-bsu,,,,,Games;
 english,curiosity:30,curiosity:30,curiosity:30,X,X,X,Learn English,,Aprende Inglés,Aprender Inglês,,Learn English,,,,,gjs /usr/share/eos-english/src/english_app.js,,,,,english-app,,,,,Education;
-eos-browser,10,10,10,X,X,X,Internet,,,,,Browse the Web,,,,,eos-browser file:///usr/share/EndlessOS/exploration_center/index.html,,,,,browser,,,,,Internet;
+eos-browser,10,10,10,X,X,X,Internet,,,,,Browse the Web,,,,,eos-browser %U,,,,,browser,,,,,Internet;
 evolution,work:10,work:10,work:10,X,X,X,E-mail,,,,,E-mail,,,,,evolution %U,,,,,email,,,,,Mail;Email;
 frostwire,media:40,media:40,media:40,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,frostwire,,,,,frostwire,,,,,Network;
 gcalctool,work:50,work:50,work:50,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,gnome-calculator,,,,,calculator,,,,,Utility;Calculator;
