@@ -109,6 +109,17 @@ if (personality) {
         logError(e, 'Error executing \'' + command + '\'');
     }
 
+    // Write personality to a file so that it can be read after installation
+    let personalityPath = INSTALL_PATH + '/EndlessOS/personality.txt';
+    let personalityFile = Gio.File.new_for_path(personalityPath);
+    try {
+        personalityFile.replace_contents(personality, null, false,
+            Gio.FileCreateFlags.NONE, null);
+    } catch (e) {
+        logError(e,
+            'Error saving personality to \'' + personalityPath + '\'');
+    }
+
     // Reset any previous user customization of the desktop
     // so that the new configuration will be used
     let settings = Gio.Settings.new(EOS_SHELL_SCHEMA);
