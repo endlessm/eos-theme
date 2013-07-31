@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
 
 <metacity_theme>
+
+<info>
+  <name>EndlessOS</name>
+  <author>Roddy Shuler</author>
+  <copyright>Endless Mobile, Inc.</copyright>
+  <date>July, 2013</date>
+  <description>Metacity theme</description>
+</info>
+
+<!-- Based on default Ubuntu theme...
 <info>
   <name>Ambiance</name>
   <author>Kenneth Wimer, James Schriver, Andrea Cimitan</author>
@@ -8,6 +18,7 @@
   <date>June, 2011</date>
   <description>Metacity theme</description>
 </info>
+-->
 
 <!-- general window layout -->
 <frame_geometry name="frame_geometry_normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -458,10 +469,10 @@
   <frame focus="no" state="normal" resize="both" style="normal_unfocused"/>
   <frame focus="yes" state="maximized" style="maximized_focused"/>
   <frame focus="no" state="maximized" style="maximized_unfocused"/>
-  <frame focus="yes" state="shaded" style="normal_focused"/><!-- todo -->
-  <frame focus="no" state="shaded" style="normal_unfocused"/><!-- todo -->
-  <frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/><!-- todo -->
-  <frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/><!-- todo -->
+  <frame focus="yes" state="shaded" style="normal_focused"/>
+  <frame focus="no" state="shaded" style="normal_unfocused"/>
+  <frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/>
+  <frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/>
 </frame_style_set>
 
 <frame_style_set name="utility">
@@ -469,10 +480,10 @@
   <frame focus="no" state="normal" resize="both" style="utility_unfocused"/>
   <frame focus="yes" state="maximized" style="maximized_focused"/>
   <frame focus="no" state="maximized" style="normal_focused"/>
-  <frame focus="yes" state="shaded" style="normal_focused"/><!-- todo -->
-  <frame focus="no" state="shaded" style="normal_unfocused"/><!-- todo -->
-  <frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/><!-- todo -->
-  <frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/><!-- todo -->
+  <frame focus="yes" state="shaded" style="normal_focused"/>
+  <frame focus="no" state="shaded" style="normal_unfocused"/>
+  <frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/>
+  <frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/>
 </frame_style_set>
 
 <frame_style_set name="border">
@@ -480,10 +491,10 @@
   <frame focus="no" state="normal" resize="both" style="border"/>
   <frame focus="yes" state="maximized" style="maximized_focused"/>
   <frame focus="no" state="maximized" style="normal_focused"/>
-  <frame focus="yes" state="shaded" style="normal_focused"/><!-- todo -->
-  <frame focus="no" state="shaded" style="normal_unfocused"/><!-- todo -->
-  <frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/><!-- todo -->
-  <frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/><!-- todo -->
+  <frame focus="yes" state="shaded" style="normal_focused"/>
+  <frame focus="no" state="shaded" style="normal_unfocused"/>
+  <frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/>
+  <frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/>
 </frame_style_set>
 
 <!-- window -->
