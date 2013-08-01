@@ -1,1 +1,8 @@
 Copyright © 2013 Endless Mobile, Inc.  All rights reserved.
+
+Except the following files copyright 2010, 2012 Adobe Systems Inc.
+	fonts/SourceSansPro-*.otf
+	fonts/*ReadMe.html
+	fonts/LICENSE.txt
+These files are licensed under the SIL Open Font License, version 1.1; see
+fonts/LICENSE.txt for details.
