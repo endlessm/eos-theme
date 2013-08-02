@@ -31,7 +31,8 @@ cursor-theme='EndlessOS'
 # For now, we are using Ubuntu defaults
 # Setting the values here ensures consistency when testing under jhbuild
 [org.gnome.desktop.interface]
-font-name='Ubuntu 11'
+font-name='Source Sans Pro 11'
+document-font-name='Source Sans Pro 11'
 monospace-font-name='Ubuntu Mono 13'
 [org.gnome.settings-daemon.plugins.xsettings]
 antialiasing='rgba'
@@ -80,6 +81,10 @@ show-desktop-icons=false
 # Do not display a notification when updates are available
 [com.ubuntu.update-notifier]
 no-show-notifications=true
+
+# Title bar font: Source Sans Bold
+[org.gnome.desktop.wm.preferences]
+titlebar-font='Source Sans Pro Bold 12'
 
 # Use 'Alt-Tab' to switch windows
 [org.gnome.desktop.wm.keybindings]
