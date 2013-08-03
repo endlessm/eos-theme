@@ -15,7 +15,7 @@ gnome-genius,,,,X,X,X,Math,,Matemáticas,Matemática,,Genius Math,,,,,,gnome-gen
 gnome-sudoku,,,,X,X,X,Sudoku,,,,,Sudoku,,,,,,/usr/games/gnome-sudoku,,,,,sudoku,,,,,Games,,,
 goldendict,,,,X,X,X,Dictionary,,Dicionário,Dicionário,,GoldenDict,,,,,,goldendict,,,,,goldendict,,,,,Utility,,,
 khanacademy,curiosity:40,curiosity:40,curiosity:40,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,,eos-khanacademy,,,,,khanacademy-app,,,,,Education,,,
-kobodeluxe,,,,X,X,X,Kobo Deluxe,,Kobo Deluxe,Kobo Deluxe,,Destroy enemy bases in space,,,,,,kobodl,,,,,kobodeluxe,,,,,Games,,,
+kobodeluxe,,,,X,X,X,Kobo Deluxe,,Kobo Deluxe,Kobo Deluxe,,Destroy enemy bases in space,,,,,kobodl,resfix kobodl -fullscreen,,,,,kobodeluxe,,,,,Games,,,
 lbreakout2,,,,X,X,X,Breakout,,El Escape,Fuga,,LBreakout2 game,,,,,,lbreakout2,,,,,lbreakout,,,,,Games,,,
 libreoffice-calc,work:20,work:20,work:20,X,X,X,Spreadsheet,,Hoja de Cálculo,Planilha,,Spreadsheet,,,,,,libreoffice --calc %U,,,,,office_spreadsheet,,,,,Office,,,
 libreoffice-impress,work:30,work:30,work:30,X,X,X,Presentation,,Presentación,Apresentação,,Impress,,,,,,libreoffice --impress %U,,,,,office_presentation,,,,,Office,,,
