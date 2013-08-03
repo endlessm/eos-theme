@@ -20,7 +20,7 @@ class DesktopWriter:
             'prefix': 'eos-app-',
             'suffix': '.desktop',
             'desktop_type': 'Application',
-            'locale_keys': ['Name', 'Comment', 'Exec', 'Icon', 'Categories'] },
+            'locale_keys': ['Name', 'Comment', 'TryExec', 'Exec', 'Icon', 'Categories'] },
         'links': {
             'csv_path': 'links.csv',
             'desktop_dir': 'links',
@@ -131,6 +131,11 @@ class DesktopWriter:
 
         if 'Exec' in self._locale_keys:
             self._write_exec(desktop_file, fields, 'Exec')
+
+        if 'TryExec' in self._locale_keys:
+            field = fields[self._indexes['TryExec']['default']]
+            if field:
+                desktop_file.write("%s=%s\n" % ('TryExec', field))
 
         if 'URL' in self._locale_keys:
             self._write_exec(desktop_file, fields, 'URL')
