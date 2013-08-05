@@ -2,6 +2,8 @@
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
+	BentonSans-Black.otf \
+	BentonSans-ExtraLight.otf \
 	SourceSansPro-Black.otf \
 	SourceSansPro-BlackIt.otf \
 	SourceSansPro-Bold.otf \
