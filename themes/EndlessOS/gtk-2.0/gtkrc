@@ -2378,6 +2378,15 @@ widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*" style "chrome_menu_item"
 # by Chrome/Chromium to derive the style for its toolbar
 widget_class "<GtkEntry>"                            style "standalone_entry"
 
+style "chrome-gtk-frame"
+{
+    ChromeGtkFrame::frame-color = "#1E1E1E"
+    ChromeGtkFrame::inactive-frame-color = "#1E1E1E"
+    ChromeGtkFrame::frame-gradient-color = "#464646"
+}
+
+class "ChromeGtkFrame" style "chrome-gtk-frame"
+
 # Eclipse/SWT
 widget "gtk-tooltips*" 			style "eclipse-tooltips"
 widget "*swt-toolbar-flat"		style "null"
