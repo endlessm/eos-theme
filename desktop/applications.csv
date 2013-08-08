@@ -40,7 +40,7 @@ totem,media:20,media:20,media:20,X,X,X,Videos,,Vídeos,Vídeos,,Video,,,,,,totem
 translate,curiosity:20,curiosity:20,curiosity:20,X,X,X,Translate,,Traductor,Tradutor,翻译,Translate,,,,,,gjs /usr/share/eos-translation/translation_app.js,,,,,translate,,,,,Education,Office,,
 tuxmath,,,,X,X,X,Tux Math,,123 Tux,123 Tux,,Math Games,,,,,,tuxmath,,,,,123tux,,,,,Games,Education,,
 tuxtype,,,,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,,tuxtype -t,,tuxtype -t espanol,tuxtype -t brazilian-portuguese,,tuxtyping,,,,,Games,,,
-typing,work:60,work:60,work:60,X,X,X,Learn to Type,,Teclado Fácil,Tecla Fácil,学习型,Learn to type,,,,,eos-typing,gjs /usr/share/eos-typing/src/endless_typing.js,,,,,typing,,,,,Education,Games,,
+typing,work:60,work:60,work:60,X,X,X,Typing,,Tecla-Oke,Tecla-Okê,学习型,Learn to type,,,,,eos-typing,gjs /usr/share/eos-typing/src/endless_typing.js,,,,,typing,,,,,Education,Games,,
 weather,news:10,news:10,,X,X,,Weather,,Tiempo,Tempo,,See the weather forecast,,,,,,endless-os-weather,,,,,weather,,,,,Network,News,,
 wikipedia,curiosity:10,curiosity:10,curiosity:10,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,,eos-wikipedia,,,,,wikipedia-app,,,,,Education,,,
 youtube,30,30,30,X,X,X,YouTube,,,,,YouTube,,,,,,eos-youtube,,,,,youtube-app,,,,,Media,,,
