@@ -9,7 +9,7 @@ chromium-bsu,games:60,games:60,games:60,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,
 english,curiosity:30,curiosity:30,curiosity:30,X,X,X,Learn English,,Aprende Inglés,Aprender Inglês,,Learn English,,,,,eos-english,gjs /usr/share/eos-english/src/english_app.js,,,,,english-app,,,,,Education;
 evolution,work:10,work:10,work:10,X,X,X,E-mail,,,,,E-mail,,,,,,evolution %U,,,,,email,,,,,Mail;Email;
 frostwire,media:40,media:40,media:40,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,,frostwire,,,,,frostwire,,,,,Network;
-gcalctool,work:50,work:50,work:50,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,,gnome-calculator,,,,,calculator,,,,,Utility;Calculator;
+gnome-calculator,work:50,work:50,work:50,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,,gnome-calculator,,,,,calculator,,,,,Utility;Calculator;
 gcompris,games:80,games:80,games:80,X,X,X,EduGames,,EduJuegos,Joguinhos,教育游戏,GCompris childrens games,,,,,,gcompris,,,,,gcompris,,,,,Games;Education;
 gimp,media:50,media:50,media:50,X,X,X,GIMP,,,,,Photo Editor,,Editor de Imágenes,Editor de Imagens,图像编辑器,,gimp %U,,,,,gimp,,,,,Photos;
 gnome-genius,,,,X,X,X,Math,,Matemáticas,Matemática,,Genius Math,,,,,,gnome-genius,,,,,geniusmath,,,,,Utility;Calculator;
