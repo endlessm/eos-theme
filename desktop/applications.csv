@@ -17,7 +17,7 @@ gnome-sudoku,,,,X,X,X,Sudoku,,,,,Sudoku,,,,,,/usr/games/gnome-sudoku,,,,,sudoku,
 goldendict,,,,X,X,X,Dictionary,,Dicionário,Dicionário,,GoldenDict,,,,,,goldendict,,,,,goldendict,,,,,Utility;
 health,curiosity:17,curiosity:17,,X,X,,Health,,Salud,Saúde,,Discover health,,,,,eos-health,gjs /usr/share/eos-health/src/endless_health.js,,,,,health,,,,,Education;
 khanacademy,curiosity:40,curiosity:40,curiosity:40,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,,eos-khanacademy,,,,,khanacademy-app,,,,,Education;
-kobodeluxe,,,,X,X,X,Kobo Deluxe,,Kobo Deluxe,Kobo Deluxe,,Destroy enemy bases in space,,,,,kobodl,resfix kobodl -fullscreen,,,,,kobodeluxe,,,,,Games;
+kobodeluxe,,,,X,X,X,Kobo Deluxe,,Kobo Deluxe,Kobo Deluxe,,Destroy enemy bases in space,,,,,kobodl,resfix "kobodl -fullscreen",,,,,kobodeluxe,,,,,Games;
 lbreakout2,,,,X,X,X,Breakout,,El Escape,Fuga,,LBreakout2 game,,,,,,lbreakout2,,,,,lbreakout,,,,,Games;
 libreoffice-calc,work:20,work:20,work:20,X,X,X,Spreadsheet,,Hoja de Cálculo,Planilha,,Spreadsheet,,,,,,libreoffice --calc %U,,,,,office_spreadsheet,,,,,Office;
 libreoffice-impress,work:30,work:30,work:30,X,X,X,Presentation,,Presentación,Apresentação,,Impress,,,,,,libreoffice --impress %U,,,,,office_presentation,,,,,Office;
