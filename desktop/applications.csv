@@ -24,7 +24,7 @@ libreoffice-impress,work:30,work:30,work:30,X,X,X,Presentation,,Presentación,Ap
 libreoffice-writer,50,50,50,X,X,X,Writer,,Escritor,Redator,,Writer,,,,,,libreoffice --writer %U,,,,,office_text,,,,,Office;
 nautilus,80,80,80,X,X,X,My Documents,,Documentos,Documentos,,File Manager,,,,,,nautilus,,,,,nautilus,,,,,FileManager;Utility;Core;GTK;
 numptyphysics,,,,X,X,X,Physics,,Retos,Fisicando,,Numpty Physics game,,,,,,numptyphysics,,,,,fisicando,,,,,Games;Education;
-openarena,games:10,games:10,games:10,X,X,X,Open Arena,,,,,Open Arena,,,,,/usr/games/openarena,resfix /usr/games/openarena,,,,,openarena,,,,,Games;
+openarena,games:10,games:10,games:10,X,X,X,Open Arena,,,,,Open Arena,,,,,/usr/games/openarena,resfix /usr/games/openarena +r_fullscreen 1,,,,,openarena,,,,,Games;
 photos,70,70,70,X,X,X,Photo Editor,,Editor de Fotos,Editor de Fotos,照片编辑器,Endless Photo App,,,,,,endless-os-photos %f,,,,,photo,,,,,Photos;
 pingus,,,,X,X,X,Pingus,,,,,Penguin Game,,,,,,pingus,,,,,pingus,,,,,Games;
 rhythmbox,media:30,media:30,media:30,X,X,X,Music,,Música,Música,,Music,,,,,,rhythmbox %U,,,,,music,,,,,Audio;
