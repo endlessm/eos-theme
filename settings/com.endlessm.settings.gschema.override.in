@@ -60,6 +60,10 @@ app-folder-categories=['Media', 'Games', 'Work', 'News', 'Curiosity', 'Settings'
 [org.gnome.shell]
 favorite-apps=[]
 
+# Always enable log out
+[org.gnome.shell]
+always-show-log-out=true
+
 # Set Nautilus default view to list view
 [org.gnome.nautilus.preferences]
 default-folder-viewer='list-view'
