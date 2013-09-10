@@ -96,3 +96,12 @@ switch-windows=['<Alt>Tab']
 # Set Exploration Center as browser homepage
 [com.endlessm.eos-browser]
 homepage-url='file:///usr/share/EndlessOS/exploration_center/index.html'
+
+# Automatically import user's pictures into Shotwell
+[org.yorba.shotwell.preferences.files]
+auto-import=true
+
+# Automatically import user's music into Rhythmbox
+[org.gnome.rhythmbox.rhythmdb]
+monitor-library=true
+
