@@ -20,7 +20,7 @@ class DesktopWriter:
             'prefix': 'eos-app-',
             'suffix': '.desktop',
             'desktop_type': 'Application',
-            'locale_keys': ['Name', 'Comment', 'TryExec', 'Exec', 'Icon', 'Categories'] },
+            'locale_keys': ['Name', 'Comment', 'TryExec', 'Exec', 'Icon', 'SplashScreen', 'Categories'] },
         'links': {
             'csv_path': 'links.csv',
             'desktop_dir': 'links',
@@ -146,6 +146,12 @@ class DesktopWriter:
             # Note: Categories is not localized
             desktop_file.write('Categories=%s\n' %
                                fields[self._indexes['Categories']['default']])
+
+        if 'SplashScreen' in self._locale_keys:
+            # Note: SplashScreen is not localized
+            field = fields[self._indexes['SplashScreen']['default']]
+            if field == 'none':
+                desktop_file.write('X-Endless-Splash-Screen=false\n')
 
         desktop_file.close()
 
