@@ -147,11 +147,18 @@ class DesktopWriter:
             desktop_file.write('Categories=%s\n' %
                                fields[self._indexes['Categories']['default']])
 
-        if 'SplashScreen' in self._locale_keys:
+        disable_splash = False
+        if self._asset_type == 'links':
+            # Since we currently open web links as a new tab in the browser,
+            # it is not appropriate to show the launch splash screen
+            disable_splash = True
+        elif 'SplashScreen' in self._locale_keys:
             # Note: SplashScreen is not localized
             field = fields[self._indexes['SplashScreen']['default']]
             if field == 'none':
-                desktop_file.write('X-Endless-Splash-Screen=false\n')
+                disable_splash = True
+        if disable_splash:
+            desktop_file.write('X-Endless-Splash-Screen=false\n')
 
         desktop_file.close()
 
