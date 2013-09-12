@@ -8,7 +8,7 @@ chromium-bsu,games:60,games:60,games:60,X,X,X,Chromium BSU,,,,,Chromium BSU,,,,,
 com.endlessm.brazil,curiosity:15,curiosity:15,,X,X,,Brazil,,,Brasil,,Explore Brasil,,,,,,eos-brazil,,,,,brazil,,,,,,Education;Travel;
 com.endlessm.endless-english,curiosity:30,curiosity:30,curiosity:30,X,X,X,Learn English,,Aprende Inglés,Aprender Inglês,,Learn English,,,,,,eos-english,,,,,english-app,,,,,,Education;
 com.endlessm.endless-photos,70,70,70,X,X,X,Photo Editor,,Editor de Fotos,Editor de Fotos,照片编辑器,Endless Photo App,,,,,,endless-os-photos %f,,,,,photo,,,,,,Photos;
-com.endlessm.endless-translation,curiosity:20,curiosity:20,curiosity:20,X,X,X,Translate,,Traductor,Tradutor,翻译,Translate,,,,,,gjs /usr/share/eos-translation/translation_app.js,,,,,translate,,,,,,Education;Office;
+com.endlessm.endless-translation,curiosity:20,curiosity:20,curiosity:20,X,X,X,Translate,,Traductor,Tradutor,翻译,Translate,,,,,,eos-translation,,,,,translate,,,,,,Education;Office;
 com.endlessm.endless-weather,news:10,news:10,news:10,X,X,X,Weather,,Tiempo,Tempo,,See the weather forecast,,,,,,eos-weather,,,,,weather,,,,,,Network;News;
 com.endlessm.health,curiosity:17,curiosity:17,,X,X,,Health,,Salud,Saúde,,Discover health,,,,,,eos-health,,,,,health,,,,,,Education;
 com.endlessm.khanacademy,curiosity:40,curiosity:40,curiosity:40,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,,eos-khanacademy,,,,,khanacademy-app,,,,,,Education;
