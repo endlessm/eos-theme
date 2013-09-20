@@ -22,7 +22,7 @@ economist,news:50,,,X,,,The Economist,,,,,,,,,,http://www.economist.com,,,,,thee
 empregocerto,,,,,X,,Emprego Certo,,,,,,,,,,http://empregocerto.uol.com.br/info/cadastre-se.html?psid=1,,,,,emprego-certo,,,,,Jobs;
 empregosrj,,,,,X,,Ache Empregos Rio,,,,,,,,,,http://www.empregosrj.com,,,,,empregos-rj,,,,,Jobs;
 extra,,,,,X,,Extra,,,,,,,,,,http://extra.globo.com,,,,,extra,,,,,News;
-facebook,20,20,20,X,X,X,Facebook,,,,,,,,,,http://www.facebook.com,,,,,facebook,,,,,Entertainment;Games;
+facebook,media:5,media:5,media:5,X,X,X,Facebook,,,,,,,,,,http://www.facebook.com,,,,,facebook,,,,,Entertainment;Games;
 fluminense,,,,,X,,Fluminense,,,,,,,,,,http://www.fluminense.com.br,,,,,fluminense,,,,,Sports;
 fofoca,,,,,X,,Fofoca,,,,,,,,,,http://www.fofoca.tv/,,,,,fofoca-tv,,,,,Entertainment;Games;
 g1,,,,,X,,G1,,,,,,,,,,http://g1.globo.com,,,,,g1,,,,,News;
