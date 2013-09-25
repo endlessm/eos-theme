@@ -84,6 +84,10 @@ drag-threshold=10
 [org.gnome.desktop.background]
 show-desktop-icons=false
 
+# Disable the switch user option on the user menu
+[org.gnome.desktop.lockdown]
+disable-user-switching=true
+
 # Do not display a notification when updates are available
 [com.ubuntu.update-notifier]
 no-show-notifications=true
