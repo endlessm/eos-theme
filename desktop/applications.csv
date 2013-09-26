@@ -12,6 +12,7 @@ com.endlessm.endless-translation,curiosity:20,curiosity:20,curiosity:20,X,X,X,Tr
 com.endlessm.endless-weather,news:10,news:10,news:10,X,X,X,Weather,,Tiempo,Tempo,,See the weather forecast,,,,,,eos-weather,,,,,weather,,,,,,Network;News;
 com.endlessm.health,curiosity:17,curiosity:17,,X,X,,Health,,Salud,Saúde,,Discover health,,,,,,eos-health,,,,,health,,,,,,Education;
 com.endlessm.khanacademy,curiosity:40,curiosity:40,curiosity:40,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,,eos-khanacademy,,,,,khanacademy-app,,,,,,Education;
+com.endlessm.programming,curiosity:50,curiosity:50,curiosity:50,X,X,X,Coding Fun,,Código Divertido,Código Divertido,,Learn to program,,,,,,eos-programming,,,,,codeacademy,,,,,,Education;
 com.endlessm.typing,work:60,work:60,work:60,X,X,X,Typing,,Tecla-Oke,Tecla-Okê,学习型,Learn to type,,,,,,eos-typing,,,,,typing,,,,,,Education;Games;
 com.endlessm.wikipedia,curiosity:10,curiosity:10,curiosity:10,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,,eos-wikipedia,,,,,wikipedia-app,,,,,,Education;
 com.endlessm.youtube,30,30,30,X,X,X,YouTube,,,,,YouTube,,,,,,eos-youtube,,,,,youtube-app,,,,,,Media;
