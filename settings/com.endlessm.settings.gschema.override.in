@@ -29,12 +29,12 @@ cursor-theme='EndlessOS'
 
 # Specify the fonts and related settings
 [org.gnome.desktop.interface]
-font-name='Source Sans Pro 12'
-document-font-name='Source Sans Pro 12'
+font-name='Lato 12'
+document-font-name='Lato Pro 12'
 monospace-font-name='Ubuntu Mono 13'
 
 [org.gnome.desktop.wm.preferences]
-titlebar-font='Source Sans Pro Bold 13'
+titlebar-font='Lato Bold 13'
 
 [org.gnome.settings-daemon.plugins.xsettings]
 antialiasing='rgba'
