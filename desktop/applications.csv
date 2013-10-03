@@ -17,6 +17,7 @@ com.endlessm.programming,curiosity:50,curiosity:50,curiosity:50,X,X,X,Coding Fun
 com.endlessm.typing,work:60,work:60,work:60,X,X,X,Typing,,Tecla-Oke,Tecla-Okê,学习型,Learn to type,,,,,,eos-typing,,,,,typing,,,,,,Education;Games;
 com.endlessm.wikipedia,curiosity:10,curiosity:10,curiosity:10,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,,eos-wikipedia,,,,,wikipedia-app,,,,,,Education;
 com.endlessm.youtube,30,30,30,X,X,X,YouTube,,,,,YouTube,,,,,,eos-youtube,,,,,youtube-app,,,,,,Media;
+eos-file-manager,80,80,80,X,X,X,My Documents,,Documentos,Documentos,,File Manager,,,,,,eos-file-manager %U,,,,,nautilus,,,,,,FileManager;Utility;Core;GTK;
 evolution,work:10,work:10,work:10,X,X,X,E-mail,,,,,E-mail,,,,,,evolution %U,,,,,email,,,,,,Mail;Email;
 frostwire,media:40,media:40,media:40,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,,frostwire,,,,,frostwire,,,,,,Network;
 gnome-calculator,work:50,work:50,work:50,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,,gnome-calculator,,,,,calculator,,,,,none,Utility;Calculator;
@@ -30,7 +31,6 @@ lbreakout2,,,,X,X,X,Breakout,,El Escape,Fuga,,LBreakout2 game,,,,,,lbreakout2,,,
 libreoffice-calc,work:20,work:20,work:20,X,X,X,Spreadsheet,,Hoja de Cálculo,Planilha,,Spreadsheet,,,,,,libreoffice --calc %U,,,,,office_spreadsheet,,,,,,Office;
 libreoffice-impress,work:30,work:30,work:30,X,X,X,Presentation,,Presentación,Apresentação,,Impress,,,,,,libreoffice --impress %U,,,,,office_presentation,,,,,,Office;
 libreoffice-writer,50,50,50,X,X,X,Writer,,Escritor,Redator,,Writer,,,,,,libreoffice --writer %U,,,,,office_text,,,,,,Office;
-nautilus,80,80,80,X,X,X,My Documents,,Documentos,Documentos,,File Manager,,,,,,nautilus,,,,,nautilus,,,,,,FileManager;Utility;Core;GTK;
 numptyphysics,,,,X,X,X,Physics,,Retos,Fisicando,,Numpty Physics game,,,,,,numptyphysics,,,,,fisicando,,,,,,Games;Education;
 openarena,games:10,games:10,games:10,X,X,X,Open Arena,,,,,Open Arena,,,,,/usr/games/openarena,resfix /usr/games/openarena +r_fullscreen 1,,,,,openarena,,,,,,Games;
 pingus,,,,X,X,X,Pingus,,,,,Penguin Game,,,,,,pingus,,,,,pingus,,,,,,Games;
