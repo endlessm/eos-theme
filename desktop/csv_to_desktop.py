@@ -244,7 +244,11 @@ class DesktopWriter:
                 desktop_layout.add_item(personality, item, position)
 
     def process_all(self, desktop_layout):
-        csv_file = open(self._csv_path, 'r')
+        # CSV files must live in the same directory
+        # as the python script file
+        csv_dir = os.path.dirname(os.path.abspath(__file__))
+        csv_path = os.path.join(csv_dir, self._csv_path)
+        csv_file = open(csv_path, 'r')
 
         # Parse the first line header
         header = csv_file.readline().rstrip()

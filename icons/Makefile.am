@@ -5,6 +5,8 @@ theme_DATA = $(theme_in_files:.theme.in.in=.theme)
 render_sizes = "64x64" "scalable"
 THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$$size/* -type d`; do printf "$$dir,"; done; done;)
 
+EXTRA_DIST = index.theme.in.in
+
 index.theme.in: index.theme.in.in Makefile
 	dirs="`echo $(THEME_DIRS) | sed -e 's#\./##g'`"; \
 	sed -e "s|\@THEME_DIRS\@|$$dirs|g" < $< > $@; \
@@ -95,3 +97,5 @@ install-data-hook:
 
 uninstall-hook:
 	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
+
+CLEANFILES = index.theme.in index.theme
