@@ -20,7 +20,7 @@ dist_font_DATA = \
 
 fontdocdir = $(datadir)/doc/fonts-adobe-sourcesanspro
 dist_fontdoc_DATA = \
-	LICENSE.txt \
-	ReadMe.html \
-	SourceSansProReadMe.html \
+	SourceSansPro-LICENSE.txt \
+	SourceSansPro-OTReadMe.html \
+	SourceSansPro-ReadMe.html \
 	$(NULL)
