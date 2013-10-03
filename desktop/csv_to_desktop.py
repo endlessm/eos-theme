@@ -159,6 +159,24 @@ class DesktopWriter:
                 disable_splash = True
         if disable_splash:
             desktop_file.write('X-Endless-Splash-Screen=false\n')
+        
+        if self._desktop_type == 'Application' :
+            showInAppStore = False
+            showInPersonalities = ''
+            for personality in self._personalities :
+                index = self._indexes['AppStore'][personality]
+                value = fields[index]
+                # match any non-empty value
+                if value.strip() :
+                    if personality.lower() == 'default' :
+                        showInAppStore = True
+                    else :
+                        showInPersonalities += personality.strip() + ';'
+
+            if showInAppStore :
+                desktop_file.write('X-Endless-ShowInAppStore=true\n');
+            if showInPersonalities :
+                desktop_file.write('X-Endless-ShowInPersonalities=' + showInPersonalities + '\n')
 
         desktop_file.close()
 
