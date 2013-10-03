@@ -1,7 +1,10 @@
 EXTRA_DIST = applications.csv	\
+	extras.csv		\
 	links.csv		\
 	folders.csv		\
-	csv_to_desktop.py
+	csv_to_desktop.py	\
+	eos-exec-localized	\
+	eos-select-desktop.in
 
 BUILT_SOURCES = \
 	.dot_desktop_files_timestamp
@@ -16,22 +19,24 @@ eos-select-desktop: eos-select-desktop.in Makefile
 	@mkdir -p applications
 	@mkdir -p links
 	@mkdir -p folders
-	$(AM_V_GEN) ./csv_to_desktop.py
+	$(AM_V_GEN) $(srcdir)/csv_to_desktop.py
 	@touch .dot_desktop_files_timestamp
 
 appsdir = $(datadir)/applications
-apps_DATA = $(wildcard applications/*.desktop)
+apps_DATA = $(wildcard $(srcdir)/applications/*.desktop)
 
 linksdir = $(datadir)/applications
-links_DATA = $(wildcard links/*.desktop)
+links_DATA = $(wildcard $(srcdir)/links/*.desktop)
 
 foldersdir = $(datadir)/desktop-directories
-folders_DATA = $(wildcard folders/*.directory)
+folders_DATA = $(wildcard $(srcdir)/folders/*.directory)
 
 desktopsdir = $(datadir)/EndlessOS/desktops
 desktops_DATA = $(wildcard settings/com.endlessm.desktop.*.gschema.override)
 
 bin_SCRIPTS = eos-exec-localized eos-select-desktop
+
+CLEANFILES = eos-select-desktop
 
 clean-local:
 	rm -rf applications

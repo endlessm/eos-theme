@@ -7,7 +7,7 @@ endlessos.xml.in: endlessos.xml.in.in
 
 backgroundsdir = $(datadir)/EndlessOS/backgrounds
 backgrounds_DATA = \
-	*.jpg
+	$(wildcard *.jpg)
 
 metadatadir = $(datadir)/gnome-background-properties
 metadata_DATA = endlessos.xml
