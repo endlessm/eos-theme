@@ -20,28 +20,32 @@ class DesktopWriter:
             'prefix': 'eos-app-',
             'suffix': '.desktop',
             'desktop_type': 'Application',
-            'locale_keys': ['Name', 'Comment', 'TryExec', 'Exec', 'Icon', 'SplashScreen', 'Categories'] },
+            'locale_keys': ['Name', 'Comment', 'TryExec', 'Exec', 'Icon', 'SplashScreen', 'Categories'],
+            'in_app_store': True },
         'links': {
             'csv_path': 'links.csv',
             'desktop_dir': 'links',
             'prefix': 'eos-link-',
             'suffix': '.desktop',
             'desktop_type': 'Application',
-            'locale_keys': ['Name', 'Comment', 'URL', 'Icon', 'Categories'] },
+            'locale_keys': ['Name', 'Comment', 'URL', 'Icon', 'Categories'],
+            'in_app_store': True },
         'folders': {
             'csv_path': 'folders.csv',
             'desktop_dir': 'folders',
             'prefix': 'eos-folder-',
             'suffix': '.directory',
             'desktop_type': 'Directory',
-            'locale_keys': ['Name', 'Icon'] },
+            'locale_keys': ['Name', 'Icon'],
+            'in_app_store': False },
         'extras': {
             'csv_path': 'extras.csv',
             'desktop_dir': None,
             'prefix': '',
             'suffix': '.desktop',
             'desktop_type': 'Application',
-            'locale_keys': [] } }
+            'locale_keys': [],
+            'in_app_store': False } }
 
     def __init__(self, asset_type):
         self._asset_type = asset_type
@@ -52,6 +56,7 @@ class DesktopWriter:
         self._suffix = self._config['suffix']
         self._desktop_type = self._config['desktop_type']
         self._locale_keys = self._config['locale_keys']
+        self._in_app_store = self._config['in_app_store']
 
         if self._desktop_dir:
             make_sure_path_exists(self._desktop_dir)
@@ -159,6 +164,15 @@ class DesktopWriter:
                 disable_splash = True
         if disable_splash:
             desktop_file.write('X-Endless-Splash-Screen=false\n')
+
+        if self._in_app_store:
+            show_in_app_store = True
+            if 'AppStore' in self._indexes:
+                field = fields[self._indexes['AppStore']['default']]
+                if not field:
+                    show_in_app_store = False
+
+            desktop_file.write('X-Endless-ShowInAppStore=%s\n' % str(show_in_app_store).lower())
 
         desktop_file.close()
 
