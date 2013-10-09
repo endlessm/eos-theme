@@ -2436,6 +2436,10 @@ GtkTreeMenu .menuitem,
     background-image: url("assets/menuitem-radio-checked-insensitive.png");
 }
 
+.menu .menuitem .button:hover,
+.menu .menuitem .button *:hover {
+    color: @theme_text_color;
+}
 
 /***************
  * Menu Button *
