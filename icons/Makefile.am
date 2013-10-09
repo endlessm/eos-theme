@@ -4,8 +4,9 @@ theme_DATA = $(theme_in_files:.theme.in.in=.theme)
 
 render_sizes = "64x64" "scalable"
 THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$$size/* -type d`; do printf "$$dir,"; done; done;)
+THEME_FILES=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
 
-EXTRA_DIST = index.theme.in.in
+EXTRA_DIST = index.theme.in.in $(THEME_FILES)
 
 index.theme.in: index.theme.in.in Makefile
 	dirs="`echo $(THEME_DIRS) | sed -e 's#\./##g'`"; \
