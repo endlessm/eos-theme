@@ -14,6 +14,13 @@ dist_font_DATA = \
 	Lato-Lig.otf \
 	Lato-RegIta.otf \
 	Lato-Reg.otf \
+	Dosis-Bold.otf \
+	Dosis-ExtraBold.otf \
+	Dosis-ExtraLight.otf \
+	Dosis-Light.otf \
+	Dosis-Medium.otf \
+	Dosis-Regular.otf \
+	Dosis-SemiBold.otf \
 	SourceSansPro-Black.otf \
 	SourceSansPro-BlackIt.otf \
 	SourceSansPro-Bold.otf \
