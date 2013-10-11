@@ -24,9 +24,9 @@ Package: eos-theme
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
+         gtk2-engines-pixbuf,
          eos-shell
-Recommends: gtk2-engines,
-            eos-plymouth-theme,
+Recommends: eos-plymouth-theme,
             eos-shell
 Description: Custom theme for eos-shell
  Custom theme along with icons and images
