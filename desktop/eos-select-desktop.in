@@ -15,6 +15,7 @@ const Gio = imports.gi.Gio;
 const GLib = imports.gi.GLib;
 
 const INSTALL_PATH = '@DATA_DIR@';
+const PERSONALITY_PATH ='@SYSCONF_DIR@/EndlessOS';
 const EOS_SHELL_SCHEMA = 'org.gnome.shell';
 const ICON_GRID_LAYOUT_SETTING = 'icon-grid-layout';
 const OVERRIDES_PRIORITY = 90;
@@ -109,15 +110,23 @@ if (personality) {
         logError(e, 'Error executing \'' + command + '\'');
     }
 
+    // Ensure that /etc/EndlessOS exists
+    try {
+        GLib.mkdir_with_parents(PERSONALITY_PATH, parseInt('0755', 8));
+    } catch (e) {
+        logError(e,
+            'Error creating config directory \'' + PERSONALITY_PATH + '\'');
+    }
+
     // Write personality to a file so that it can be read after installation
-    let personalityPath = INSTALL_PATH + '/EndlessOS/personality.txt';
-    let personalityFile = Gio.File.new_for_path(personalityPath);
+    let personalityFilePath = PERSONALITY_PATH + '/personality.txt';
+    let personalityFile = Gio.File.new_for_path(personalityFilePath);
     try {
         personalityFile.replace_contents(personality, null, false,
             Gio.FileCreateFlags.NONE, null);
     } catch (e) {
         logError(e,
-            'Error saving personality to \'' + personalityPath + '\'');
+            'Error saving personality to \'' + personalityFilePath + '\'');
     }
 
     // Reset any previous user customization of the desktop
