@@ -9,7 +9,9 @@ EXTRA_DIST = applications.csv	\
 BUILT_SOURCES = \
 	.dot_desktop_files_timestamp
 
-do_subst = sed -e 's|@DATA_DIR[@]|$(datadir)|g'
+do_subst = sed \
+	-e 's|@DATA_DIR[@]|$(datadir)|g' \
+	-e 's|@SYSCONF_DIR[@]|$(sysconfdir)|g'
 
 eos-select-desktop: eos-select-desktop.in Makefile
 	$(AM_V_GEN) $(do_subst) $< > $@
