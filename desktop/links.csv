@@ -33,7 +33,7 @@ globotvnews,,,,,X,,Globo News,,,,,,,,,,http://globotv.globo.com/globo-news,,,,,g
 gmail,work:40,work:40,work:40,X,X,X,Gmail,,,,,,,,,,http://gmail.com,,,,,gmail,,,,,Network;
 gnt,,,,,X,,GNT,,,,,,,,,,http://gnt.globo.com,,,,,gnt,,,,,Entertainment;Games;
 google,,,,X,X,X,Google,,,,,,,,,,http://www.google.com,,,,,google,,,,,Network;
-googlebooks,media:70,media:70,media:70,X,X,X,Books,,Libros,Livros,书籍,,,,,,http://books.google.com,,http://books.google.com.gt/books?hl=es,http://books.google.com.br/books?hl=pt-BR,http://books.google.com.br/books?hl=zh_CN,google-books,,,,,Network;
+googlebooks,media:80,media:80,media:80,X,X,X,Books,,Libros,Livros,书籍,,,,,,http://books.google.com,,http://books.google.com.gt/books?hl=es,http://books.google.com.br/books?hl=pt-BR,http://books.google.com.br/books?hl=zh_CN,google-books,,,,,Network;
 gritodanacao,,,,,X,,Grito da Naçao,,,,,,,(614) 886-6032,,,http://blogs.lancenet.com.br/gritodanacao,,,,,grito-da-nacao,,,,,Sports;
 grooveshark,60,60,60,X,X,X,Online Music,,Música Virtual,Música Online,在线音乐,Grooveshark,,,,,http://grooveshark.com,,,,,grooveshark,,,,,Entertainment;Games;
 guatemala,,,news:30,,,X,Gobierno de Guatemala,,,,,,,,,,http://www.guatemala.gob.gt,,,,,gobierno-guatemala,,,,,Network;
@@ -76,7 +76,7 @@ senac,,,,,X,,Senac,,,,,,,,,,http://www.rj.senac.br,,,,,senac-rj,,,,,Health;Educa
 senado,,,,,X,,Senado Online,,,,,,,,,,http://www.senado.gov.br,,,,,senado-federal,,,,,Health;Education;
 sitedabaixada,,,,,X,,Site da Baixada,,,,,,,,,,http://noticias.sitedabaixada.com.br,,,,,site-da-baixada,,,,,News;
 som13,,,,,X,,Som13 Música,,,,,,,,,,http://som13.com.br,,,,,som13,,,,,Entertainment;Games;
-ted,media:60,media:60,media:60,X,X,X,TED Talks,,Discusiones,Palestras,TED,,,TED,TED,,http://www.ted.com,,http://www.ted.com/translate/languages/es,http://www.ted.com/translate/languages/pt-br,http://www.ted.com/translate/languages/zh,ted,,,,,Network;
+ted,media:70,media:70,media:70,X,X,X,TED Talks,,Discusiones,Palestras,TED,,,TED,TED,,http://www.ted.com,,http://www.ted.com/translate/languages/es,http://www.ted.com/translate/languages/pt-br,http://www.ted.com/translate/languages/zh,ted,,,,,Network;
 telelistas,,,,,X,,Telefones Úteis,,,,,,,,,,http://www.telelistas.net/templates/telefones_uteis_int.aspx?state=rj&idprnt=64,,,,,telefones-uteis,,,,,Rio;
 terra,,news:40,,,X,,Terra,,,,,,,,,,http://www.terra.com.br/portal,,,,,terra,,,,,News;
 twitter,,,,X,X,X,Twitter,,,,,,,,,,http://www.twitter.com,,,,,twitter,,,,,Entertainment;Games;
