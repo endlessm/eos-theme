@@ -77,6 +77,8 @@ class DesktopWriter:
             field = fields[self._indexes[key][locale]]
             # Other than the default, omit blank values
             if field or locale == 'default':
+                if key == 'Icon' and self._asset_type == 'folders':
+                    field = field + '-symbolic'
                 line = '%s%s=%s\n' % (key, self.locale_string(locale), field)
                 desktop_file.write(line)
 
