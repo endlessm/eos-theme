@@ -20,6 +20,7 @@ com.endlessm.youtube,30,30,30,X,X,X,YouTube,,,,,YouTube,,,,,,eos-youtube,,,,,you
 eos-file-manager,80,80,80,,,,My Documents,,Documentos,Documentos,,File Manager,,,,,,eos-file-manager %U,,,,,nautilus,,,,,,FileManager;Utility;Core;GTK;
 evolution,work:10,work:10,work:10,X,X,X,E-mail,,,,,E-mail,,,,,,evolution %U,,,,,email,,,,,,Mail;Email;
 frostwire,media:40,media:40,media:40,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,,frostwire,,,,,frostwire,,,,,,Network;
+frozen-bubble,games:90,games:90,games:90,X,X,X,Frozen Bubble,,Burbujitas,Bolhinhas,,Frozen Bubble game,,,,,,frozen-bubble,,,,,frozen-bubble,,,,,,Games;
 gnome-calculator,work:50,work:50,work:50,X,X,X,Calculator,,Calculadora,Calculadora,,Calculator,,,,,,gnome-calculator,,,,,calculator,,,,,none,Utility;Calculator;
 gcompris,games:80,games:80,games:80,X,X,X,EduGames,,EduJuegos,Joguinhos,教育游戏,GCompris childrens games,,,,,,gcompris,,,,,gcompris,,,,,,Games;Education;
 gimp,media:50,media:50,media:50,X,X,X,GIMP,,,,,Photo Editor,,Editor de Imágenes,Editor de Imagens,图像编辑器,,gimp %U,,,,,gimp,,,,,,Photos;
