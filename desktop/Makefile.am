@@ -4,7 +4,7 @@ EXTRA_DIST = applications.csv	\
 	folders.csv		\
 	csv_to_desktop.py	\
 	eos-exec-localized	\
-	eos-select-desktop.in
+	eos-select-personality.in
 
 BUILT_SOURCES = \
 	.dot_desktop_files_timestamp
@@ -13,7 +13,7 @@ do_subst = sed \
 	-e 's|@DATA_DIR[@]|$(datadir)|g' \
 	-e 's|@SYSCONF_DIR[@]|$(sysconfdir)|g'
 
-eos-select-desktop: eos-select-desktop.in Makefile
+eos-select-personality: eos-select-personality.in Makefile
 	$(AM_V_GEN) $(do_subst) $< > $@
 	chmod +x $@
 
@@ -36,9 +36,9 @@ folders_DATA = $(wildcard $(srcdir)/folders/*.directory)
 desktopsdir = $(datadir)/EndlessOS/desktops
 desktops_DATA = $(wildcard settings/com.endlessm.desktop.*.gschema.override)
 
-bin_SCRIPTS = eos-exec-localized eos-select-desktop
+bin_SCRIPTS = eos-exec-localized eos-select-personality
 
-CLEANFILES = eos-select-desktop
+CLEANFILES = eos-select-personality
 
 clean-local:
 	rm -rf applications
