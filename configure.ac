@@ -1,7 +1,13 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([eos-theme], [1.0.0],
+m4_define(endless_platform, 1)
+m4_define(endless_minor, 2)
+m4_define(endless_micro, 0)
+
+m4_define(endless_version, [endless_platform.endless_minor.endless_micro])
+
+AC_INIT([eos-theme], [endless_version],
         [http://www.endlessm.com])
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-xz no-dist-gzip])
@@ -27,6 +33,17 @@ GETTEXT_PACKAGE="${PACKAGE}"
 AC_SUBST(GETTEXT_PACKAGE)
 
 GLIB_GSETTINGS
+
+dnl Export versioning information
+ENDLESS_PLATFORM=endless_platform
+ENDLESS_MINOR=endless_minor
+ENDLESS_MICRO=endless_micro
+ENDLESS_DATE=`date +"%Y-%m-%d"`
+
+AC_SUBST(ENDLESS_PLATFORM)
+AC_SUBST(ENDLESS_MINOR)
+AC_SUBST(ENDLESS_MICRO)
+AC_SUBST(ENDLESS_DATE)
 
 AC_ARG_ENABLE([gtk3-engine],
               AC_HELP_STRING([--disable-gtk3-engine],
@@ -75,6 +92,7 @@ fi
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
 AC_CONFIG_FILES([
+endlessos-version.xml.in
 Makefile
 fonts/Makefile
 backgrounds/Makefile
