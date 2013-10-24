@@ -1,5 +1,13 @@
 SUBDIRS = themes po desktop icons settings backgrounds fonts
 
+versiondir = $(datadir)/EndlessOS
+version_DATA = endlessos-version.xml
+
+@INTLTOOL_XML_RULE@
+
+EXTRA_DIST = endlessos-version.xml.in.in
+CLEANFILES = $(version_DATA)
+
 MAINTAINERCLEANFILES =			\
 	Makefile.in			\
 	aclocal.m4			\
