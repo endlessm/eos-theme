@@ -2,8 +2,6 @@
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
-	BentonSans-Black.otf \
-	BentonSans-ExtraLight.otf \
 	Lato-BlaIta.otf \
 	Lato-Bla.otf \
 	Lato-BolIta.otf \
