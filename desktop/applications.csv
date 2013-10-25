@@ -17,6 +17,7 @@ com.endlessm.programming,curiosity:50,curiosity:50,curiosity:50,X,X,X,Coding Fun
 com.endlessm.typing,work:60,work:60,work:60,X,X,X,Typing,,Tecla-Oke,Tecla-Okê,学习型,Learn to type,,,,,,eos-typing,,,,,typing,,,,,,Education;Games;
 com.endlessm.wikipedia,curiosity:10,curiosity:10,curiosity:10,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,,eos-wikipedia,,,,,wikipedia-app,,,,,,Education;
 com.endlessm.youtube,30,30,30,X,X,X,YouTube,,,,,YouTube,,,,,,eos-youtube,,,,,youtube-app,,,,,,Media;
+empathy,,,,X,X,X,Chat,,,,,Chat,,,,,,empathy,,,,,empathy,,,,,,Internet;
 eos-file-manager,80,80,80,,,,My Documents,,Documentos,Documentos,,File Manager,,,,,,eos-file-manager %U,,,,,nautilus,,,,,,FileManager;Utility;Core;GTK;
 evolution,work:10,work:10,work:10,X,X,X,E-mail,,,,,E-mail,,,,,,evolution %U,,,,,email,,,,,,Mail;Email;
 frostwire,media:40,media:40,media:40,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,,frostwire,,,,,frostwire,,,,,,Network;
