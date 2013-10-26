@@ -109,3 +109,7 @@ auto-import=true
 [org.gnome.rhythmbox.rhythmdb]
 monitor-library=true
 
+# Default desktop layout. An empty value indicates that the real per-personality
+# default stored in usr/share/EndlessOS/personality-defaults/ should be used
+[org.gnome.shell]
+icon-grid-layout={}
