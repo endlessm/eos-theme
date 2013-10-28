@@ -23,7 +23,7 @@ const OVERRIDES_PRIORITY = 90;
 const selectPersonality = function() {
     let command = 'zenity --list --title="Desktop configuration" --text="Select an option and hit OK\n(Cancel to keep existing configuration)" --radiolist --hide-header --column=button --column=selection TRUE default';
 
-    let path = INSTALL_PATH + '/EndlessOS/desktops';
+    let path = INSTALL_PATH + '/EndlessOS/personality-defaults';
     let dir = Gio.File.new_for_path(path);
 
     let files;
@@ -31,7 +31,7 @@ const selectPersonality = function() {
         files = dir.enumerate_children('standard::name,standard::type',
                                        Gio.FileQueryInfoFlags.NONE, null);
     } catch (e) {
-        logError(e, 'Missing desktop configuration files in ' + path);
+        logError(e, 'Missing personality configuration files in ' + path);
         return null;
     }
 
@@ -39,11 +39,14 @@ const selectPersonality = function() {
 
     while (file) {
         let name = file.get_name();
-        // Example: com.endlessm.desktop.Brazil.gschema.override
-        let tokens = name.split('.');
-        const PERSONALITY_INDEX = 3;
-        let option = tokens[PERSONALITY_INDEX];
-        command += ' FALSE ' + option;
+        // Example: icon-grid-Brazil.json
+        let tokens = name.match(/^icon-grid-(.*).json$/);
+        if (tokens !== null) {
+            let option = tokens[1];
+            if (option != 'default') {
+                command += ' FALSE ' + option;
+            }
+        }
         file = files.next_file(null);
     }
 

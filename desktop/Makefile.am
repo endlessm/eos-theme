@@ -33,8 +33,8 @@ links_DATA = $(wildcard $(srcdir)/links/*.desktop)
 foldersdir = $(datadir)/desktop-directories
 folders_DATA = $(wildcard $(srcdir)/folders/*.directory)
 
-desktopsdir = $(datadir)/EndlessOS/desktops
-desktops_DATA = $(wildcard settings/com.endlessm.desktop.*.gschema.override)
+desktopsdir = $(datadir)/EndlessOS/personality-defaults
+desktops_DATA = $(wildcard settings/icon-grid-*.json)
 
 bin_SCRIPTS = eos-exec-localized eos-select-personality
 
