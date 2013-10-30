@@ -324,9 +324,9 @@ class DesktopLayout:
 
             desktop = layout['desktop']
             sorted_desktop = sorted(desktop, key = lambda val: int(val))
-            settings_dict[''] = []
+            settings_dict['desktop'] = []
             for item in sorted_desktop:
-                settings_dict[''].append(desktop[item])
+                settings_dict['desktop'].append(desktop[item])
 
             # Process the folders in the order that they appear on the desktop
             folders = layout['folders']
