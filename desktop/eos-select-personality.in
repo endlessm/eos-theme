@@ -86,33 +86,9 @@ const getPersonality = function(args) {
     return personality;
 }
 
-const getCommand = function(personality) {
-    let command;
-    if (personality == 'default') {
-        command = 'rm -f ' + INSTALL_PATH +
-            '/glib-2.0/schemas/' + OVERRIDES_PRIORITY +
-            '_eos-desktop.gschema.override';
-    } else {
-        command = 'ln -sf ' + INSTALL_PATH +
-            '/EndlessOS/desktops/com.endlessm.desktop.' +
-            personality + '.gschema.override ' + INSTALL_PATH +
-            '/glib-2.0/schemas/' + OVERRIDES_PRIORITY +
-            '_eos-desktop.gschema.override';
-    }
-    return command;
-}
-
 let personality = getPersonality(ARGV);
 
 if (personality) {
-    // Set the personality
-    let command = getCommand(personality);
-    try {
-        GLib.spawn_command_line_async(command);
-    } catch (e) {
-        logError(e, 'Error executing \'' + command + '\'');
-    }
-
     // Ensure that /etc/EndlessOS exists
     try {
         GLib.mkdir_with_parents(PERSONALITY_PATH, parseInt('0755', 8));
@@ -179,13 +155,5 @@ if (personality) {
     } catch (e) {
         logError(e,
             'Error saving personality to \'' + personalityFilePath + '\'');
-    }
-
-    // Load the latest schema overrides
-    command = 'glib-compile-schemas ' + INSTALL_PATH + '/glib-2.0/schemas';
-    try {
-        GLib.spawn_command_line_async(command);
-    } catch (e) {
-        logError(e, 'Error executing \'' + command + '\'');
     }
 }
