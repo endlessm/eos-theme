@@ -33,7 +33,7 @@ globotvnews,,,,,X,,Globo News,,,,,,,,,,http://globotv.globo.com/globo-news,,,,,g
 gmail,work:40,work:40,work:40,X,X,X,Gmail,,,,,,,,,,http://gmail.com,,,,,gmail,,,,,Network;
 gnt,,,,,X,,GNT,,,,,,,,,,http://gnt.globo.com,,,,,gnt,,,,,Entertainment;Games;
 google,,,,X,X,X,Google,,,,,,,,,,http://www.google.com,,,,,google,,,,,Network;
-googlebooks,media:80,media:80,media:80,X,X,X,Books,,Libros,Livros,书籍,,,,,,http://books.google.com,,http://books.google.com.gt/books?hl=es,http://books.google.com.br/books?hl=pt-BR,http://books.google.com.br/books?hl=zh_CN,google-books,,,,,Network;
+googlebooks,media:80,media:80,media:80,X,X,X,Books,,Libros,Livros,书籍,,,,,,http://books.google.com,,http://books.google.com.gt/books?hl=es,http://books.google.com.br/books?hl=pt-BR,http://books.google.com.br/books?hl=zh_CN,googlebooks,,,,,Network;
 gritodanacao,,,,,X,,Grito da Naçao,,,,,,,(614) 886-6032,,,http://blogs.lancenet.com.br/gritodanacao,,,,,grito-da-nacao,,,,,Sports;
 grooveshark,60,60,60,X,X,X,Online Music,,Música Virtual,Música Online,在线音乐,Grooveshark,,,,,http://html5.grooveshark.com,,,,,grooveshark,,,,,Entertainment;Games;
 guatemala,,,news:30,,,X,Gobierno de Guatemala,,,,,,,,,,http://www.guatemala.gob.gt,,,,,gobierno-guatemala,,,,,Network;
@@ -85,7 +85,7 @@ upasrio,,,,,X,,UPAs Rio,,,,,,,,,,http://www.saude.rj.gov.br/upas-24-horas/5629-u
 vasco,,,,,X,,Vasco da Gama,,,,,,,,,,http://www.vasco.com.br/site/,,,,,vasco-da-gama,,,,,Sports;
 vivario,,,,,X,,Viva Favela (Viva Rio),,,,,,,,,,http://vivario.org.br/viva-favela/,,,,,vivafavela,,,,,Rio;
 wikipedia,,,,X,X,X,Wikipedia,,,Wikipédia,,,,,,,http://en.wikipedia.org,,http://es.wikipedia.org,http://pt.wikipedia.org,http://zh.wikipedia.org,wikipedia,,,,,Health;Education;
-worldwonders,curiosity:60,curiosity:60,curiosity:60,X,X,X,World Wonders,,Maravillas,Maravilhas,,World Wonders Project,,,,,http://www.google.com/culturalinstitute/worldwonders/,,http://www.google.com/intl/es-419/culturalinstitute/worldwonders/,http://www.google.com/intl/pt-BR/culturalinstitute/worldwonders/,,worldwondersproject,,,,,Education;
+worldwonders,curiosity:60,curiosity:60,curiosity:60,X,X,X,World Wonders,,Maravillas,Maravilhas,,World Wonders Project,,,,,http://www.google.com/culturalinstitute/worldwonders/,,http://www.google.com/intl/es-419/culturalinstitute/worldwonders/,http://www.google.com/intl/pt-BR/culturalinstitute/worldwonders/,,worldwonders,,,,,Education;
 wsj,news:40,,,X,,,Wall St Journal,,,,,,,,,,http://www.wsj.com,,,,,wsj,,,,,Network;
 yahoo,,,,X,X,X,Yahoo,,,,,,,,,,http://www.yahoo.com,,,,,yahoo,,,,,Network;
 youtube,,,,X,X,X,YouTube,,,,,,,,,,http://www.youtube.com,,,,,youtube,,,,,Entertainment;Games;
