@@ -5,6 +5,7 @@ import errno
 import re
 import collections
 import json
+import sys
 
 def make_sure_path_exists(path):
     try:
@@ -49,7 +50,7 @@ class DesktopWriter:
             'locale_keys': [],
             'in_app_store': False } }
 
-    def __init__(self, asset_type):
+    def __init__(self, asset_type, basedir=None):
         self._asset_type = asset_type
         self._config = self.CONFIGS[self._asset_type]
         self._csv_path = self._config['csv_path']
@@ -59,6 +60,7 @@ class DesktopWriter:
         self._desktop_type = self._config['desktop_type']
         self._locale_keys = self._config['locale_keys']
         self._in_app_store = self._config['in_app_store']
+        self._basedir = basedir
 
         if self._desktop_dir:
             make_sure_path_exists(self._desktop_dir)
@@ -168,7 +170,10 @@ class DesktopWriter:
             if field == 'none':
                 disable_splash = True
             else :
-                splash_file = field
+                if self._basedir :
+                    splash_file = self._basedir + '/splash/' + field
+                else :
+                    splash_file = field
         if disable_splash:
             desktop_file.write('X-Endless-Splash-Screen=false\n')
         else :
@@ -351,9 +356,16 @@ class DesktopLayout:
             settings_file.close()
 
 if __name__ == '__main__':
+    basedir = None
+    if len(sys.argv) > 1:
+        if len(sys.argv) == 3 and sys.argv[1] == '--basedir' :
+            basedir = sys.argv[2]
+        else :
+            print('Usage: csv_to_desktop.py [--basedir BASEDIR]')
+
     desktop_layout = DesktopLayout()
     for asset_type in ['apps', 'links', 'folders', 'extras']:
-        desktop_writer = DesktopWriter(asset_type)
+        desktop_writer = DesktopWriter(asset_type, basedir)
         desktop_writer.process_all(desktop_layout)
 
     desktop_layout.write_settings()

@@ -21,7 +21,7 @@ eos-select-personality: eos-select-personality.in Makefile
 	@mkdir -p applications
 	@mkdir -p links
 	@mkdir -p folders
-	$(AM_V_GEN) $(srcdir)/csv_to_desktop.py
+	$(AM_V_GEN) $(srcdir)/csv_to_desktop.py --basedir $(datadir)/EndlessOS
 	@touch .dot_desktop_files_timestamp
 
 appsdir = $(datadir)/applications
