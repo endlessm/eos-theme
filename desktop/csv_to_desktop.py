@@ -157,6 +157,7 @@ class DesktopWriter:
                                fields[self._indexes['Categories']['default']])
 
         disable_splash = False
+        splash_file = ''
         if self._asset_type == 'links':
             # Since we currently open web links as a new tab in the browser,
             # it is not appropriate to show the launch splash screen
@@ -166,8 +167,13 @@ class DesktopWriter:
             field = fields[self._indexes['SplashScreen']['default']]
             if field == 'none':
                 disable_splash = True
+            else :
+                splash_file = field
         if disable_splash:
             desktop_file.write('X-Endless-Splash-Screen=false\n')
+        else :
+            desktop_file.write('X-Endless-Splash-Screen=true\n')
+            desktop_file.write('X-Endless-launch-background=' + splash_file + '\n')
 
         if self._in_app_store:
             show_in_app_store = True
