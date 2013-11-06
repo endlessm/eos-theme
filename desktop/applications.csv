@@ -20,12 +20,12 @@ com.endlessm.health,curiosity:18,curiosity:18,curiosity:18,X,X,X,Health,,Salud,S
 com.endlessm.khanacademy,curiosity:40,curiosity:40,curiosity:40,X,X,X,Khan Academy,,Academia Khan,Academia Khan,,Khan Academy,,,,,,eos-khanacademy,,,,,khanacademy-app,,,,,loading_BG_khanacademy.jpg,Education;
 com.endlessm.mexico,curiosity:17,,,X,,X,Mexico,,México,,,Learn all about Mexico right from your desktop,,,,,,eos-mexico,,,,,mexico,,,,,,Education;Travel;
 com.endlessm.programming,curiosity:50,curiosity:50,curiosity:50,X,X,X,Coding Fun,,Código Divertido,Código Divertido,,Learn to program,,,,,,eos-programming,,,,,codeacademy,,,,,loading_BG_programming.jpg,Education;
-com.endlessm.science,,,,X,X,X,Science,,Ciencia,,,Learn about everything from dinosaurs to space,,,,,,eos-science,,,,,science,,,,,,Education;
+com.endlessm.science,,,,X,X,X,Science,,Ciencia,,,Learn about everything from dinosaurs to space,,,,,,eos-science,,,,,science,,,,,loading_BG_science.jpg,Education;
 com.endlessm.travel,,,,X,X,X,Travel,,Tu Mundo,,,Explore beautiful places all over the world,,,,,,eos-travel,,,,,travel,,,,,,Education;Travel;
 com.endlessm.typing,work:60,work:60,work:60,X,X,X,Typing,,Tecla-Oke,Tecla-Okê,学习型,Learn to type,,,,,,eos-typing,,,,,typing,,,,,loading_BG_typing.jpg,Education;Games;
 com.endlessm.wikipedia,curiosity:10,curiosity:10,curiosity:10,X,X,X,Wikipedia,,,Wikipédia,,Wikipedia,,,,,,eos-wikipedia,,,,,wikipedia-app,,,,,loading_BG_wikipedia.jpg,Education;
 com.endlessm.youtube,30,30,30,X,X,X,YouTube,,,,,YouTube,,,,,,eos-youtube,,,,,youtube-app,,,,,loading_BG_youtube,Media;
-empathy,,,,X,X,X,Chat,,,,,Chat,,,,,,empathy,,,,,empathy,,,,,,Internet;
+empathy,,,,X,X,X,Chat,,,,,Chat,,,,,,empathy,,,,,empathy,,,,,none,Internet;
 eos-file-manager,80,80,80,,,,My Documents,,Documentos,Documentos,,File Manager,,,,,,eos-file-manager %U,,,,,nautilus,,,,,,FileManager;Utility;Core;GTK;
 evolution,work:10,work:10,work:10,X,X,X,E-mail,,,,,E-mail,,,,,,evolution %U,,,,,email,,,,,,Mail;Email;
 frostwire,media:40,media:40,media:40,X,X,X,Media Download,,Descargar,Baixar Mídia,,FrostWire,,,,,,frostwire,,,,,frostwire,,,,,,Network;
