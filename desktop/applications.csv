@@ -54,6 +54,6 @@ stellarium,curiosity:80,curiosity:80,curiosity:80,X,X,X,Stellarium,,Constelacion
 supertux2,games:50,games:50,games:50,X,X,X,Super Tux,,,,,Super Tux,,,,,supertux2,resfix supertux2 --fullscreen,,,,,supertux,,,,,,Games;
 supertuxkart,games:70,games:70,games:70,X,X,X,Tux Kart,,,,,Tux Kart,,,,,supertuxkart,resfix supertuxkart --fullscreen,,,,,supertuxkart,,,,,,Games;
 teeworlds,,,,X,X,X,Teeworlds,,Teelandia,Teelândia,,Multiplayer game,,,,,teeworlds,resfix teeworlds,,,,,teelandia,,,,,,Games;
-totem,media:20,media:20,media:20,X,X,X,Videos,,Videos,Vídeos,,Video,,,,,,sh -c "totem --pause `xdg-user-dir VIDEOS`",,,,,video,,,,,,Video;
+totem,media:20,media:20,media:20,X,X,X,Videos,,Videos,Vídeos,,Video,,,,,totem,sh -c "totem --pause `xdg-user-dir VIDEOS`",,,,,video,,,,,,Video;
 tuxmath,,,,X,X,X,Tux Math,,123 Tux,123 Tux,,Math Games,,,,,,tuxmath,,,,,123tux,,,,,,Games;Education;
 tuxtype,,,,X,X,X,Tux Typing,,Tecla Tux,Tecla Tux,,Typing game,,,,,,tuxtype -t,,tuxtype -t espanol,tuxtype -t brazilian-portuguese,,tuxtyping,,,,,,Games;
