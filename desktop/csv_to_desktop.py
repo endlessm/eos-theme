@@ -158,27 +158,32 @@ class DesktopWriter:
             desktop_file.write('Categories=%s\n' %
                                fields[self._indexes['Categories']['default']])
 
-        disable_splash = False
-        splash_file = ''
+        # Since we currently open web links as a new tab in the browser,
+        # it is not appropriate to show the launch splash screen
+        # For applications, the splash screen can be disabled with the keyword 'none'
+        # If self._basedir has been set, the images are assumed to be in BASEDIR/splash/
+        # Otherwise, the content of the 'SplashScreen' field is used as-is
+        # Note: SplashScreen is not localized
+        enable_splash = True
+        splash_image = None
         if self._asset_type == 'links':
-            # Since we currently open web links as a new tab in the browser,
-            # it is not appropriate to show the launch splash screen
-            disable_splash = True
+            enable_splash = False
         elif 'SplashScreen' in self._locale_keys:
-            # Note: SplashScreen is not localized
             field = fields[self._indexes['SplashScreen']['default']]
             if field == 'none':
-                disable_splash = True
-            else :
+                enable_splash = False
+            elif len(field) > 0 :
                 if self._basedir :
-                    splash_file = self._basedir + '/splash/' + field
+                    splash_image = self._basedir + '/splash/' + field
                 else :
-                    splash_file = field
-        if disable_splash:
-            desktop_file.write('X-Endless-Splash-Screen=false\n')
-        else :
+                    splash_image = field
+
+        if enable_splash :
             desktop_file.write('X-Endless-Splash-Screen=true\n')
-            desktop_file.write('X-Endless-launch-background=' + splash_file + '\n')
+            if splash_image :
+                desktop_file.write('X-Endless-launch-background=' + splash_image + '\n')
+        else :
+            desktop_file.write('X-Endless-Splash-Screen=false\n')
 
         if self._in_app_store:
             show_in_app_store = True
