@@ -2,7 +2,6 @@ usr/share/themes/EndlessOS
 usr/share/icons/EndlessOS
 usr/share/fonts/EndlessOS
 usr/share/EndlessOS
-usr/share/applications
 usr/share/desktop-directories
 usr/share/gnome-background-properties
 usr/lib/*/gtk-2.0/*/engines/*.so
