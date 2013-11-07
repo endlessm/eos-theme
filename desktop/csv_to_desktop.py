@@ -5,6 +5,7 @@ import errno
 import re
 import collections
 import json
+import sys
 
 def make_sure_path_exists(path):
     try:
@@ -49,7 +50,7 @@ class DesktopWriter:
             'locale_keys': [],
             'in_app_store': False } }
 
-    def __init__(self, asset_type):
+    def __init__(self, asset_type, basedir=None):
         self._asset_type = asset_type
         self._config = self.CONFIGS[self._asset_type]
         self._csv_path = self._config['csv_path']
@@ -59,6 +60,7 @@ class DesktopWriter:
         self._desktop_type = self._config['desktop_type']
         self._locale_keys = self._config['locale_keys']
         self._in_app_store = self._config['in_app_store']
+        self._basedir = basedir
 
         if self._desktop_dir:
             make_sure_path_exists(self._desktop_dir)
@@ -156,17 +158,31 @@ class DesktopWriter:
             desktop_file.write('Categories=%s\n' %
                                fields[self._indexes['Categories']['default']])
 
-        disable_splash = False
+        # Since we currently open web links as a new tab in the browser,
+        # it is not appropriate to show the launch splash screen
+        # For applications, the splash screen can be disabled with the keyword 'none'
+        # If self._basedir has been set, the images are assumed to be in BASEDIR/splash/
+        # Otherwise, the content of the 'SplashScreen' field is used as-is
+        # Note: SplashScreen is not localized
+        enable_splash = True
+        splash_image = None
         if self._asset_type == 'links':
-            # Since we currently open web links as a new tab in the browser,
-            # it is not appropriate to show the launch splash screen
-            disable_splash = True
+            enable_splash = False
         elif 'SplashScreen' in self._locale_keys:
-            # Note: SplashScreen is not localized
             field = fields[self._indexes['SplashScreen']['default']]
             if field == 'none':
-                disable_splash = True
-        if disable_splash:
+                enable_splash = False
+            elif len(field) > 0 :
+                if self._basedir :
+                    splash_image = self._basedir + '/splash/' + field
+                else :
+                    splash_image = field
+
+        if enable_splash :
+            desktop_file.write('X-Endless-Splash-Screen=true\n')
+            if splash_image :
+                desktop_file.write('X-Endless-launch-background=' + splash_image + '\n')
+        else :
             desktop_file.write('X-Endless-Splash-Screen=false\n')
 
         if self._in_app_store:
@@ -345,9 +361,16 @@ class DesktopLayout:
             settings_file.close()
 
 if __name__ == '__main__':
+    basedir = None
+    if len(sys.argv) > 1:
+        if len(sys.argv) == 3 and sys.argv[1] == '--basedir' :
+            basedir = sys.argv[2]
+        else :
+            print('Usage: csv_to_desktop.py [--basedir BASEDIR]')
+
     desktop_layout = DesktopLayout()
     for asset_type in ['apps', 'links', 'folders', 'extras']:
-        desktop_writer = DesktopWriter(asset_type)
+        desktop_writer = DesktopWriter(asset_type, basedir)
         desktop_writer.process_all(desktop_layout)
 
     desktop_layout.write_settings()

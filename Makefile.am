@@ -1,4 +1,4 @@
-SUBDIRS = themes po desktop icons settings backgrounds fonts
+SUBDIRS = themes po desktop icons settings backgrounds fonts splash
 
 versiondir = $(datadir)/EndlessOS
 version_DATA = endlessos-version.xml
