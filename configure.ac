@@ -96,7 +96,6 @@ endlessos-version.xml.in
 Makefile
 fonts/Makefile
 backgrounds/Makefile
-desktop/Makefile
 icons/Makefile
 settings/Makefile
 themes/Makefile

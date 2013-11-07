@@ -42,12 +42,6 @@ config.sub
 configure
 configure.lineno
 depcomp
-desktop/.dot_desktop_files_timestamp
-desktop/applications
-desktop/eos-select-personality
-desktop/folders
-desktop/links
-desktop/settings
 install-sh
 intltool-*.in
 intltool-extract.in
