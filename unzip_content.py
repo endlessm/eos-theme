@@ -13,6 +13,7 @@
 # Add and commit any changes to git
 # Proceed with the normal build process
 
+import glob
 import os
 import shutil
 import sys
@@ -21,8 +22,11 @@ import json
 
 ZIP_FILENAME = 'appstore.zip'
 UNZIP_DIR = 'unzipped'
+ICON_DIR = os.path.join('icons', '64x64', 'apps')
 IGNORE_ERRORS = True
 JPEG_QUALITY = 90
+APP_PREFIX = 'eos-app-'
+LINK_PREFIX = 'eos-link-'
 
 # Run the ImageMagick 'convert' application from the command line,
 # with specified JPEG quality and all metadata stripped
@@ -37,16 +41,36 @@ def get_icon_path(linkJSON):
         return None
     return linkJSON['linkIcon']
 
-# Remove the existing unzipped, if they exist
+# Remove the existing unzipped directory, if it exists
 shutil.rmtree(UNZIP_DIR, IGNORE_ERRORS)
+
+# Remove any existing app or link icons
+# We cannot blindly remove the directory,
+# as there are other icons that should not be touched
+# by this script (e.g., generic-app.png and generic-link.png)
+for f in glob.glob(os.path.join(ICON_DIR, APP_PREFIX + '*.png')):
+    os.remove(f)
+for f in glob.glob(os.path.join(ICON_DIR, LINK_PREFIX + '*.png')):
+    os.remove(f)
 
 # Unzip the file
 zfile = zipfile.ZipFile(ZIP_FILENAME)
 zfile.extractall(UNZIP_DIR)
 
-# Link icons will be copied/cropped from the zipped dir's links dir
+# Copy and rename the app icons to the icon folder
+source_dir = os.path.join(UNZIP_DIR, 'apps', 'icons')
+target_dir = ICON_DIR
+for source in os.listdir(source_dir):
+    # Rename the icons from name-icon.png to eos-app-name.png
+    target = APP_PREFIX + source.replace('-icon.png', '.png')
+    source_file = os.path.join(source_dir, source)
+    target_file = os.path.join(target_dir, target)
+    shutil.copy(source_file, target_file)
+
+# Copy and rename the link icons to the icon folder
+# If no link icon available, resize/crop the thumbnail image
 source_dir = os.path.join(UNZIP_DIR, 'links')
-target_dir = os.path.join('icons', '64x64', 'apps')
+target_dir = ICON_DIR
 
 # At the moment, we're only using the spanish content file
 links_json = os.path.join(source_dir, 'es-gt.json')
@@ -56,7 +80,7 @@ with open(links_json) as links_content:
     for category in link_data:
         for link in category['links']:
             icon_path = get_icon_path(link)
-            target_file = os.path.join(target_dir, link['linkId'] + '.png')
+            target_file = os.path.join(target_dir, LINK_PREFIX + link['linkId'] + '.png')
 
             if icon_path is None:
                 # Generate a new icon based on existing link image
