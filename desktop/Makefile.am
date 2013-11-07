@@ -24,12 +24,6 @@ eos-select-personality: eos-select-personality.in Makefile
 	$(AM_V_GEN) $(srcdir)/csv_to_desktop.py
 	@touch .dot_desktop_files_timestamp
 
-appsdir = $(datadir)/applications
-apps_DATA = $(wildcard $(srcdir)/applications/*.desktop)
-
-linksdir = $(datadir)/applications
-links_DATA = $(wildcard $(srcdir)/links/*.desktop)
-
 foldersdir = $(datadir)/desktop-directories
 folders_DATA = $(wildcard $(srcdir)/folders/*.directory)
 
