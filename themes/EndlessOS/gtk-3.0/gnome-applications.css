@@ -139,6 +139,14 @@ NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar:only-chil
     border-bottom-color: @borders;
 }
 
+.nautilus-preview-image {
+    background-color: @theme_bg_color;
+    border-radius: 4px;
+    border-color: @borders;
+    border-style: solid;
+    border-width: 1px;
+}
+
 /* gedit */
 
 GeditWindow .pane-separator, 
