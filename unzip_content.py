@@ -72,28 +72,32 @@ for source in os.listdir(source_dir):
 source_dir = os.path.join(UNZIP_DIR, 'links')
 target_dir = ICON_DIR
 
-# At the moment, we're only using the spanish content file
-links_json = os.path.join(source_dir, 'es-gt.json')
+file_names = os.listdir(source_dir)
 
-with open(links_json) as links_content:
-    link_data = json.load(links_content)
-    for category in link_data:
-        for link in category['links']:
-            icon_path = get_icon_path(link)
-            target_file = os.path.join(target_dir, LINK_PREFIX + link['linkId'] + '.png')
+# Work around the fact that the CMS currently splits
+# the links into separate JSON files by country
+for file_name in file_names:
+    if file_name.endswith('.json'):
+        links_json = os.path.join(source_dir, file_name)
 
-            if icon_path is None:
-                # Generate a new icon based on existing link image
-                source_file = os.path.join(source_dir, 'images', link['linkId'] + '.jpg')
+        with open(links_json) as links_content:
+            link_data = json.load(links_content)
+            for category in link_data:
+                for link in category['links']:
+                    icon_path = get_icon_path(link)
+                    target_file = os.path.join(target_dir, LINK_PREFIX + link['linkId'] + '.png')
 
-                # Path to the mask png which will set the margin/corners of the generated icon.
-                # Currently requires that 'generic-link.png' stays put indefinitely
-                mask_file = os.path.join(target_dir, 'generic-link.png')
+                    if icon_path is None:
+                        # Generate a new icon based on existing link image
+                        source_file = os.path.join(source_dir, 'images', link['linkId'] + '.jpg')
 
-                convert(source_file, target_file,
-                        '-resize 64x64^ -gravity center -crop 64x64+0+0 -alpha set \
-                        ' + mask_file + ' -compose DstIn -composite')
-            else:
-                # Simply copy existing icon asset to destination
-                source_file = os.path.join(source_dir, icon_path)
-                shutil.copy(source_file, target_file)
+                        # Path to the mask png which will set the margin/corners of the generated icon.
+                        # Currently requires that 'generic-link.png' stays put indefinitely
+                        mask_file = os.path.join(target_dir, 'generic-link.png')
+
+                        convert(source_file, target_file,
+                                '-resize 64x64^ -gravity center -crop 64x64+0+0 -alpha set ' + mask_file + ' -compose DstIn -composite')
+                    else:
+                        # Simply copy existing icon asset to destination
+                        source_file = os.path.join(source_dir, icon_path)
+                        shutil.copy(source_file, target_file)
