@@ -54,7 +54,7 @@ button-layout=':minimize,close'
 
 # Specify the default background image
 [org.gnome.desktop.background]
-picture-uri='file://@DATA_DIR@/EndlessOS/backgrounds/default_background.jpg'
+picture-uri='eos:///default'
 
 # Specify the folders for the app selector
 [org.gnome.shell]
