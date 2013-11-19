@@ -3,7 +3,23 @@
 <wallpapers>
   <wallpaper deleted="false">
     <_name>Default Background</_name>
-    <filename>@DATA_DIR@/EndlessOS/backgrounds/default_background.jpg</filename>
+    <filename>@DATA_DIR@/EndlessOS/personality-defaults/desktop-background-default.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3465a4</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <_name>Default Background Guatemala</_name>
+    <filename>@DATA_DIR@/EndlessOS/personality-defaults/desktop-background-Guatemala.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3465a4</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <_name>Default Background Brazil</_name>
+    <filename>@DATA_DIR@/EndlessOS/personality-defaults/desktop-background-Brazil.jpg</filename>
     <options>zoom</options>
     <shade_type>solid</shade_type>
     <pcolor>#3465a4</pcolor>
