@@ -1,6 +1,6 @@
 do_subst = sed -e 's|@DATA_DIR[@]|$(datadir)|g'
 
-endlessos.xml.in: endlessos.xml.in.in
+endlessos-backgrounds-default.xml.in: endlessos-backgrounds-default.xml.in.in
 	$(AM_V_GEN) $(do_subst) $< > $@
 
 @INTLTOOL_XML_RULE@
@@ -21,9 +21,9 @@ uninstall-hook:
 	rm -f $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Guatemala.jpg
 
 metadatadir = $(datadir)/gnome-background-properties
-metadata_DATA = endlessos.xml
+metadata_DATA = endlessos-backgrounds-default.xml
 
-noinst_DATA = endlessos.xml.in
-CLEANFILES = endlessos.xml endlessos.xml.in
+noinst_DATA = endlessos-backgrounds-default.xml.in
+CLEANFILES = endlessos-backgrounds-default.xml endlessos-backgrounds-default.xml.in
 
-EXTRA_DIST = endlessos.xml.in.in
+EXTRA_DIST = endlessos-backgrounds-default.xml.in.in
