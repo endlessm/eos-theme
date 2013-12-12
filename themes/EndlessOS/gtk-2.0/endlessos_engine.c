@@ -160,7 +160,6 @@ endlessos_draw_flat_box (GtkStyle      *style,
                        gint	      width,
                        gint	      height)
 {
-  gboolean tried_ooo_hack;
   const gchar *app_name;
 
   GTK_STYLE_CLASS (endlessos_style_parent_class)->draw_flat_box (style, window, state_type, shadow_type,

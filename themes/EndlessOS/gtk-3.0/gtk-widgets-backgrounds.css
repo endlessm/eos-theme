@@ -205,7 +205,7 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
 .inline-toolbar.toolbar  {
     background-image: linear-gradient(to bottom,
                                       @toolbar_gradient_a,
-                                      @toolbar_gradient_b 50%,
+                                      @toolbar_gradient_b 20%,
                                       @toolbar_gradient_c
                                       );
     background-color: transparent;
@@ -216,7 +216,7 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
 .inline-toolbar.toolbar.vertical {
     background-image: linear-gradient(to right,
                                       @toolbar_gradient_a,
-                                      @toolbar_gradient_b 50%,
+                                      @toolbar_gradient_b 20%,
                                       @toolbar_gradient_c
                                       );
     background-color: transparent;

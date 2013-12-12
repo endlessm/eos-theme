@@ -1,5 +1,7 @@
 @define-color documents_emblem_bg #3465a4;
 @define-color documents_collection_bg #d3d7cf;
+@define-color gedit_not_found_bg rgb (237, 54, 54);
+@define-color gedit_not_found_fg white;
 
 /****************
  * Applications *
@@ -91,13 +93,13 @@ NautilusToolbar .button {
     icon-shadow: 0 1px @button_text_shadow;
 }
 
-NautilusToolbar .button *:active {
+NautilusToolbar .button:active {
     icon-shadow: 0 1px @button_active_text_shadow;
 }
 
-NautilusToolbar .button *:insensitive,
-NautilusToolbar .button *:active:insensitive {
-    text-shadow: none;
+NautilusToolbar .button:insensitive,
+NautilusToolbar .button:active *:insensitive {
+    icon-shadow: none;
 }
 
 NautilusQueryEditor .primary-toolbar.toolbar {
@@ -227,9 +229,9 @@ GeditViewFrame .gedit-search-slider {
 }
 
 GeditViewFrame .gedit-search-slider .not-found {
-    color: @error_fg_color;
+    color: @gedit_not_found_fg;
     background-image: none;
-    background-color: @error_bg_color;
+    background-color: @gedit_not_found_bg;
 }
 
 GeditViewFrame .gedit-search-slider .not-found:selected {
@@ -309,8 +311,8 @@ GeditViewFrame .gedit-search-slider .not-found:selected {
     font: bold;
 }
 
-.documents-favorite.button *:active,
-.documents-favorite.button *:active:hover {
+.documents-favorite.button:active,
+.documents-favorite.button:active:hover {
     color: shade(@theme_selected_bg_color, 1.20);
 }
 
@@ -457,7 +459,7 @@ EphyToolbar .entry:focus:last-child {
 EphyToolbar .location-entry .button {
     color: @internal_element_color;
     -GtkButton-child-displacement-y: 0;
-    border-image-source: url("borders/generic-border.png");
+    border-image-source: -gtk-scaled(url("borders/generic-border.png"),url("borders/generic-border@2.png"));
     border-image-slice: 3 3 4 3;
     border-image-repeat: stretch;
     border-width: 1px 1px 2px 1px;
@@ -473,7 +475,7 @@ EphyToolbar .location-entry .button:backdrop,
 EphyToolbar .location-entry .button:backdrop:first-child,
 EphyToolbar .location-entry .button:backdrop:hover,
 EphyToolbar .location-entry .button:backdrop:hover:first-child {
-    border-image-source: url("borders/generic-border-backdrop.png");
+    border-image-source: -gtk-scaled (url("borders/generic-border-backdrop.png"),url("borders/generic-border-backdrop@2.png"));
     box-shadow: none;
     background-image: none;
     background-color: @theme_unfocused_base_color;
@@ -515,8 +517,7 @@ EphyToolbar .location-entry .button:active:hover {
 }
 
 EphyToolbar .location-entry .button:hover,
-EphyToolbar .location-entry .button:active,
-EphyToolbar .location-entry .button *:active {
+EphyToolbar .location-entry .button:active {
     color: @theme_text_color;
 }
 
