@@ -20,42 +20,41 @@ GtkComboBox {
     text-shadow: 0 -1px @button_text_shadow;
 }
 
-.button *:active,
-GtkComboBox *:active {
+.button:active,
+GtkComboBox:active {
     text-shadow: 0 1px @button_active_text_shadow;
-    color: @theme_selected_bg_color; /* Not sure about this one */
 }
 
-.button *:active:insensitive,
-GtkComboBox *:active:insensitive {
+.button:active:insensitive,
+GtkComboBox:active:insensitive {
     text-shadow: none;
     color: @insensitive_fg_color;
 }
 
-.toolbar .button.raised *,
-.toolbar .raised .button *,
-.inline-toolbar .button * {
+.toolbar .button.raised,
+.toolbar .raised .button,
+.inline-toolbar .button {
     text-shadow: 0 -1px @button_text_shadow;
     icon-shadow: 0 -1px @button_text_shadow;
 }
 
-.toolbar .button.raised *:active,
-.toolbar .raised .button *:active,
-.inline-toolbar .button *:active {
+.toolbar .button.raised:active,
+.toolbar .raised .button:active,
+.inline-toolbar .button:active {
     text-shadow: 0 1px @button_active_text_shadow;
     icon-shadow: 0 1px @button_active_text_shadow;
 }
 
-.toolbar .button.raised *:insensitive,
-.toolbar .raised .button *:insensitive,
-.inline-toolbar .button *:insensitive {
+.toolbar .button.raised:insensitive,
+.toolbar .raised .button:insensitive,
+.inline-toolbar .button:insensitive {
     text-shadow: none;
     icon-shadow: none;
 }
 
-.toolbar .button.raised *:backdrop,
-.toolbar .raised .button *:backdrop,
-.inline-toolbar .button *:backdrop {
+.toolbar .button.raised:backdrop,
+.toolbar .raised .button:backdrop,
+.inline-toolbar .button:backdrop {
     text-shadow: none;
     icon-shadow: none;
 }
@@ -67,7 +66,7 @@ column-header .button {
 
 GtkTreeMenu .menuitem,
 .button .menuitem,
-.toolbar .button .menuitem * {
+.toolbar .button .menuitem {
     text-shadow: none;
 }
 
@@ -229,22 +228,22 @@ GtkColorEditor GtkColorSwatch.color-light:hover {
     border-color: @unfocused_borders;
 }
 
-.selection-mode.header-bar .button *,
-.selection-mode.header-bar .button *:active,
-.selection-mode.toolbar .button *,
-.selection-mode.toolbar .button *:active,
-.selection-mode.toolbar GtkToolButton .button *,
-.selection-mode.toolbar GtkToolButton .button *:active {
+.selection-mode.header-bar .button,
+.selection-mode.header-bar .button:active,
+.selection-mode.toolbar .button,
+.selection-mode.toolbar .button:active,
+.selection-mode.toolbar GtkToolButton .button,
+.selection-mode.toolbar GtkToolButton .button:active {
     text-shadow: 0 -1px @selection_toolbar_button_shadow;
     icon-shadow: 0 -1px @selection_toolbar_button_shadow;
 }
 
-.selection-mode.header-bar .suggested-action.button *,
-.selection-mode.header-bar .suggested-action.button *:active,
-.selection-mode.toolbar .suggested-action.button *,
-.selection-mode.toolbar .suggested-action.button *:active,
-.selection-mode.toolbar GtkToolButton.suggested-action .button *,
-.selection-mode.toolbar GtkToolButton.suggested-action *:active {
+.selection-mode.header-bar .suggested-action.button,
+.selection-mode.header-bar .suggested-action.button:active,
+.selection-mode.toolbar .suggested-action.button,
+.selection-mode.toolbar .suggested-action.button:active,
+.selection-mode.toolbar GtkToolButton.suggested-action .button,
+.selection-mode.toolbar GtkToolButton.suggested-action:active {
     text-shadow: 0 -1px @button_text_shadow;
     icon-shadow: 0 -1px @button_text_shadow;
 }
