@@ -56,10 +56,6 @@ button-layout=':minimize,close'
 [org.gnome.desktop.background]
 picture-uri='eos:///default'
 
-# Specify the folders for the app selector
-[org.gnome.shell]
-app-folder-categories=['Media', 'Games', 'Work', 'News', 'Curiosity', 'Settings']
-
 # Specify the favorites on the dash (should be empty by default)
 [org.gnome.shell]
 favorite-apps=[]
