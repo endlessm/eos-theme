@@ -84,6 +84,10 @@ restore-session-policy='never'
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
 
+# Enable touchpad natural scrolling by default
+[org.gnome.settings-daemon.peripherals.touchpad]
+natural-scroll=true
+
 # Do not let Nautilus manage the desktop
 [org.gnome.desktop.background]
 show-desktop-icons=false
