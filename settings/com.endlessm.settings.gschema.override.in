@@ -56,10 +56,6 @@ button-layout=':minimize,close'
 [org.gnome.desktop.background]
 picture-uri='eos:///default'
 
-# Specify the folders for the app selector
-[org.gnome.shell]
-app-folder-categories=['Media', 'Games', 'Work', 'News', 'Curiosity', 'Settings']
-
 # Specify the favorites on the dash (should be empty by default)
 [org.gnome.shell]
 favorite-apps=[]
@@ -83,6 +79,10 @@ restore-session-policy='never'
 # Decrease the likelihood that an unsteady click is interpreted as a drag
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
+
+# Enable touchpad natural scrolling by default
+[org.gnome.settings-daemon.peripherals.touchpad]
+natural-scroll=true
 
 # Do not let Nautilus manage the desktop
 [org.gnome.desktop.background]
