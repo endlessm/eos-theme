@@ -117,3 +117,7 @@ monitor-library=true
 # default stored in usr/share/EndlessOS/personality-defaults/ should be used
 [org.gnome.shell]
 icon-grid-layout={}
+
+# Automatically play video DVDs
+[org.gnome.desktop.media-handling]
+autorun-x-content-start-app=['x-content/unix-software', 'x-content/video-dvd']
