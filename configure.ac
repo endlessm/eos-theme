@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
 m4_define(endless_platform, 1)
-m4_define(endless_minor, 2)
+m4_define(endless_minor, 4)
 m4_define(endless_micro, 0)
 
 m4_define(endless_version, [endless_platform.endless_minor.endless_micro])
