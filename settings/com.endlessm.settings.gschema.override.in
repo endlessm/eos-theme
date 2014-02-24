@@ -41,7 +41,7 @@ monospace-font-name='Ubuntu Mono 13'
 titlebar-font='Lato Bold 13'
 
 [org.gnome.settings-daemon.plugins.xsettings]
-antialiasing='rgba'
+antialiasing='grayscale'
 hinting='slight'
 
 # Remove the Ubuntu overlay scrollbars
