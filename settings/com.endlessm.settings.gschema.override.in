@@ -72,10 +72,6 @@ drag-threshold=10
 [org.gnome.settings-daemon.peripherals.touchpad]
 natural-scroll=true
 
-# Do not let Nautilus manage the desktop
-[org.gnome.desktop.background]
-show-desktop-icons=false
-
 # Disable the switch user option on the user menu
 [org.gnome.desktop.lockdown]
 disable-user-switching=true
