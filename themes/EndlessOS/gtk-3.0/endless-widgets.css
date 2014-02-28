@@ -45,3 +45,10 @@
 .top-bar .button *:active {
     color: #8a8a8a;
 }
+
+/* Shadow beneath the top bar */
+.mutter-topbar-shadow {
+  border-width: 2px;
+  border-style: solid;
+  border-color: alpha(black, 0.15);
+}
