@@ -79,11 +79,6 @@ natural-scroll=true
 [org.gnome.desktop.lockdown]
 disable-user-switching=true
 
-# Use 'Alt-Tab' to switch windows
-[org.gnome.desktop.wm.keybindings]
-switch-applications=['<Super>Tab']
-switch-windows=['<Alt>Tab']
-
 # Set Exploration Center as browser homepage
 [com.endlessm.eos-browser]
 homepage-url='file:///usr/share/EndlessOS/exploration_center/index.html'
