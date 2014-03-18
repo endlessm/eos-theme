@@ -3,7 +3,7 @@ AC_PREREQ(2.53)
 
 m4_define(endless_platform, 1)
 m4_define(endless_minor, 4)
-m4_define(endless_micro, 4)
+m4_define(endless_micro, 5)
 
 m4_define(endless_version, [endless_platform.endless_minor.endless_micro])
 
