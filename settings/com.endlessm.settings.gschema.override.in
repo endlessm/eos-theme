@@ -103,3 +103,9 @@ autorun-x-content-start-app=['x-content/unix-software', 'x-content/video-dvd']
 # Hide EOG sidebar by default
 [org.gnome.eog.ui]
 sidebar=false
+
+# On change of language, move home directories rather than copy,
+# without asking the user for confirmation
+[org.gnome.xdg-user-dirs]
+move-directories=true
+show-confirmation-dialog=false
