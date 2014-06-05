@@ -19,6 +19,8 @@ dist_font_DATA = \
 	Dosis-Medium.otf \
 	Dosis-Regular.otf \
 	Dosis-SemiBold.otf \
+	Quattrocento-Bold.ttf \
+	Quattrocento-Regular.ttf \
 	SourceSansPro-Black.otf \
 	SourceSansPro-BlackIt.otf \
 	SourceSansPro-Bold.otf \
@@ -37,6 +39,9 @@ fontdocdir = $(datadir)/doc/fonts-adobe-sourcesanspro
 dist_fontdoc_DATA = \
 	Lato-OFL.txt \
 	Lato-README.txt \
+	Quattrocento-DESCRIPTION.en_us.html \
+	Quattrocento-FONTLOG.txt \
+	Quattrocento-OFL.txt \
 	SourceSansPro-LICENSE.txt \
 	SourceSansPro-OTReadMe.html \
 	SourceSansPro-ReadMe.html \
