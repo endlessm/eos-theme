@@ -31,6 +31,8 @@ dist_font_DATA = \
 	SourceSansPro-Regular.otf \
 	SourceSansPro-Semibold.otf \
 	SourceSansPro-SemiboldIt.otf \
+	Montserrat-Regular.ttf \
+	Montserrat-Bold.ttf \
 	$(NULL)
 
 fontdocdir = $(datadir)/doc/fonts-adobe-sourcesanspro
@@ -40,4 +42,5 @@ dist_fontdoc_DATA = \
 	SourceSansPro-LICENSE.txt \
 	SourceSansPro-OTReadMe.html \
 	SourceSansPro-ReadMe.html \
+	Montserrat-OFL.txt \
 	$(NULL)
