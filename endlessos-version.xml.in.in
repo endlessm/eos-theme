@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<endlessos-version>
- <platform>@ENDLESS_PLATFORM@</platform>
- <minor>@ENDLESS_MINOR@</minor>
- <micro>@ENDLESS_MICRO@</micro>
- <distributor>Endless Mobile</distributor>
- <date>@ENDLESS_DATE@</date>
-</endlessos-version>
