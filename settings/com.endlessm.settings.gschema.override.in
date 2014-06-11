@@ -109,3 +109,7 @@ sidebar=false
 [org.gnome.xdg-user-dirs]
 move-directories=true
 show-confirmation-dialog=false
+
+# Always turn off scaling factor, as we don't fully support it yet
+[org.gnome.desktop.interface]
+scaling-factor=1
