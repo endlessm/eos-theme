@@ -2,6 +2,10 @@
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
+	Belgrano-Regular.ttf \
+	Cinzel-Black.ttf \
+	Cinzel-Bold.ttf \
+	Cinzel-Regular.ttf \
 	Dosis-Bold.otf \
 	Dosis-ExtraBold.otf \
 	Dosis-ExtraLight.otf \
@@ -9,6 +13,7 @@ dist_font_DATA = \
 	Dosis-Medium.otf \
 	Dosis-Regular.otf \
 	Dosis-SemiBold.otf \
+	Kranky.ttf \
 	Lato-BlaIta.otf \
 	Lato-Bla.otf \
 	Lato-BolIta.otf \
@@ -21,6 +26,12 @@ dist_font_DATA = \
 	Lato-Reg.otf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
+	Oswald-Bold.ttf \
+	Oswald-Light.ttf \
+	Oswald-Regular.ttf \
+	PathwayGothicOne-Regular.ttf \
+	Podkova-Bold.ttf \
+	Podkova-Regular.ttf \
 	Quattrocento-Bold.ttf \
 	Quattrocento-Regular.ttf \
 	SourceSansPro-Black.otf \
@@ -35,17 +46,25 @@ dist_font_DATA = \
 	SourceSansPro-Regular.otf \
 	SourceSansPro-Semibold.otf \
 	SourceSansPro-SemiboldIt.otf \
+	VarelaRound-Regular.ttf \
 	$(NULL)
 
 fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
+	Belgrano-OFL.txt \
+	Cinzel-OFL.txt \
+	Kranky-LICENSE.txt \
 	Lato-OFL.txt \
 	Lato-README.txt \
 	Montserrat-OFL.txt \
+	Oswald-OFL.txt \
+	PathwayGothicOne-OFL.txt \
+	Podkova-OFL.txt \
 	Quattrocento-DESCRIPTION.en_us.html \
 	Quattrocento-FONTLOG.txt \
 	Quattrocento-OFL.txt \
 	SourceSansPro-LICENSE.txt \
 	SourceSansPro-OTReadMe.html \
 	SourceSansPro-ReadMe.html \
+	VarelaRound-OFL.txt \
 	$(NULL)
