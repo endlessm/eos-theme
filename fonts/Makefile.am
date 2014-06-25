@@ -19,8 +19,8 @@ dist_font_DATA = \
 	Lato-Lig.otf \
 	Lato-RegIta.otf \
 	Lato-Reg.otf \
-	Montserrat-Regular.ttf \
 	Montserrat-Bold.ttf \
+	Montserrat-Regular.ttf \
 	Quattrocento-Bold.ttf \
 	Quattrocento-Regular.ttf \
 	SourceSansPro-Black.otf \
@@ -37,7 +37,7 @@ dist_font_DATA = \
 	SourceSansPro-SemiboldIt.otf \
 	$(NULL)
 
-fontdocdir = $(datadir)/doc/fonts-adobe-sourcesanspro
+fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
 	Lato-OFL.txt \
 	Lato-README.txt \
