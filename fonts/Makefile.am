@@ -2,6 +2,10 @@
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
+	Abel-Regular.ttf \
+	Alice-Regular.ttf \
+	AmaticSC-Bold.ttf \
+	AmaticSC-Regular.ttf \
 	Belgrano-Regular.ttf \
 	Cinzel-Black.ttf \
 	Cinzel-Bold.ttf \
@@ -24,16 +28,20 @@ dist_font_DATA = \
 	Lato-Lig.otf \
 	Lato-RegIta.otf \
 	Lato-Reg.otf \
+	MarcellusSC-Regular.ttf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
 	Oswald-Bold.ttf \
 	Oswald-Light.ttf \
 	Oswald-Regular.ttf \
+	Parisienne-Regular.ttf \
 	PathwayGothicOne-Regular.ttf \
 	Podkova-Bold.ttf \
 	Podkova-Regular.ttf \
 	Quattrocento-Bold.ttf \
 	Quattrocento-Regular.ttf \
+	Skranji-Bold.ttf \
+	Skranji-Regular.ttf \
 	SourceSansPro-Black.otf \
 	SourceSansPro-BlackIt.otf \
 	SourceSansPro-Bold.otf \
@@ -51,18 +59,24 @@ dist_font_DATA = \
 
 fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
+	Abel-OFL.txt \
+	Alice-OFL.txt \
+	AmaticSC-OFL.txt \
 	Belgrano-OFL.txt \
 	Cinzel-OFL.txt \
 	Kranky-LICENSE.txt \
 	Lato-OFL.txt \
 	Lato-README.txt \
+	MarcellusSC-OFL.txt \
 	Montserrat-OFL.txt \
 	Oswald-OFL.txt \
+	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
 	Quattrocento-DESCRIPTION.en_us.html \
 	Quattrocento-FONTLOG.txt \
 	Quattrocento-OFL.txt \
+	Skranji-OFL.txt \
 	SourceSansPro-LICENSE.txt \
 	SourceSansPro-OTReadMe.html \
 	SourceSansPro-ReadMe.html \
