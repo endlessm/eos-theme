@@ -17,6 +17,7 @@ dist_font_DATA = \
 	Dosis-Medium.otf \
 	Dosis-Regular.otf \
 	Dosis-SemiBold.otf \
+	HammersmithOne-Regular.ttf \
 	Kranky.ttf \
 	Lato-BlaIta.otf \
 	Lato-Bla.otf \
@@ -40,6 +41,15 @@ dist_font_DATA = \
 	Podkova-Regular.ttf \
 	Quattrocento-Bold.ttf \
 	Quattrocento-Regular.ttf \
+	Raleway-Bold.otf \
+	Raleway-ExtraBold.otf \
+	Raleway-ExtraLight.otf \
+	Raleway-Heavy.otf \
+	Raleway-Light.otf \
+	Raleway-Medium.otf \
+	Raleway-Regular.otf \
+	Raleway-SemiBold.otf \
+	Raleway-Thin.otf \
 	Skranji-Bold.ttf \
 	Skranji-Regular.ttf \
 	SourceSansPro-Black.otf \
@@ -64,6 +74,7 @@ dist_fontdoc_DATA = \
 	AmaticSC-OFL.txt \
 	Belgrano-OFL.txt \
 	Cinzel-OFL.txt \
+	HammersmithOne-OFL.txt \
 	Kranky-LICENSE.txt \
 	Lato-OFL.txt \
 	Lato-README.txt \
@@ -76,6 +87,7 @@ dist_fontdoc_DATA = \
 	Quattrocento-DESCRIPTION.en_us.html \
 	Quattrocento-FONTLOG.txt \
 	Quattrocento-OFL.txt \
+	Raleway-LICENSE.txt \
 	Skranji-OFL.txt \
 	SourceSansPro-LICENSE.txt \
 	SourceSansPro-OTReadMe.html \
