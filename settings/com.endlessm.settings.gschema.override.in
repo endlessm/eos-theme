@@ -71,10 +71,6 @@ restore-session-policy='never'
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
 
-# Enable touchpad natural scrolling by default
-[org.gnome.settings-daemon.peripherals.touchpad]
-natural-scroll=true
-
 # Disable the switch user option on the user menu
 [org.gnome.desktop.lockdown]
 disable-user-switching=true
