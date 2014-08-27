@@ -109,3 +109,7 @@ show-confirmation-dialog=false
 # Always turn off scaling factor, as we don't fully support it yet
 [org.gnome.desktop.interface]
 scaling-factor=1
+
+# Use Ctrl-Q as alternative to quit applications
+[org.gnome.desktop.wm.keybindings]
+close=['<Alt>F4', '<Ctrl>Q']
