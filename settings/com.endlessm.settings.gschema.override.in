@@ -113,3 +113,7 @@ scaling-factor=1
 # Use Ctrl-Q as alternative to quit applications
 [org.gnome.desktop.wm.keybindings]
 close=['<Alt>F4', '<Ctrl>Q']
+
+# Enable Super_R to toggle overview
+[org.gnome.desktop.wm.keybindings]
+panel-main-menu=['<Super>s','<Alt>F1','Super_R']
