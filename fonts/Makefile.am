@@ -2,6 +2,8 @@
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
+	ABeeZee-Italic.ttf \
+	ABeeZee-Regular.ttf \
 	Abel-Regular.ttf \
 	Alice-Regular.ttf \
 	AmaticSC-Bold.ttf \
@@ -52,6 +54,8 @@ dist_font_DATA = \
 	Raleway-Thin.otf \
 	Skranji-Bold.ttf \
 	Skranji-Regular.ttf \
+	Sniglet-ExtraBold.ttf \
+	Sniglet-Regular.ttf \
 	SourceSansPro-Black.otf \
 	SourceSansPro-BlackIt.otf \
 	SourceSansPro-Bold.otf \
@@ -69,6 +73,7 @@ dist_font_DATA = \
 
 fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
+	ABeeZee-OFL.txt \
 	Abel-OFL.txt \
 	Alice-OFL.txt \
 	AmaticSC-OFL.txt \
@@ -89,6 +94,7 @@ dist_fontdoc_DATA = \
 	Quattrocento-OFL.txt \
 	Raleway-LICENSE.txt \
 	Skranji-OFL.txt \
+	Sniglet-OFL.txt \
 	SourceSansPro-LICENSE.txt \
 	SourceSansPro-OTReadMe.html \
 	SourceSansPro-ReadMe.html \
