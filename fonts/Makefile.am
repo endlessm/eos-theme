@@ -4,6 +4,10 @@ fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
 	Abel-Regular.ttf \
 	Alice-Regular.ttf \
+	Amaranth-Bold.ttf \
+	Amaranth-BoldItalic.ttf \
+	Amaranth-Italic.ttf \
+	Amaranth-Regular.ttf \
 	AmaticSC-Bold.ttf \
 	AmaticSC-Regular.ttf \
 	Belgrano-Regular.ttf \
@@ -50,6 +54,8 @@ dist_font_DATA = \
 	Raleway-Regular.otf \
 	Raleway-SemiBold.otf \
 	Raleway-Thin.otf \
+	Sanchez-Italic.ttf \
+	Sanchez-Regular.ttf \
 	Skranji-Bold.ttf \
 	Skranji-Regular.ttf \
 	SourceSansPro-Black.otf \
@@ -71,6 +77,7 @@ fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
 	Abel-OFL.txt \
 	Alice-OFL.txt \
+	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
 	Belgrano-OFL.txt \
 	Cinzel-OFL.txt \
@@ -88,6 +95,7 @@ dist_fontdoc_DATA = \
 	Quattrocento-FONTLOG.txt \
 	Quattrocento-OFL.txt \
 	Raleway-LICENSE.txt \
+	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
 	SourceSansPro-LICENSE.txt \
 	SourceSansPro-OTReadMe.html \
