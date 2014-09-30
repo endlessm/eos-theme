@@ -16,13 +16,6 @@ dist_font_DATA = \
 	Cinzel-Black.ttf \
 	Cinzel-Bold.ttf \
 	Cinzel-Regular.ttf \
-	Dosis-Bold.otf \
-	Dosis-ExtraBold.otf \
-	Dosis-ExtraLight.otf \
-	Dosis-Light.otf \
-	Dosis-Medium.otf \
-	Dosis-Regular.otf \
-	Dosis-SemiBold.otf \
 	HammersmithOne-Regular.ttf \
 	Kranky.ttf \
 	MarcellusSC-Regular.ttf \
