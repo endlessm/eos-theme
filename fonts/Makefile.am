@@ -25,16 +25,6 @@ dist_font_DATA = \
 	Dosis-SemiBold.otf \
 	HammersmithOne-Regular.ttf \
 	Kranky.ttf \
-	Lato-BlaIta.otf \
-	Lato-Bla.otf \
-	Lato-BolIta.otf \
-	Lato-Bol.otf \
-	Lato-HaiIta.otf \
-	Lato-Hai.otf \
-	Lato-LigIta.otf \
-	Lato-Lig.otf \
-	Lato-RegIta.otf \
-	Lato-Reg.otf \
 	MarcellusSC-Regular.ttf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
@@ -88,8 +78,6 @@ dist_fontdoc_DATA = \
 	Cinzel-OFL.txt \
 	HammersmithOne-OFL.txt \
 	Kranky-LICENSE.txt \
-	Lato-OFL.txt \
-	Lato-README.txt \
 	MarcellusSC-OFL.txt \
 	Montserrat-OFL.txt \
 	Oswald-OFL.txt \
