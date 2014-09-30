@@ -28,8 +28,6 @@ dist_font_DATA = \
 	PathwayGothicOne-Regular.ttf \
 	Podkova-Bold.ttf \
 	Podkova-Regular.ttf \
-	Quattrocento-Bold.ttf \
-	Quattrocento-Regular.ttf \
 	Raleway-Bold.otf \
 	Raleway-ExtraBold.otf \
 	Raleway-ExtraLight.otf \
@@ -77,9 +75,6 @@ dist_fontdoc_DATA = \
 	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
-	Quattrocento-DESCRIPTION.en_us.html \
-	Quattrocento-FONTLOG.txt \
-	Quattrocento-OFL.txt \
 	Raleway-LICENSE.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
