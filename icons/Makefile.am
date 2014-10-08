@@ -2,7 +2,7 @@ themedir = $(datadir)/icons/EndlessOS
 theme_in_files = index.theme.in.in
 theme_DATA = $(theme_in_files:.theme.in.in=.theme)
 
-render_sizes = "64x64" "scalable"
+render_sizes = "24x24" "64x64" "scalable"
 THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$$size/* -type d`; do printf "$$dir,"; done; done;)
 THEME_FILES=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
 
