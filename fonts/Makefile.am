@@ -16,6 +16,7 @@ dist_font_DATA = \
 	Cinzel-Black.ttf \
 	Cinzel-Bold.ttf \
 	Cinzel-Regular.ttf \
+	FjallaOne-Regular.ttf \
 	HammersmithOne-Regular.ttf \
 	Kranky.ttf \
 	MarcellusSC-Regular.ttf \
@@ -37,6 +38,10 @@ dist_font_DATA = \
 	Raleway-Regular.otf \
 	Raleway-SemiBold.otf \
 	Raleway-Thin.otf \
+	RobotoSlab-Bold.ttf \
+	RobotoSlab-Light.ttf \
+	RobotoSlab-Regular.ttf \
+	RobotoSlab-Thin.ttf \
 	Sanchez-Italic.ttf \
 	Sanchez-Regular.ttf \
 	Skranji-Bold.ttf \
@@ -67,6 +72,7 @@ dist_fontdoc_DATA = \
 	AmaticSC-OFL.txt \
 	Belgrano-OFL.txt \
 	Cinzel-OFL.txt \
+	FjallaOne-OFL.txt \
 	HammersmithOne-OFL.txt \
 	Kranky-LICENSE.txt \
 	MarcellusSC-OFL.txt \
@@ -76,6 +82,7 @@ dist_fontdoc_DATA = \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
 	Raleway-LICENSE.txt \
+	RobotoSlab-LICENSE.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
 	Sniglet-OFL.txt \
