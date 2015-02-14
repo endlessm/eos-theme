@@ -15,6 +15,7 @@ install-data-hook:
 	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Global.jpg
 	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Guatemala.jpg
 	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Haiti.jpg
+	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Spanish.jpg
 
 uninstall-hook:
 	rm -f $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-default.jpg
@@ -23,6 +24,7 @@ uninstall-hook:
 	rm -f $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Global.jpg
 	rm -f $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Guatemala.jpg
 	rm -f $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Haiti.jpg
+	rm -f $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Spanish.jpg
 
 metadatadir = $(datadir)/gnome-background-properties
 metadata_DATA = endlessos-backgrounds-default.xml
