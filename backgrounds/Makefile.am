@@ -9,13 +9,13 @@ default_images = $(datadir)/eos-media/default_images
 
 install-data-hook:
 	$(mkdir_p) $(DESTDIR)$(datadir)/EndlessOS/personality-defaults
-	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-default.jpg
-	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Arabic.jpg
+	ln -fs $(default_images)/bg_global_02.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-default.jpg
+	ln -fs $(default_images)/bg_global_02.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Arabic.jpg
 	ln -fs $(default_images)/bg_brazil_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Brazil.jpg
-	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Global.jpg
+	ln -fs $(default_images)/bg_global_02.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Global.jpg
 	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Guatemala.jpg
-	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Haiti.jpg
-	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Spanish.jpg
+	ln -fs $(default_images)/bg_global_02.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Haiti.jpg
+	ln -fs $(default_images)/bg_global_02.jpg $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-Spanish.jpg
 
 uninstall-hook:
 	rm -f $(DESTDIR)$(datadir)/EndlessOS/personality-defaults/desktop-background-default.jpg
