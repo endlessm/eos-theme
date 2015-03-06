@@ -1,4 +1,4 @@
-# Copyright 2013 Endless Mobile, Inc.
+# Copyright 2013-2015 Endless Mobile, Inc.
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
@@ -22,6 +22,7 @@ dist_font_DATA = \
 	MarcellusSC-Regular.ttf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
+	NixieOne-Regular.ttf \
 	Oswald-Bold.ttf \
 	Oswald-Light.ttf \
 	Oswald-Regular.ttf \
@@ -77,6 +78,7 @@ dist_fontdoc_DATA = \
 	Kranky-LICENSE.txt \
 	MarcellusSC-OFL.txt \
 	Montserrat-OFL.txt \
+	NixieOne-OFL.txt \
 	Oswald-OFL.txt \
 	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
