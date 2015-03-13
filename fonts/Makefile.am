@@ -30,6 +30,7 @@ dist_font_DATA = \
 	PathwayGothicOne-Regular.ttf \
 	Podkova-Bold.ttf \
 	Podkova-Regular.ttf \
+	Pompiere-Regular.ttf \
 	Raleway-Bold.otf \
 	Raleway-ExtraBold.otf \
 	Raleway-ExtraLight.otf \
@@ -83,6 +84,7 @@ dist_fontdoc_DATA = \
 	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
+	Pompiere-OFL.txt \
 	Raleway-LICENSE.txt \
 	RobotoSlab-LICENSE.txt \
 	Sanchez-OFL.txt \
