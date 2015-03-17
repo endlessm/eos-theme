@@ -116,7 +116,8 @@ close=['<Alt>F4', '<Ctrl>Q']
 
 # Override the order for default search providers
 [org.gnome.desktop.search-providers]
-sort-order=['com.endlessm.encyclopedia-es.desktop', 'com.endlessm.encyclopedia-pt.desktop', 'com.endlessm.encyclopedia-ar.desktop', 'com.endlessm.encyclopedia-fr.desktop', 'com.endlessm.encyclopedia-en.desktop', 'eos-file-manager.desktop']
+sort-order=['com.endlessm.encyclopedia-es.desktop', 'com.endlessm.encyclopedia-pt.desktop', 'com.endlessm.encyclopedia-ar.desktop', 'com.endlessm.encyclopedia-fr.desktop', 'com.endlessm.encyclopedia-en.desktop']
+disabled=['eos-app-eos-file-manager.desktop']
 
 # Pop up shutdown dialog by default when pressing power button
 [org.gnome.settings-daemon.plugins.power]
