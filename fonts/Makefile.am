@@ -5,6 +5,7 @@ dist_font_DATA = \
 	ABeeZee-Italic.ttf \
 	ABeeZee-Regular.ttf \
 	Abel-Regular.ttf \
+	AbrilFatface-Regular.ttf \
 	Alice-Regular.ttf \
 	Amaranth-Bold.ttf \
 	Amaranth-BoldItalic.ttf \
@@ -18,6 +19,18 @@ dist_font_DATA = \
 	Cinzel-Regular.ttf \
 	FjallaOne-Regular.ttf \
 	HammersmithOne-Regular.ttf \
+	Inika-Bold.ttf \
+	Inika-Regular.ttf \
+	JosefinSlab-Bold.ttf \
+	JosefinSlab-BoldItalic.ttf \
+	JosefinSlab-Italic.ttf \
+	JosefinSlab-Light.ttf \
+	JosefinSlab-LightItalic.ttf \
+	JosefinSlab-Regular.ttf \
+	JosefinSlab-SemiBold.ttf \
+	JosefinSlab-SemiBoldItalic.ttf \
+	JosefinSlab-Thin.ttf \
+	JosefinSlab-ThinItalic.ttf \
 	Kranky.ttf \
 	MarcellusSC-Regular.ttf \
 	Montserrat-Bold.ttf \
@@ -69,6 +82,7 @@ fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
 	ABeeZee-OFL.txt \
 	Abel-OFL.txt \
+	AbrilFatface-OFL.txt \
 	Alice-OFL.txt \
 	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
@@ -76,6 +90,8 @@ dist_fontdoc_DATA = \
 	Cinzel-OFL.txt \
 	FjallaOne-OFL.txt \
 	HammersmithOne-OFL.txt \
+	Inika-OFL.txt \
+	JosefinSlab-OFL.txt \
 	Kranky-LICENSE.txt \
 	MarcellusSC-OFL.txt \
 	Montserrat-OFL.txt \
