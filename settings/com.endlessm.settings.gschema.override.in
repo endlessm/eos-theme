@@ -23,10 +23,6 @@ theme='EndlessOS'
 [org.gnome.desktop.interface]
 icon-theme='EndlessOS'
 
-# Select the cursor theme
-[org.gnome.desktop.interface]
-cursor-theme='EndlessOS'
-
 # Specify the fonts and related settings
 [org.gnome.desktop.interface]
 font-name='Lato 12'
