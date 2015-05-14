@@ -64,7 +64,6 @@ icons/Makefile
 settings/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile
-themes/EndlessOS/cursors/Makefile
 themes/EndlessOS/gtk-2.0/Makefile
 themes/EndlessOS/metacity-1/Makefile
 po/Makefile.in

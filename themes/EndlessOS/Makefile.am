@@ -1,4 +1,4 @@
-SUBDIRS = cursors metacity-1
+SUBDIRS = metacity-1
 
 if GTK2_ENGINE
 SUBDIRS += gtk-2.0
