@@ -28,44 +28,6 @@ AC_SUBST(GETTEXT_PACKAGE)
 
 GLIB_GSETTINGS
 
-AC_ARG_ENABLE([gtk3-engine],
-              AC_HELP_STRING([--disable-gtk3-engine],
-                             [Disable Gtk+ 3.x engine [default=no]]),
-              enable_gtk3_engine=$enableval,
-              enable_gtk3_engine=yes)
-AC_MSG_CHECKING([building gtk3 engine])
-AM_CONDITIONAL(GTK3_ENGINE, test "x$enable_gtk3_engine" = "xyes")
-AC_MSG_RESULT([$enable_gtk3_engine])
-
-GTK_VERSION_REQUIRED=3.6.2
-if test "x$enable_gtk3_engine" = "xyes"; then
-  PKG_CHECK_MODULES([GTK3_ENGINE], [gtk+-3.0 >= $GTK_VERSION_REQUIRED librsvg-2.0])
-  PKG_CHECK_MODULES([HIGHCONTRAST], [cairo gio-2.0 gdk-pixbuf-2.0 gdk-3.0])
-fi
-
-GTK3_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-3.0`
-AC_SUBST(GTK3_VERSION)
-
-AC_ARG_ENABLE([gtk2-engine],
-              AC_HELP_STRING([--disable-gtk2-engine],
-                             [Disable Gtk+-2 engine [default=no]]),
-              enable_gtk2_engine=$enableval,
-              enable_gtk2_engine=yes)
-AC_MSG_CHECKING([building gtk2 engine])
-AM_CONDITIONAL(GTK2_ENGINE, test "x$enable_gtk2_engine" = "xyes")
-AC_MSG_RESULT([$enable_gtk2_engine])
-
-GTK2_VERSION_REQUIRED=2.24.15
-if test "x$enable_gtk2_engine" = "xyes"; then
-  PKG_CHECK_MODULES([GTK2_ENGINE], [gtk+-2.0 >= $GTK2_VERSION_REQUIRED gdk-2.0 >= $GTK2_VERSION_REQUIRED])
-fi
-
-GTK2_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
-AC_SUBST(GTK2_VERSION)
-
-GLIB_COMPILE_RESOURCES=`$PKG_CONFIG --variable glib_compile_resources gio-2.0`
-AC_SUBST(GLIB_COMPILE_RESOURCES)
-
 AC_PATH_PROG(GTK_UPDATE_ICON_CACHE, gtk-update-icon-cache)
 if test -z "$GTK_UPDATE_ICON_CACHE"; then
     AC_MSG_ERROR([Could not find gtk-update-icon-cache])
@@ -82,9 +44,6 @@ icons/Makefile
 settings/Makefile
 themes/Makefile
 themes/EndlessOS/Makefile
-themes/EndlessOS/cursors/Makefile
-themes/EndlessOS/gtk-2.0/Makefile
-themes/EndlessOS/gtk-3.0/Makefile
 themes/EndlessOS/metacity-1/Makefile
 po/Makefile.in
 ])
