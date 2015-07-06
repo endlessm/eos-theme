@@ -15,10 +15,6 @@ user-switch-enabled=false
 [org.gnome.settings-daemon.plugins.xsettings]
 overrides={"Gtk/ShellShowsAppMenu": <int32 0>}
 
-# Select the window theme
-[org.gnome.desktop.wm.preferences]
-theme='EndlessOS'
-
 # Select the icon theme
 [org.gnome.desktop.interface]
 icon-theme='EndlessOS'

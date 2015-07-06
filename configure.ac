@@ -46,9 +46,6 @@ Makefile
 fonts/Makefile
 icons/Makefile
 settings/Makefile
-themes/Makefile
-themes/EndlessOS/Makefile
-themes/EndlessOS/metacity-1/Makefile
 po/Makefile.in
 ])
 
