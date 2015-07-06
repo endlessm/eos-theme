@@ -1,4 +1,4 @@
-SUBDIRS = themes po icons settings backgrounds fonts
+SUBDIRS = po icons settings backgrounds fonts
 
 MAINTAINERCLEANFILES =			\
 	Makefile.in			\
