@@ -1,0 +1,5 @@
+# Copyright 2015 Endless Mobile, Inc.
+# This file is sourced by Xsession(5), not executed.
+
+# Always show full scrollbars (turn off gtk overlay scrolling).
+export GTK_OVERLAY_SCROLLING=0
