@@ -45,7 +45,7 @@ picture-uri='eos:///default'
 
 # Specify the favorites on the dash (default to browser and file manager)
 [org.gnome.shell]
-favorite-apps=['eos-app-chromium-browser.desktop', 'eos-app-eos-file-manager.desktop']
+favorite-apps=['chromium-browser.desktop', 'eos-file-manager.desktop']
 
 # Always enable log out
 [org.gnome.shell]
