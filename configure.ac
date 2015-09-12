@@ -33,6 +33,11 @@ if test -z "$GTK_UPDATE_ICON_CACHE"; then
     AC_MSG_ERROR([Could not find gtk-update-icon-cache])
 fi
 
+AC_PATH_PROG(GTK_ENCODE_SYMBOLIC_SVG, gtk-encode-symbolic-svg)
+if test -z "$GTK_ENCODE_SYMBOLIC_SVG"; then
+    AC_MSG_ERROR([Could not find gtk-encode-symbolic-svg])
+fi
+
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
