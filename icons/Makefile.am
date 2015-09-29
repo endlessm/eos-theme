@@ -2,14 +2,22 @@ themedir = $(datadir)/icons/EndlessOS
 theme_in_files = index.theme.in.in
 theme_DATA = $(theme_in_files:.theme.in.in=.theme)
 
-render_sizes = "24x24" "64x64" "scalable"
-THEME_DIRS=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/$$size/* -type d`; do printf "$$dir,"; done; done;)
-THEME_FILES=$(shell SIZES="$(render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
+fullcolor_render_sizes = "24x24" "64x64" "scalable"
+symbolic_render_sizes = "scalable"
+symbolic_encode_sizes = "16x16" "24x24" "32x32" "48x48" "64x64" "96x96"
+
+all_dirs=$(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/fullcolor/$$size/* -type d`; dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
+all_dirs+=$(shell SIZES="$(symbolic_encode_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/symbolic/scalable/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
+all_dirs+=$(shell SIZES="$(symbolic_render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/symbolic/$$size/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
+THEME_DIRS = $(shell ALL_DIRS="$(all_dirs)"; echo $$ALL_DIRS | tr ' ' '\n' | sort -u | tr '\n' ',')
+
+THEME_FILES = $(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/fullcolor/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
+THEME_FILES += $(shell SIZES="$(symbolic_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/symbolic/$$size/* -name "*.svg"`; do printf "$$file "; done; done;)
 
 EXTRA_DIST = index.theme.in.in $(THEME_FILES)
 
 index.theme.in: index.theme.in.in Makefile
-	dirs="`echo $(THEME_DIRS) | sed -e 's#\./##g'`"; \
+	dirs="`echo $(THEME_DIRS)`"; \
 	sed -e "s|\@THEME_DIRS\@|$$dirs|g" < $< > $@; \
 	echo "" >> $@; \
 	for dir in `echo $$dirs | sed -e "s/,/ /g"`; do \
@@ -77,19 +85,40 @@ index.theme.in: index.theme.in.in Makefile
 @INTLTOOL_THEME_RULE@
 
 install-data-local:
-	for size in $(render_sizes); do \
-		echo -e "Going to copy files for $$size"; \
-		for file in `cd $(srcdir)/$$size && find . \( -name "*.png" -or -name "*.svg" \)`; do \
+	for size in $(fullcolor_render_sizes); do \
+		echo -e "Going to copy files for fullcolor/$$size"; \
+		for file in `cd $(srcdir)/fullcolor/$$size && find . \( -name "*.png" -or -name "*.svg" \)`; do \
 			context="`dirname $$file`"; \
 			$(mkdir_p) $(DESTDIR)$(themedir)/$$size/$$context; \
-			$(install_sh_DATA) $(srcdir)/$$size/$$file $(DESTDIR)$(themedir)/$$size/$$file; \
+			$(install_sh_DATA) $(srcdir)/fullcolor/$$size/$$file $(DESTDIR)$(themedir)/$$size/$$file; \
+		done; \
+	done
+	for size in $(symbolic_render_sizes); do \
+		echo -e "Going to copy files for symbolic/$$size"; \
+		for file in `cd $(srcdir)/symbolic/$$size && find . -name "*.svg"`; do \
+			context="`dirname $$file`"; \
+			$(mkdir_p) $(DESTDIR)$(themedir)/$$size/$$context; \
+			$(install_sh_DATA) $(srcdir)/symbolic/$$size/$$file $(DESTDIR)$(themedir)/$$size/$$file; \
+			for enc_size in $(symbolic_encode_sizes); do \
+				$(mkdir_p) $(DESTDIR)$(themedir)/$$enc_size/$$context; \
+				$(GTK_ENCODE_SYMBOLIC_SVG) $(srcdir)/symbolic/$$size/$$file $$enc_size -o $(DESTDIR)$(themedir)/$$enc_size/$$context; \
+			done; \
 		done; \
 	done
 
 uninstall-local:
-	for size in $(render_sizes); do \
+	for size in $(fullcolor_render_sizes); do \
 		for file in `cd $(srcdir)/$$size && find . \( -name "*.png" -or -name "*.svg" \)`; do \
 			rm -f $(DESTDIR)$(themedir)/$$size/$$file; \
+		done; \
+	done
+	for size in $(symbolic_render_sizes); do \
+		for file in `cd $(srcdir)/$$size && find . -name "*.svg"`; do \
+			rm -f $(DESTDIR)$(themedir)/$$size/$$file; \
+			for enc_size in $(symbolic_encode_sizes); do \
+				name="`basename $$file .svg`.symbolic.png"; \
+				rm -f $(DESTDIR)/$(themedir)/$$enc_size/$$context/$$name; \
+			done; \
 		done; \
 	done
 
