@@ -108,16 +108,19 @@ install-data-local:
 
 uninstall-local:
 	for size in $(fullcolor_render_sizes); do \
-		for file in `cd $(srcdir)/$$size && find . \( -name "*.png" -or -name "*.svg" \)`; do \
+		echo -e "Going to remove files for fullcolor/$$size"; \
+		for file in `cd $(srcdir)/fullcolor/$$size && find . \( -name "*.png" -or -name "*.svg" \)`; do \
 			rm -f $(DESTDIR)$(themedir)/$$size/$$file; \
 		done; \
 	done
 	for size in $(symbolic_render_sizes); do \
-		for file in `cd $(srcdir)/$$size && find . -name "*.svg"`; do \
+		echo -e "Going to remove files for symbolic/$$size"; \
+		for file in `cd $(srcdir)/symbolic/$$size && find . -name "*.svg"`; do \
+			context="`dirname $$file`"; \
 			rm -f $(DESTDIR)$(themedir)/$$size/$$file; \
 			for enc_size in $(symbolic_encode_sizes); do \
 				name="`basename $$file .svg`.symbolic.png"; \
-				rm -f $(DESTDIR)/$(themedir)/$$enc_size/$$context/$$name; \
+				rm -f $(DESTDIR)$(themedir)/$$enc_size/$$context/$$name; \
 			done; \
 		done; \
 	done
