@@ -5,19 +5,6 @@ endlessos-backgrounds-default.xml.in: endlessos-backgrounds-default.xml.in.in
 
 @INTLTOOL_XML_RULE@
 
-default_images = $(datadir)/eos-media/default_images
-
-install-data-hook:
-	$(mkdir_p) $(DESTDIR)$(datadir)/EndlessOS/language-defaults
-	ln -fs $(default_images)/bg_global_02.jpg $(DESTDIR)$(datadir)/EndlessOS/language-defaults/desktop-background-C.jpg
-	ln -fs $(default_images)/bg_global_01.jpg $(DESTDIR)$(datadir)/EndlessOS/language-defaults/desktop-background-es_GT.jpg
-	ln -fs $(default_images)/bg_brazil_01.jpg $(DESTDIR)$(datadir)/EndlessOS/language-defaults/desktop-background-pt.jpg
-
-uninstall-hook:
-	rm -f $(DESTDIR)$(datadir)/EndlessOS/language-defaults/desktop-background-C.jpg
-	rm -f $(DESTDIR)$(datadir)/EndlessOS/language-defaults/desktop-background-es_GT.jpg
-	rm -f $(DESTDIR)$(datadir)/EndlessOS/language-defaults/desktop-background-pt.jpg
-
 metadatadir = $(datadir)/gnome-background-properties
 metadata_DATA = endlessos-backgrounds-default.xml
 
