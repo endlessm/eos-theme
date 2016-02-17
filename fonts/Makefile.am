@@ -17,6 +17,38 @@ dist_font_DATA = \
 	Cinzel-Black.ttf \
 	Cinzel-Bold.ttf \
 	Cinzel-Regular.ttf \
+	FiraSans-Bold.otf \
+	FiraSans-BoldItalic.otf \
+	FiraSans-Book.otf \
+	FiraSans-BookItalic.otf \
+	FiraSans-Eight.otf \
+	FiraSans-EightItalic.otf \
+	FiraSans-ExtraBold.otf \
+	FiraSans-ExtraBoldItalic.otf \
+	FiraSans-ExtraLight.otf \
+	FiraSans-ExtraLightItalic.otf \
+	FiraSans-Four.otf \
+	FiraSans-FourItalic.otf \
+	FiraSans-Hair.otf \
+	FiraSans-HairItalic.otf \
+	FiraSans-Heavy.otf \
+	FiraSans-HeavyItalic.otf \
+	FiraSans-Italic.otf \
+	FiraSans-Light.otf \
+	FiraSans-LightItalic.otf \
+	FiraSans-Medium.otf \
+	FiraSans-MediumItalic.otf \
+	FiraSans-Regular.otf \
+	FiraSans-SemiBold.otf \
+	FiraSans-SemiBoldItalic.otf \
+	FiraSans-Thin.otf \
+	FiraSans-ThinItalic.otf \
+	FiraSans-Two.otf \
+	FiraSans-TwoItalic.otf \
+	FiraSans-Ultra.otf \
+	FiraSans-UltraItalic.otf \
+	FiraSans-UltraLight.otf \
+	FiraSans-UltraLightItalic.otf \
 	FjallaOne-Regular.ttf \
 	HammersmithOne-Regular.ttf \
 	Inika-Bold.ttf \
@@ -33,6 +65,14 @@ dist_font_DATA = \
 	JosefinSlab-ThinItalic.ttf \
 	Kranky.ttf \
 	MarcellusSC-Regular.ttf \
+	Merriweather-Bold.ttf \
+	Merriweather-BoldIt.ttf \
+	Merriweather-Italic.ttf \
+	Merriweather-Light.ttf \
+	Merriweather-LightIt.ttf \
+	Merriweather-Regular.ttf \
+	Merriweather-UltraBold.ttf \
+	Merriweather-UltraBdIt.ttf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
 	NixieOne-Regular.ttf \
@@ -88,12 +128,14 @@ dist_fontdoc_DATA = \
 	AmaticSC-OFL.txt \
 	Belgrano-OFL.txt \
 	Cinzel-OFL.txt \
+	FiraSans-OFL.txt \
 	FjallaOne-OFL.txt \
 	HammersmithOne-OFL.txt \
 	Inika-OFL.txt \
 	JosefinSlab-OFL.txt \
 	Kranky-LICENSE.txt \
 	MarcellusSC-OFL.txt \
+	Merriweather-OFL.txt \
 	Montserrat-OFL.txt \
 	NixieOne-OFL.txt \
 	Oswald-OFL.txt \
