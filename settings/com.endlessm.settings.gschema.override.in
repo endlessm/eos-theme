@@ -43,10 +43,6 @@ button-layout=':minimize,maximize,close'
 [org.gnome.desktop.background]
 picture-uri='eos:///default'
 
-# Specify the favorites on the dash (default to browser and file manager)
-[org.gnome.shell]
-favorite-apps=['chromium-browser.desktop', 'eos-file-manager.desktop']
-
 # Always enable log out
 [org.gnome.shell]
 always-show-log-out=true
