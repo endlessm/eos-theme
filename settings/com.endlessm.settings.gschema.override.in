@@ -110,3 +110,9 @@ disabled=['eos-app-eos-file-manager.desktop']
 # Pop up shutdown dialog by default when pressing power button
 [org.gnome.settings-daemon.plugins.power]
 button-power='interactive'
+
+# Include Endless sample media in the directories indexed by tracker
+# (tracker does not follow symlinks, so we need the absolute path
+# even though they are linked from the xdg user directories)
+[org.freedesktop.Tracker.Miner.Files]
+index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS', '/var/endless-content']
