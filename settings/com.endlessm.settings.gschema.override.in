@@ -31,6 +31,7 @@ monospace-font-name='Ubuntu Mono 13'
 
 [org.gnome.desktop.wm.preferences]
 titlebar-font='Lato Bold 13'
+titlebar-uses-system-font=false
 
 [org.gnome.settings-daemon.plugins.xsettings]
 hinting='slight'
