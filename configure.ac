@@ -44,7 +44,6 @@ AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 AC_CONFIG_FILES([
 Makefile
 fonts/Makefile
-backgrounds/Makefile
 icons/Makefile
 settings/Makefile
 themes/Makefile
