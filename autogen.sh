@@ -7,8 +7,7 @@ test -z "$srcdir" && srcdir=.
 PKG_NAME="eos-themes"
 REQUIRED_AUTOMAKE_VERSION=1.9
 
-(test -f $srcdir/configure.ac \
-  && test -d $srcdir/themes) || {
+(test -f $srcdir/configure.ac) || {
     echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
     echo " top-level $PKG_NAME directory"
     exit 1
