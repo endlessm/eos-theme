@@ -32,9 +32,11 @@ titlebar-uses-system-font=false
 [org.gnome.settings-daemon.plugins.xsettings]
 hinting='slight'
 
-# Enable the minimize button (but not maximize)
+# Enable the minimize and maximize buttons
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
+[org.gnome.shell.overrides]
+button-layout=':minimize,maximize,close'
 
 # Specify the default background image
 [org.gnome.desktop.background]
