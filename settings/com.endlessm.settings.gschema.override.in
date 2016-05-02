@@ -103,7 +103,7 @@ close=['<Alt>F4', '<Ctrl>Q']
 # Override the order for default search providers
 [org.gnome.desktop.search-providers]
 sort-order=['com.endlessm.encyclopedia-es.desktop', 'com.endlessm.encyclopedia-pt.desktop', 'com.endlessm.encyclopedia-ar.desktop', 'com.endlessm.encyclopedia-fr.desktop', 'com.endlessm.encyclopedia-en.desktop']
-disabled=['org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop']
+disabled=['org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'gnote.desktop']
 
 # Include Endless sample media in the directories indexed by tracker
 # (tracker does not follow symlinks, so we need the absolute path
