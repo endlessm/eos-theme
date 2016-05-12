@@ -110,8 +110,3 @@ disabled=['org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'gnote.deskt
 # even though they are linked from the xdg user directories)
 [org.freedesktop.Tracker.Miner.Files]
 index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS', '/var/endless-content']
-
-# Enable right-click and middle-click when clicking the touchpad (as opposed to
-# just when using tap-to-click)
-[org.gnome.desktop.peripherals.touchpad]
-click-method='fingers'
