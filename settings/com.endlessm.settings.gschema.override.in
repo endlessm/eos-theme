@@ -39,7 +39,7 @@ button-layout=':minimize,maximize,close'
 
 # Specify the default background image
 [org.gnome.desktop.background]
-picture-uri='eos:///default'
+picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
 
 # Always enable log out
 [org.gnome.shell]
