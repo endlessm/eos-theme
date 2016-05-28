@@ -18,6 +18,5 @@ Package: eos-theme
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Recommends: eos-plymouth-theme
 Description: Custom theme for eos-shell
  Custom theme along with icons and images
