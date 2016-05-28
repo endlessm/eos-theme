@@ -19,7 +19,6 @@ Package: eos-theme
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         gtk2-engines-pixbuf,
          eos-shell
 Recommends: eos-plymouth-theme,
             eos-shell
