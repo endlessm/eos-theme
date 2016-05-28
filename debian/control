@@ -16,7 +16,29 @@ Homepage: http://www.endlessm.com
 
 Package: eos-theme
 Architecture: any
+Depends: eos-icon-theme,
+         eos-extra-fonts,
+         eos-default-settings
+Description: transitional metapackage for EndlessOS theme
+ This is a transitional metapackage that depends on the
+ other packages provided by eos-theme.
+
+Package: eos-default-settings
+Architecture: any
+Depends: ${misc:Depends}
+Description: default settings for EndlessOS
+ This package contains default settings for EndlessOS, including
+ GSettings overrides and X11 environment defaults.
+
+Package: eos-extra-fonts
+Architecture: any
+Depends: ${misc:Depends}
+Description: extra fonts for EndlessOS
+ This package contains extra fonts used by Endless applications.
+
+Package: eos-icon-theme
+Architecture: any
 Depends: ${misc:Depends},
-         ${shlibs:Depends}
-Description: Custom theme for eos-shell
- Custom theme along with icons and images
+         adwaita-icon-theme
+Description: default icon theme for EndlessOS
+ This package contains the default icon theme used by EndlessOS.
