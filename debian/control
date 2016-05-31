@@ -27,6 +27,8 @@ Description: transitional metapackage for EndlessOS theme
 Package: eos-default-settings
 Architecture: any
 Depends: ${misc:Depends}
+Replaces: eos-theme (<< 1.4.0)
+Breaks: eos-theme (<< 1.4.0)
 Description: default settings for EndlessOS
  This package contains default settings for EndlessOS, including
  GSettings overrides and X11 environment defaults.
@@ -34,6 +36,8 @@ Description: default settings for EndlessOS
 Package: eos-extra-fonts
 Architecture: any
 Depends: ${misc:Depends}
+Replaces: eos-theme (<< 1.4.0)
+Breaks: eos-theme (<< 1.4.0)
 Description: extra fonts for EndlessOS
  This package contains extra fonts used by Endless applications.
 
@@ -41,5 +45,7 @@ Package: eos-icon-theme
 Architecture: any
 Depends: ${misc:Depends},
          adwaita-icon-theme
+Replaces: eos-theme (<< 1.4.0)
+Breaks: eos-theme (<< 1.4.0)
 Description: default icon theme for EndlessOS
  This package contains the default icon theme used by EndlessOS.
