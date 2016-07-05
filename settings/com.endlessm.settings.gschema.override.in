@@ -111,6 +111,8 @@ disabled=['org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'gnote.deskt
 [org.freedesktop.Tracker.Miner.Files]
 index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS', '/var/endless-content']
 
-# Do not show the nonfree tags in GNOME Software
+# Do not show the nonfree tags in GNOME Software nor the sources option/dialog
+# in its app menu
 [org.gnome.software]
 show-nonfree-ui=false
+enable-software-sources=false
