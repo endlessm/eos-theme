@@ -110,3 +110,7 @@ disabled=['org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'gnote.deskt
 # even though they are linked from the xdg user directories)
 [org.freedesktop.Tracker.Miner.Files]
 index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS', '/var/endless-content']
+
+# Do not show the nonfree tags in GNOME Software
+[org.gnome.software]
+show-nonfree-ui=false
