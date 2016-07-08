@@ -116,3 +116,4 @@ index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&
 [org.gnome.software]
 show-nonfree-ui=false
 enable-software-sources=false
+show-folder-management=false
