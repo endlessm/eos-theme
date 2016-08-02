@@ -78,18 +78,6 @@ dist_font_DATA = \
 	Skranji-Regular.ttf \
 	Sniglet-ExtraBold.ttf \
 	Sniglet-Regular.ttf \
-	SourceSansPro-Black.otf \
-	SourceSansPro-BlackIt.otf \
-	SourceSansPro-Bold.otf \
-	SourceSansPro-BoldIt.otf \
-	SourceSansPro-ExtraLight.otf \
-	SourceSansPro-ExtraLightIt.otf \
-	SourceSansPro-It.otf \
-	SourceSansPro-Light.otf \
-	SourceSansPro-LightIt.otf \
-	SourceSansPro-Regular.otf \
-	SourceSansPro-Semibold.otf \
-	SourceSansPro-SemiboldIt.otf \
 	VarelaRound-Regular.ttf \
 	$(NULL)
 
@@ -97,34 +85,21 @@ fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
 	ABeeZee-OFL.txt \
 	Abel-OFL.txt \
-	AbrilFatface-OFL.txt \
 	Alice-OFL.txt \
 	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
-	Belgrano-OFL.txt \
-	Cinzel-OFL.txt \
 	FiraSans-OFL.txt \
-	FjallaOne-OFL.txt \
 	HammersmithOne-OFL.txt \
-	Inika-OFL.txt \
-	JosefinSlab-OFL.txt \
-	Kranky-LICENSE.txt \
 	MarcellusSC-OFL.txt \
 	Merriweather-OFL.txt \
 	Montserrat-OFL.txt \
-	NixieOne-OFL.txt \
 	Oswald-OFL.txt \
 	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
-	Pompiere-OFL.txt \
 	Raleway-LICENSE.txt \
-	RobotoSlab-LICENSE.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
 	Sniglet-OFL.txt \
-	SourceSansPro-LICENSE.txt \
-	SourceSansPro-OTReadMe.html \
-	SourceSansPro-ReadMe.html \
 	VarelaRound-OFL.txt \
 	$(NULL)
