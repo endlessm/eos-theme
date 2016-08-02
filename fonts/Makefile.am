@@ -5,7 +5,6 @@ dist_font_DATA = \
 	ABeeZee-Italic.ttf \
 	ABeeZee-Regular.ttf \
 	Abel-Regular.ttf \
-	AbrilFatface-Regular.ttf \
 	Alice-Regular.ttf \
 	Amaranth-Bold.ttf \
 	Amaranth-BoldItalic.ttf \
@@ -13,10 +12,6 @@ dist_font_DATA = \
 	Amaranth-Regular.ttf \
 	AmaticSC-Bold.ttf \
 	AmaticSC-Regular.ttf \
-	Belgrano-Regular.ttf \
-	Cinzel-Black.ttf \
-	Cinzel-Bold.ttf \
-	Cinzel-Regular.ttf \
 	FiraSans-Bold.otf \
 	FiraSans-BoldItalic.otf \
 	FiraSans-Book.otf \
@@ -49,21 +44,7 @@ dist_font_DATA = \
 	FiraSans-UltraItalic.otf \
 	FiraSans-UltraLight.otf \
 	FiraSans-UltraLightItalic.otf \
-	FjallaOne-Regular.ttf \
 	HammersmithOne-Regular.ttf \
-	Inika-Bold.ttf \
-	Inika-Regular.ttf \
-	JosefinSlab-Bold.ttf \
-	JosefinSlab-BoldItalic.ttf \
-	JosefinSlab-Italic.ttf \
-	JosefinSlab-Light.ttf \
-	JosefinSlab-LightItalic.ttf \
-	JosefinSlab-Regular.ttf \
-	JosefinSlab-SemiBold.ttf \
-	JosefinSlab-SemiBoldItalic.ttf \
-	JosefinSlab-Thin.ttf \
-	JosefinSlab-ThinItalic.ttf \
-	Kranky.ttf \
 	MarcellusSC-Regular.ttf \
 	Merriweather-Bold.ttf \
 	Merriweather-BoldIt.ttf \
@@ -75,7 +56,6 @@ dist_font_DATA = \
 	Merriweather-UltraBdIt.ttf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
-	NixieOne-Regular.ttf \
 	Oswald-Bold.ttf \
 	Oswald-Light.ttf \
 	Oswald-Regular.ttf \
@@ -83,7 +63,6 @@ dist_font_DATA = \
 	PathwayGothicOne-Regular.ttf \
 	Podkova-Bold.ttf \
 	Podkova-Regular.ttf \
-	Pompiere-Regular.ttf \
 	Raleway-Bold.otf \
 	Raleway-ExtraBold.otf \
 	Raleway-ExtraLight.otf \
@@ -93,28 +72,12 @@ dist_font_DATA = \
 	Raleway-Regular.otf \
 	Raleway-SemiBold.otf \
 	Raleway-Thin.otf \
-	RobotoSlab-Bold.ttf \
-	RobotoSlab-Light.ttf \
-	RobotoSlab-Regular.ttf \
-	RobotoSlab-Thin.ttf \
 	Sanchez-Italic.ttf \
 	Sanchez-Regular.ttf \
 	Skranji-Bold.ttf \
 	Skranji-Regular.ttf \
 	Sniglet-ExtraBold.ttf \
 	Sniglet-Regular.ttf \
-	SourceSansPro-Black.otf \
-	SourceSansPro-BlackIt.otf \
-	SourceSansPro-Bold.otf \
-	SourceSansPro-BoldIt.otf \
-	SourceSansPro-ExtraLight.otf \
-	SourceSansPro-ExtraLightIt.otf \
-	SourceSansPro-It.otf \
-	SourceSansPro-Light.otf \
-	SourceSansPro-LightIt.otf \
-	SourceSansPro-Regular.otf \
-	SourceSansPro-Semibold.otf \
-	SourceSansPro-SemiboldIt.otf \
 	VarelaRound-Regular.ttf \
 	$(NULL)
 
@@ -122,34 +85,21 @@ fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
 	ABeeZee-OFL.txt \
 	Abel-OFL.txt \
-	AbrilFatface-OFL.txt \
 	Alice-OFL.txt \
 	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
-	Belgrano-OFL.txt \
-	Cinzel-OFL.txt \
 	FiraSans-OFL.txt \
-	FjallaOne-OFL.txt \
 	HammersmithOne-OFL.txt \
-	Inika-OFL.txt \
-	JosefinSlab-OFL.txt \
-	Kranky-LICENSE.txt \
 	MarcellusSC-OFL.txt \
 	Merriweather-OFL.txt \
 	Montserrat-OFL.txt \
-	NixieOne-OFL.txt \
 	Oswald-OFL.txt \
 	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
-	Pompiere-OFL.txt \
 	Raleway-LICENSE.txt \
-	RobotoSlab-LICENSE.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
 	Sniglet-OFL.txt \
-	SourceSansPro-LICENSE.txt \
-	SourceSansPro-OTReadMe.html \
-	SourceSansPro-ReadMe.html \
 	VarelaRound-OFL.txt \
 	$(NULL)
