@@ -63,6 +63,14 @@ dist_font_DATA = \
 	PathwayGothicOne-Regular.ttf \
 	Podkova-Bold.ttf \
 	Podkova-Regular.ttf \
+	PTC55F.ttf \
+	PTC75F.ttf \
+	PTN57F.ttf \
+	PTN77F.ttf \
+	PTS55F.ttf \
+	PTS56F.ttf \
+	PTS75F.ttf \
+	PTS76F.ttf \
 	Raleway-Bold.otf \
 	Raleway-ExtraBold.otf \
 	Raleway-ExtraLight.otf \
@@ -97,6 +105,7 @@ dist_fontdoc_DATA = \
 	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
+	PT-LICENSE.txt \
 	Raleway-LICENSE.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
