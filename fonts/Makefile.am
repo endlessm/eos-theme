@@ -12,6 +12,7 @@ dist_font_DATA = \
 	Amaranth-Regular.ttf \
 	AmaticSC-Bold.ttf \
 	AmaticSC-Regular.ttf \
+	BalooDa-Regular.ttf \
 	FiraSans-Bold.otf \
 	FiraSans-BoldItalic.otf \
 	FiraSans-Book.otf \
@@ -96,6 +97,7 @@ dist_fontdoc_DATA = \
 	Alice-OFL.txt \
 	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
+	BalooDa-OFL.txt \
 	FiraSans-OFL.txt \
 	HammersmithOne-OFL.txt \
 	MarcellusSC-OFL.txt \
