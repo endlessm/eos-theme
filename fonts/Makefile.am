@@ -57,6 +57,10 @@ dist_font_DATA = \
 	Merriweather-UltraBdIt.ttf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
+	NoticiaText-Bold.ttf \
+	NoticiaText-BoldItalic.ttf \
+	NoticiaText-Italic.ttf \
+	NoticiaText-Regular.ttf \
 	Oswald-Bold.ttf \
 	Oswald-Light.ttf \
 	Oswald-Regular.ttf \
@@ -103,6 +107,7 @@ dist_fontdoc_DATA = \
 	MarcellusSC-OFL.txt \
 	Merriweather-OFL.txt \
 	Montserrat-OFL.txt \
+	NoticiaText-OFL.txt \
 	Oswald-OFL.txt \
 	Parisienne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
