@@ -117,3 +117,5 @@ index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&
 show-nonfree-ui=false
 enable-software-sources=false
 show-folder-management=false
+show-nonfree-prompt=false
+show-nonfree-software=true
