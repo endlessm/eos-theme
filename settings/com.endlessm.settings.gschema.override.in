@@ -123,3 +123,7 @@ show-nonfree-software=true
 # Remove default screencast duration limit
 [org.gnome.settings-daemon.plugins.media-keys]
 max-screencast-length=0
+
+# Make Rhythmbox seem less like a database management app
+[org.gnome.rhythmbox.source]
+show-browser=false
