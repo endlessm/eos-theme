@@ -119,6 +119,7 @@ enable-software-sources=false
 show-folder-management=false
 show-nonfree-prompt=false
 show-nonfree-software=true
+download-updates=false
 
 # Remove default screencast duration limit
 [org.gnome.settings-daemon.plugins.media-keys]
