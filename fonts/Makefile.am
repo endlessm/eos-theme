@@ -88,6 +88,14 @@ dist_font_DATA = \
 	Raleway-Regular.otf \
 	Raleway-SemiBold.otf \
 	Raleway-Thin.otf \
+	Roboto-Black.ttf \
+	Roboto-BlackItalic.ttf \
+	Roboto-Bold.ttf \
+	Roboto-BoldItalic.ttf \
+	Roboto-Italic.ttf \
+	Roboto-Light.ttf \
+	Roboto-LightItalic.ttf \
+	Roboto-Regular.ttf \
 	RobotoSlab-Bold.ttf \
 	RobotoSlab-Light.ttf \
 	RobotoSlab-Regular.ttf \
@@ -122,6 +130,7 @@ dist_fontdoc_DATA = \
 	Podkova-OFL.txt \
 	PT-LICENSE.txt \
 	Raleway-LICENSE.txt \
+	Roboto-OFL.txt \
 	RobotoSlab-OFL.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
