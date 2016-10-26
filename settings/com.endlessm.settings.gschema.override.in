@@ -135,3 +135,6 @@ show-browser=false
 # Enable GB18030 encoding in gedit
 [org.gnome.gedit.preferences.encodings]
 candidate-encodings=['UTF-8', 'GB18030', 'ISO-8859-15', 'UTF-16']
+
+[org.gnome.settings-daemon.plugins.media-keys]
+logout=''
