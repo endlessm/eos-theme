@@ -123,6 +123,7 @@ show-nonfree-software=true
 download-updates=false
 external-appstream-urls=['https://d3lapyynmdp1i9.cloudfront.net/app-info/eos-extra.xml.gz']
 refresh-when-metered=true
+screenshot-cache-age-maximum=0
 
 # Remove default screencast duration limit
 [org.gnome.settings-daemon.plugins.media-keys]
