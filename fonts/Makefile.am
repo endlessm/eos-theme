@@ -68,6 +68,9 @@ dist_font_DATA = \
 	Oswald-Light.ttf \
 	Oswald-Regular.ttf \
 	Parisienne-Regular.ttf \
+	PassionOne-Black.ttf \
+	PassionOne-Bold.ttf \
+	PassionOne-Regular.ttf \
 	PathwayGothicOne-Regular.ttf \
 	Podkova-Bold.ttf \
 	Podkova-Regular.ttf \
@@ -118,6 +121,7 @@ dist_fontdoc_DATA = \
 	NoticiaText-OFL.txt \
 	Oswald-OFL.txt \
 	Parisienne-OFL.txt \
+	PassionOne-OFL.txt \
 	PathwayGothicOne-OFL.txt \
 	Podkova-OFL.txt \
 	PT-LICENSE.txt \
