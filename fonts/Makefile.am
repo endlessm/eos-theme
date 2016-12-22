@@ -49,6 +49,24 @@ dist_font_DATA = \
 	FiraSans-UltraLight.otf \
 	FiraSans-UltraLightItalic.otf \
 	HammersmithOne-Regular.ttf \
+	LibreFranklin-Black.ttf \
+	LibreFranklin-BlackItalic.ttf \
+	LibreFranklin-Bold.ttf \
+	LibreFranklin-BoldItalic.ttf \
+	LibreFranklin-ExtraBold.ttf \
+	LibreFranklin-ExtraBoldItalic.ttf \
+	LibreFranklin-ExtraLight.ttf \
+	LibreFranklin-ExtraLightItalic.ttf \
+	LibreFranklin-Italic.ttf \
+	LibreFranklin-Light.ttf \
+	LibreFranklin-LightItalic.ttf \
+	LibreFranklin-Medium.ttf \
+	LibreFranklin-MediumItalic.ttf \
+	LibreFranklin-Regular.ttf \
+	LibreFranklin-SemiBold.ttf \
+	LibreFranklin-SemiBoldItalic.ttf \
+	LibreFranklin-Thin.ttf \
+	LibreFranklin-ThinItalic.ttf \
 	MarcellusSC-Regular.ttf \
 	Merriweather-Bold.ttf \
 	Merriweather-BoldIt.ttf \
@@ -115,6 +133,7 @@ dist_fontdoc_DATA = \
 	Cardo-OFL.txt \
 	FiraSans-OFL.txt \
 	HammersmithOne-OFL.txt \
+	LibreFranklin-OFL.txt \
 	MarcellusSC-OFL.txt \
 	Merriweather-OFL.txt \
 	Montserrat-OFL.txt \
