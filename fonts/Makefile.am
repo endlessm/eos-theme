@@ -100,6 +100,7 @@ dist_font_DATA = \
 	PTS56F.ttf \
 	PTS75F.ttf \
 	PTS76F.ttf \
+	Raleway-Black.ttf \
 	Raleway-Bold.otf \
 	Raleway-ExtraBold.otf \
 	Raleway-ExtraLight.otf \
