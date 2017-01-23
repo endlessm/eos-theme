@@ -120,6 +120,10 @@ dist_font_DATA = \
 	Skranji-Regular.ttf \
 	Sniglet-ExtraBold.ttf \
 	Sniglet-Regular.ttf \
+	SutonnyMJ.ttf \
+	SutonnyMJ-Bold.ttf \
+	SutonnyMJ-BoldItalic.ttf \
+	SutonnyMJ-Italic.ttf \
 	VarelaRound-Regular.ttf \
 	$(NULL)
 
