@@ -13,6 +13,14 @@ dist_font_DATA = \
 	AmaticSC-Bold.ttf \
 	AmaticSC-Regular.ttf \
 	BalooDa-Regular.ttf \
+	Cabin-BoldItalic-TTF.ttf \
+	Cabin-Bold-TTF.ttf \
+	Cabin-Italic-TTF.ttf \
+	Cabin-MediumItalic-TTF.ttf \
+	Cabin-Medium-TTF.ttf \
+	Cabin-Regular-TTF.ttf \
+	Cabin-SemiBoldItalic-TTF.ttf \
+	Cabin-SemiBold-TTF.ttf \
 	Cardo-Bold.ttf \
 	Cardo-Italic.ttf \
 	Cardo-Regular.ttf \
@@ -135,6 +143,7 @@ dist_fontdoc_DATA = \
 	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
 	BalooDa-OFL.txt \
+	Cabin-OFL.txt \
 	Cardo-OFL.txt \
 	FiraSans-OFL.txt \
 	HammersmithOne-OFL.txt \
