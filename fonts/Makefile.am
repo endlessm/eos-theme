@@ -2,8 +2,6 @@
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
-	ABeeZee-Italic.ttf \
-	ABeeZee-Regular.ttf \
 	Abel-Regular.ttf \
 	Alice-Regular.ttf \
 	Amaranth-Bold.ttf \
@@ -122,7 +120,6 @@ dist_font_DATA = \
 
 fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
-	ABeeZee-OFL.txt \
 	Abel-OFL.txt \
 	Alice-OFL.txt \
 	Amaranth-OFL.txt \
