@@ -13,9 +13,6 @@ dist_font_DATA = \
 	AmaticSC-Bold.ttf \
 	AmaticSC-Regular.ttf \
 	BalooDa-Regular.ttf \
-	Cardo-Bold.ttf \
-	Cardo-Italic.ttf \
-	Cardo-Regular.ttf \
 	FiraSans-Bold.otf \
 	FiraSans-BoldItalic.otf \
 	FiraSans-Book.otf \
@@ -135,7 +132,6 @@ dist_fontdoc_DATA = \
 	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
 	BalooDa-OFL.txt \
-	Cardo-OFL.txt \
 	FiraSans-OFL.txt \
 	HammersmithOne-OFL.txt \
 	LibreFranklin-OFL.txt \
