@@ -4,10 +4,6 @@ fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
 	Abel-Regular.ttf \
 	Alice-Regular.ttf \
-	Amaranth-Bold.ttf \
-	Amaranth-BoldItalic.ttf \
-	Amaranth-Italic.ttf \
-	Amaranth-Regular.ttf \
 	AmaticSC-Bold.ttf \
 	AmaticSC-Regular.ttf \
 	BalooDa-Regular.ttf \
@@ -122,7 +118,6 @@ fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
 	Abel-OFL.txt \
 	Alice-OFL.txt \
-	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
 	BalooDa-OFL.txt \
 	FiraSans-OFL.txt \
