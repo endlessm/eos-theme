@@ -105,8 +105,6 @@ dist_font_DATA = \
 	Sanchez-Regular.ttf \
 	Skranji-Bold.ttf \
 	Skranji-Regular.ttf \
-	Sniglet-ExtraBold.ttf \
-	Sniglet-Regular.ttf \
 	SutonnyMJ.ttf \
 	SutonnyMJ-Bold.ttf \
 	SutonnyMJ-BoldItalic.ttf \
@@ -136,6 +134,5 @@ dist_fontdoc_DATA = \
 	RobotoSlab-OFL.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
-	Sniglet-OFL.txt \
 	VarelaRound-OFL.txt \
 	$(NULL)
