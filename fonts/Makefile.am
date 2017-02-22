@@ -49,6 +49,7 @@ dist_font_DATA = \
 	FiraSans-UltraLight.otf \
 	FiraSans-UltraLightItalic.otf \
 	HammersmithOne-Regular.ttf \
+	KalpurushANSI-Regular.ttf \
 	LibreFranklin-Black.ttf \
 	LibreFranklin-BlackItalic.ttf \
 	LibreFranklin-Bold.ttf \
