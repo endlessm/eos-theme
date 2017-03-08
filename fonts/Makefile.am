@@ -2,20 +2,11 @@
 
 fontdir = $(datadir)/fonts/EndlessOS
 dist_font_DATA = \
-	ABeeZee-Italic.ttf \
-	ABeeZee-Regular.ttf \
 	Abel-Regular.ttf \
 	Alice-Regular.ttf \
-	Amaranth-Bold.ttf \
-	Amaranth-BoldItalic.ttf \
-	Amaranth-Italic.ttf \
-	Amaranth-Regular.ttf \
 	AmaticSC-Bold.ttf \
 	AmaticSC-Regular.ttf \
 	BalooDa-Regular.ttf \
-	Cardo-Bold.ttf \
-	Cardo-Italic.ttf \
-	Cardo-Regular.ttf \
 	FiraSans-Bold.otf \
 	FiraSans-BoldItalic.otf \
 	FiraSans-Book.otf \
@@ -79,10 +70,6 @@ dist_font_DATA = \
 	Merriweather-UltraBdIt.ttf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
-	NoticiaText-Bold.ttf \
-	NoticiaText-BoldItalic.ttf \
-	NoticiaText-Italic.ttf \
-	NoticiaText-Regular.ttf \
 	Oswald-Bold.ttf \
 	Oswald-Light.ttf \
 	Oswald-Regular.ttf \
@@ -119,8 +106,6 @@ dist_font_DATA = \
 	Sanchez-Regular.ttf \
 	Skranji-Bold.ttf \
 	Skranji-Regular.ttf \
-	Sniglet-ExtraBold.ttf \
-	Sniglet-Regular.ttf \
 	SutonnyMJ.ttf \
 	SutonnyMJ-Bold.ttf \
 	SutonnyMJ-BoldItalic.ttf \
@@ -130,20 +115,16 @@ dist_font_DATA = \
 
 fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
-	ABeeZee-OFL.txt \
 	Abel-OFL.txt \
 	Alice-OFL.txt \
-	Amaranth-OFL.txt \
 	AmaticSC-OFL.txt \
 	BalooDa-OFL.txt \
-	Cardo-OFL.txt \
 	FiraSans-OFL.txt \
 	HammersmithOne-OFL.txt \
 	LibreFranklin-OFL.txt \
 	MarcellusSC-OFL.txt \
 	Merriweather-OFL.txt \
 	Montserrat-OFL.txt \
-	NoticiaText-OFL.txt \
 	Oswald-OFL.txt \
 	Parisienne-OFL.txt \
 	PassionOne-OFL.txt \
@@ -154,6 +135,5 @@ dist_fontdoc_DATA = \
 	RobotoSlab-OFL.txt \
 	Sanchez-OFL.txt \
 	Skranji-OFL.txt \
-	Sniglet-OFL.txt \
 	VarelaRound-OFL.txt \
 	$(NULL)
