@@ -50,6 +50,9 @@ dist_font_DATA = \
 	FiraSans-UltraLightItalic.otf \
 	HammersmithOne-Regular.ttf \
 	KalpurushANSI-Regular.ttf \
+	LibreBaskerville-Bold.ttf \
+	LibreBaskerville-Italic.ttf \
+	LibreBaskerville-Regular.ttf \
 	LibreFranklin-Black.ttf \
 	LibreFranklin-BlackItalic.ttf \
 	LibreFranklin-Bold.ttf \
@@ -83,6 +86,10 @@ dist_font_DATA = \
 	NoticiaText-BoldItalic.ttf \
 	NoticiaText-Italic.ttf \
 	NoticiaText-Regular.ttf \
+	NotoSansUI-Bold.ttf \
+	NotoSansUI-BoldItalic.ttf \
+	NotoSansUI-Italic.ttf \
+	NotoSansUI-Regular.ttf \
 	Oswald-Bold.ttf \
 	Oswald-Light.ttf \
 	Oswald-Regular.ttf \
@@ -139,11 +146,13 @@ dist_fontdoc_DATA = \
 	Cardo-OFL.txt \
 	FiraSans-OFL.txt \
 	HammersmithOne-OFL.txt \
+	LibreBaskerville-OFL.txt \
 	LibreFranklin-OFL.txt \
 	MarcellusSC-OFL.txt \
 	Merriweather-OFL.txt \
 	Montserrat-OFL.txt \
 	NoticiaText-OFL.txt \
+	NotoSans-OFL.txt \
 	Oswald-OFL.txt \
 	Parisienne-OFL.txt \
 	PassionOne-OFL.txt \
