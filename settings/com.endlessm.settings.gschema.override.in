@@ -142,3 +142,7 @@ logout=''
 
 [org.gnome.settings-daemon.plugins.power]
 ambient-enabled=false
+
+# Increase display settings change timeout
+[org.gnome.mutter]
+display-configuration-timeout=30
