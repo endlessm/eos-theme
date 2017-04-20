@@ -24,6 +24,10 @@ icon-theme='EndlessOS'
 font-name='Lato 12'
 document-font-name='Lato Pro 12'
 
+# Declare the IM module as xim (X Input Module)
+[org.gnome.desktop.interface]
+gtk-im-module=xim
+
 [org.gnome.desktop.wm.preferences]
 titlebar-font='Lato Bold 13'
 titlebar-uses-system-font=false
