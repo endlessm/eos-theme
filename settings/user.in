@@ -1,0 +1,2 @@
+user-db:user
+file-db:@LOCALSTATEDIR@/lib/eos-image-defaults/settings
