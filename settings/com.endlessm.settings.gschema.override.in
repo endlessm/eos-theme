@@ -146,3 +146,7 @@ ambient-enabled=false
 # Increase display settings change timeout
 [org.gnome.mutter]
 display-configuration-timeout=30
+
+# Enable geoclue location services
+[org.gnome.system.location]
+enabled=true
