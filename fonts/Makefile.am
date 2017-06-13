@@ -5,6 +5,7 @@ dist_font_DATA = \
 	ABeeZee-Italic.ttf \
 	ABeeZee-Regular.ttf \
 	Abel-Regular.ttf \
+	AlegreyaSansSC-Regular.ttf \
 	Alice-Regular.ttf \
 	Amaranth-Bold.ttf \
 	Amaranth-BoldItalic.ttf \
