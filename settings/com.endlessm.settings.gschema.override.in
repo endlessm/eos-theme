@@ -41,6 +41,10 @@ button-layout=':minimize,maximize,close'
 [org.gnome.desktop.background]
 picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
 
+# Specify the default lock screen image
+[org.gnome.desktop.screensaver]
+picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
+
 # Always enable log out
 [org.gnome.shell]
 always-show-log-out=true
