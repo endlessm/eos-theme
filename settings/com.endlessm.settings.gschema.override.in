@@ -154,3 +154,7 @@ display-configuration-timeout=30
 # Enable geoclue location services
 [org.gnome.system.location]
 enabled=true
+
+# Enable touchpad tap-to-click by default
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
