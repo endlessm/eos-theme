@@ -1,2 +1,5 @@
 icons/index.theme.in
+# Workaround intltool issue with automake 1.15+
+# https://bugs.launchpad.net/intltool/+bug/1117944
+sub/icons/index.theme.in
 icons/index.theme.in.in
