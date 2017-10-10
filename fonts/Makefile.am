@@ -81,6 +81,24 @@ dist_font_DATA = \
 	Merriweather-Regular.ttf \
 	Merriweather-UltraBold.ttf \
 	Merriweather-UltraBdIt.ttf \
+	Metropolis-BlackItalic.otf \
+	Metropolis-Black.otf \
+	Metropolis-BoldItalic.otf \
+	Metropolis-Bold.otf \
+	Metropolis-ExtraBoldItalic.otf \
+	Metropolis-ExtraBold.otf \
+	Metropolis-ExtraLightItalic.otf \
+	Metropolis-ExtraLight.otf \
+	Metropolis-LightItalic.otf \
+	Metropolis-Light.otf \
+	Metropolis-MediumItalic.otf \
+	Metropolis-Medium.otf \
+	Metropolis-RegularItalic.otf \
+	Metropolis-Regular.otf \
+	Metropolis-SemiBoldItalic.otf \
+	Metropolis-SemiBold.otf \
+	Metropolis-ThinItalic.otf \
+	Metropolis-Thin.otf \
 	Montserrat-Bold.ttf \
 	Montserrat-Regular.ttf \
 	NoticiaText-Bold.ttf \
@@ -151,6 +169,7 @@ dist_fontdoc_DATA = \
 	LibreFranklin-LICENSE.txt \
 	MarcellusSC-LICENSE.txt \
 	Merriweather-LICENSE.txt \
+	Metropolis-LICENSE.md \
 	Montserrat-LICENSE.txt \
 	NoticiaText-LICENSE.txt \
 	NotoSans-LICENSE.txt \
