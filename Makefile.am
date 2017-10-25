@@ -1,4 +1,16 @@
-SUBDIRS = po icons settings fonts
+SUBDIRS = 
+
+if BUILD_ICONTHEME
+SUBDIRS += icons
+endif
+
+if BUILD_FONTS
+SUBDIRS += fonts
+endif
+
+if BUILD_SETTINGS
+SUBDIRS += settings
+endif
 
 MAINTAINERCLEANFILES =			\
 	Makefile.in			\
