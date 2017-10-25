@@ -41,6 +41,24 @@ fi
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
+AC_ARG_ENABLE(icontheme,
+              [AC_HELP_STRING([--enable-icontheme],
+                              [enable icon theme build [default=yes]])],,
+              [enable_icontheme="yes"])
+AM_CONDITIONAL([BUILD_ICONTHEME],[test "x$enable_icontheme" = "xyes"])
+
+AC_ARG_ENABLE(fonts,
+              [AC_HELP_STRING([--enable-fonts],
+                              [enable fonts build [default=yes]])],,
+              [enable_fonts="yes"])
+AM_CONDITIONAL([BUILD_FONTS],[test "x$enable_fonts" = "xyes"])
+
+AC_ARG_ENABLE(settings,
+              [AC_HELP_STRING([--enable-settings],
+                              [enable settings build [default=yes]])],,
+              [enable_settings="yes"])
+AM_CONDITIONAL([BUILD_SETTINGS],[test "x$enable_settings" = "xyes"])
+
 AC_CONFIG_FILES([
 Makefile
 fonts/Makefile
