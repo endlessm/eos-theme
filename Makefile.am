@@ -1,4 +1,4 @@
-SUBDIRS = 
+SUBDIRS = po
 
 if BUILD_ICONTHEME
 SUBDIRS += icons
