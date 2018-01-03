@@ -47,6 +47,12 @@ AC_ARG_ENABLE(icontheme,
               [enable_icontheme="yes"])
 AM_CONDITIONAL([BUILD_ICONTHEME],[test "x$enable_icontheme" = "xyes"])
 
+AC_ARG_ENABLE(app_icons,
+              [AC_HELP_STRING([--enable-app-icons],
+                              [include app icons in theme [default=no]])],
+              [enable_app_icons="yes"],)
+AM_CONDITIONAL([BUILD_APP_ICONS],[test "x$enable_app_icons" = "xyes"])
+
 AC_ARG_ENABLE(fonts,
               [AC_HELP_STRING([--enable-fonts],
                               [enable fonts build [default=yes]])],,
