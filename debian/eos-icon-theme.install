@@ -1,1 +1,3 @@
+debian/eos-icon-theme.sh etc/profile.d
+debian/eos-icon-theme.conf lib/tmpfiles.d
 usr/share/icons/EndlessOS

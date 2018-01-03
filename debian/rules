@@ -9,3 +9,13 @@ include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 DEB_MAKE_INSTALL_TARGET  := install DESTDIR=$(CURDIR)/debian/tmp/
 DEB_DH_INSTALLGSETTINGS_ARGS_eos-default-settings += --priority=50
 DEB_CONFIGURE_EXTRA_FLAGS += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
+
+install/eos-icon-theme::
+	sed "s/@arch@/$(DEB_HOST_GNU_CPU)/" \
+		< debian/eos-icon-theme.conf.in \
+		> debian/eos-icon-theme.conf
+	install -m644 debian/eos-icon-theme.sh \
+		debian/eos-icon-theme/etc/X11/Xsession.d/20eos-icon-theme
+
+clean::
+	rm -f debian/eos-icon-theme.conf
