@@ -7,11 +7,15 @@ symbolic_render_sizes = "scalable"
 symbolic_encode_sizes = "16x16" "24x24" "32x32" "48x48" "64x64" "96x96"
 
 all_dirs=$(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/fullcolor/$$size/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
+if BUILD_APP_ICONS
+all_dirs+=$(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/apps/$$size/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
+endif
 all_dirs+=$(shell SIZES="$(symbolic_encode_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/symbolic/scalable/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
 all_dirs+=$(shell SIZES="$(symbolic_render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/symbolic/$$size/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
 THEME_DIRS = $(shell ALL_DIRS="$(all_dirs)"; echo $$ALL_DIRS | tr ' ' '\n' | sort -u | tr '\n' ',')
 
 THEME_FILES = $(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/fullcolor/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
+THEME_FILES += $(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/apps/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
 THEME_FILES += $(shell SIZES="$(symbolic_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/symbolic/$$size/* -name "*.svg"`; do printf "$$file "; done; done;)
 
 EXTRA_DIST = index.theme.in.in $(THEME_FILES)
@@ -93,6 +97,16 @@ install-data-local:
 			$(install_sh_DATA) $(srcdir)/fullcolor/$$size/$$file $(DESTDIR)$(themedir)/$$size/$$file; \
 		done; \
 	done
+if BUILD_APP_ICONS
+	for size in $(fullcolor_render_sizes); do \
+		echo -e "Going to copy files for apps/$$size"; \
+		for file in `cd $(srcdir)/apps/$$size && find . \( -name "*.png" -or -name "*.svg" \)`; do \
+			context="`dirname $$file`"; \
+			$(mkdir_p) $(DESTDIR)$(themedir)/$$size/$$context; \
+			$(install_sh_DATA) $(srcdir)/apps/$$size/$$file $(DESTDIR)$(themedir)/$$size/$$file; \
+		done; \
+	done
+endif
 	for size in $(symbolic_render_sizes); do \
 		echo -e "Going to copy files for symbolic/$$size"; \
 		for file in `cd $(srcdir)/symbolic/$$size && find . -name "*.svg"`; do \
@@ -113,6 +127,14 @@ uninstall-local:
 			rm -f $(DESTDIR)$(themedir)/$$size/$$file; \
 		done; \
 	done
+if BUILD_APP_ICONS
+	for size in $(fullcolor_render_sizes); do \
+		echo -e "Going to remove files for apps/$$size"; \
+		for file in `cd $(srcdir)/apps/$$size && find . \( -name "*.png" -or -name "*.svg" \)`; do \
+			rm -f $(DESTDIR)$(themedir)/$$size/$$file; \
+		done; \
+	done
+endif
 	for size in $(symbolic_render_sizes); do \
 		echo -e "Going to remove files for symbolic/$$size"; \
 		for file in `cd $(srcdir)/symbolic/$$size && find . -name "*.svg"`; do \
