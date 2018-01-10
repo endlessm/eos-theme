@@ -146,8 +146,15 @@ candidate-encodings=['UTF-8', 'GB18030', 'ISO-8859-15', 'UTF-16']
 [org.gnome.settings-daemon.plugins.media-keys]
 logout=''
 
+# Disable automatic brightness adjustment, which does not work reliably.
+# Default to automatically suspend when idle for 15 minutes,
+# to comply with California Energy Commission (CEC) power regulations.
 [org.gnome.settings-daemon.plugins.power]
 ambient-enabled=false
+sleep-inactive-ac-timeout=900
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=900
+sleep-inactive-battery-type='suspend'
 
 # Increase display settings change timeout
 [org.gnome.mutter]
