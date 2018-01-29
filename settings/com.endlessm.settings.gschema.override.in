@@ -23,6 +23,7 @@ icon-theme='EndlessOS'
 [org.gnome.desktop.interface]
 font-name='Lato 12'
 document-font-name='Lato 12'
+monospace-font-name='Monospace 11.25'
 
 # Hide the weekday by default
 [org.gnome.desktop.interface]
