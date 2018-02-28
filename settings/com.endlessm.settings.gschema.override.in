@@ -86,9 +86,10 @@ monitor-library=true
 [org.gnome.shell]
 icon-grid-layout={}
 
-# Automatically play video DVDs
+# Automatically play video DVDs and launch the App Center when a USB with a repo
+# is inserted
 [org.gnome.desktop.media-handling]
-autorun-x-content-start-app=['x-content/unix-software', 'x-content/video-dvd']
+autorun-x-content-start-app=['x-content/ostree-software', 'x-content/unix-software', 'x-content/video-dvd']
 
 # Hide EOG sidebar by default
 [org.gnome.eog.ui]
