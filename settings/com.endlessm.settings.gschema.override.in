@@ -38,8 +38,6 @@ hinting='slight'
 # Enable the minimize and maximize buttons
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
-[org.gnome.shell.overrides]
-button-layout=':minimize,maximize,close'
 
 # Specify the default background image
 [org.gnome.desktop.background]
@@ -149,10 +147,6 @@ logout=''
 
 [org.gnome.settings-daemon.plugins.power]
 ambient-enabled=false
-
-# Increase display settings change timeout
-[org.gnome.mutter]
-display-configuration-timeout=30
 
 # Enable geoclue location services
 [org.gnome.system.location]
