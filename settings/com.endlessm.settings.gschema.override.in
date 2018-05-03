@@ -115,8 +115,7 @@ disabled=['org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'gnote.deskt
 index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS', '/var/endless-content']
 
 # Do not show the nonfree tags in GNOME Software nor the sources option/dialog
-# in its app menu; download the eos-extra.xml.gz as an external AppStream file;
-# auto-check for updates even when on a metered connection.
+# in its app menu; download the eos-extra.xml.gz as an external AppStream file.
 [org.gnome.software]
 show-nonfree-ui=false
 enable-software-sources=false
@@ -126,7 +125,6 @@ show-nonfree-software=true
 download-updates=true
 external-appstream-system-wide=true
 external-appstream-urls=['https://d3lapyynmdp1i9.cloudfront.net/app-info/eos-extra.xml.gz']
-refresh-when-metered=true
 screenshot-cache-age-maximum=0
 
 # Remove default screencast duration limit
