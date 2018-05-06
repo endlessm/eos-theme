@@ -122,7 +122,6 @@ enable-software-sources=false
 show-folder-management=false
 show-nonfree-prompt=false
 show-nonfree-software=true
-download-updates=true
 external-appstream-system-wide=true
 external-appstream-urls=['https://d3lapyynmdp1i9.cloudfront.net/app-info/eos-extra.xml.gz']
 screenshot-cache-age-maximum=0
