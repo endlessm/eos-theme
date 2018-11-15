@@ -9,6 +9,14 @@ do_subst = sed \
 user: user.in Makefile
 	$(AM_V_GEN) $(do_subst)  $< >$@.tmp && mv $@{.tmp,}
 
+settings: dconf-defaults/settings Makefile
+	$(AM_V_GEN) $(DCONF) compile $@ $(dir $<)
+
+dconf_defaultsdir = $(datadir)/eos-default-settings
+dconf_defaults_DATA = \
+	settings \
+	$(NULL)
+
 dconf_profiledir = $(datadir)/dconf/profile
 dconf_profile_DATA = \
 	user \
@@ -25,12 +33,14 @@ xsession_DATA = \
 	$(NULL)
 
 EXTRA_DIST = \
+	dconf-defaults/settings \
 	com.endlessm.settings.gschema.override.in \
 	user.in \
 	$(xsession_DATA) \
 	$(NULL)
 
 CLEANFILES = \
+	$(dconf_defaults_DATA) \
 	$(dconf_profile_DATA) \
 	$(settings_DATA) \
 	$(NULL)

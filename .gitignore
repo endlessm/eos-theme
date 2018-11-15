@@ -63,6 +63,8 @@ po/gnome-themes-standard.pot
 po/stamp-it
 settings/50_eos-theme.gschema.override
 settings/com.endlessm.settings.gschema.override
+settings/settings
+settings/user
 so_locations
 stamp-h1
 tags
