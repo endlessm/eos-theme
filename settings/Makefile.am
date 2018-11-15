@@ -1,5 +1,5 @@
 do_subst = sed \
-	-e 's|@DATA_DIR[@]|$(datadir)|g' \
+	-e 's|@DATADIR[@]|$(datadir)|g' \
 	-e 's|@LOCALSTATEDIR[@]|$(localstatedir)|g' \
 	$(NULL)
 
