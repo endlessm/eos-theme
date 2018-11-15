@@ -1,3 +1,10 @@
+eos-theme (1.1.5~dev2) unstable; urgency=low
+
+  * Install dconf defaults for OSTree in /usr/share/eos-image-defaults
+    (https://phabricator.endlessm.com/T20990)
+
+ -- Philip Withnall <withnall@endlessm.com>  Thu, 15 Nov 2018 12:28:00 +0000
+
 eos-theme (1.1.5~dev1) unstable; urgency=low
 
   * Updating version to 1.1.5~dev1
