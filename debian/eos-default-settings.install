@@ -1,3 +1,4 @@
 etc/X11/Xsession.d
 usr/share/dconf
+usr/share/eos-default-settings
 usr/share/glib-2.0/schemas
