@@ -1,0 +1,17 @@
+# This file provides various default values for dconf paths/keys, which are to
+# be shipped in the EOS OSTree. Users can override the values in the dconf
+# database in their home directory — this file just provides the defaults. It is
+# compiled and installed as /usr/share/eos-default-settings/settings.
+#
+# This is used in addition to the GSettings schema overrides in
+# com.endlessm.settings.gschema.override. GSettings schema overrides do not work
+# for schemas which are instantiated at multiple paths.
+#
+# Please keep the key file sections in alphabetical order.
+
+# Disable power notifications on the lock screen by default, otherwise we get
+# notifications about ‘the computer is about to suspend’ when the user really
+# doesn’t care.
+# https://phabricator.endlessm.com/T20990
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+show-in-lock-screen=false
