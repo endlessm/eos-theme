@@ -5,6 +5,7 @@ Maintainer: Endless Mobile <maintainers@endlessm.com>
 Uploaders: Srdjan Grubor <sgnn7@sgnn7.org>
 Build-Depends: debhelper (>= 8),
                cdbs (>= 0.4.41),
+               dconf-cli,
                dh-autoreconf,
                gnome-pkg-tools (>= 0.10),
                intltool (>= 0.40.0),
