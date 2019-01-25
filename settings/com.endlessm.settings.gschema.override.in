@@ -148,6 +148,10 @@ ambient-enabled=false
 [org.gnome.system.location]
 enabled=true
 
-# Enable touchpad tap-to-click by default
+# Set "default" touchpad click method which allows libinput to use quirks to
+# decide between left/right click "areas" (the default) and "fingers"
+# (multi-touch two and three finger clicks for Apple/Chromebook/etc behaviour),
+# and enable tap-to-click by default
 [org.gnome.desktop.peripherals.touchpad]
+click-method=default
 tap-to-click=true
