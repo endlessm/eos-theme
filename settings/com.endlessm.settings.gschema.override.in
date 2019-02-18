@@ -153,5 +153,5 @@ enabled=true
 # (multi-touch two and three finger clicks for Apple/Chromebook/etc behaviour),
 # and enable tap-to-click by default
 [org.gnome.desktop.peripherals.touchpad]
-click-method=default
+click-method='default'
 tap-to-click=true
