@@ -32,6 +32,11 @@ xsession_DATA = \
 	65gtk-overlay-scrolling \
 	$(NULL)
 
+chrome_policydir = $(datadir)/eos-chrome-policies
+chrome_policy_DATA = \
+	safe_search.json \
+	$(NULL)
+
 EXTRA_DIST = \
 	dconf-defaults/settings \
 	com.endlessm.settings.gschema.override.in \
