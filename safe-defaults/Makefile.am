@@ -32,11 +32,13 @@ generated_tmpfiles = \
 
 safe_defaultsdir = $(datadir)/eos-safe-defaults
 safe_defaults_DATA = \
+	chrome-safe-search.json \
 	nm-opendns-family-shield.conf \
 	$(generated_tmpfiles) \
 	$(NULL)
 
 EXTRA_DIST = \
+	chrome-safe-search.json \
 	eos-safe-defaults.in \
 	eos-safe-defaults.service.in \
 	nm-opendns-family-shield.conf \

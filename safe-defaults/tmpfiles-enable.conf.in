@@ -7,3 +7,5 @@
 # be made empty rather than deleted, otherwise the change from L to r
 # in this file will be ineffective.
 L @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf - - - - @DATAROOTDIR@/eos-safe-defaults/nm-opendns-family-shield.conf
+L @SYSCONFDIR@/chromium/policies/managed/safe-search.json - - - - @DATAROOTDIR@/eos-safe-defaults/chrome-safe-search.json
+L @SYSCONFDIR@/opt/chrome/policies/managed/safe-search.json - - - - @DATAROOTDIR@/eos-safe-defaults/chrome-safe-search.json
