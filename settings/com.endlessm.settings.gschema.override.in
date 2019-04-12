@@ -99,10 +99,6 @@ sidebar=false
 move-directories=true
 show-confirmation-dialog=false
 
-# Use Ctrl-Q as alternative to quit applications
-[org.gnome.desktop.wm.keybindings]
-close=['<Alt>F4', '<Ctrl>Q']
-
 # Override the order for default search providers
 [org.gnome.desktop.search-providers]
 sort-order=['org.gnome.Software.desktop', 'gnome-calculator.desktop', 'com.endlessm.encyclopedia.ar.desktop', 'com.endlessm.encyclopedia.en.desktop', 'com.endlessm.encyclopedia.es.desktop', 'com.endlessm.encyclopedia.fr.desktop', 'com.endlessm.encyclopedia.id.desktop', 'com.endlessm.encyclopedia.pt.desktop', 'com.endlessm.encyclopedia.th.desktop', 'com.endlessm.encyclopedia.vi.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Yelp.desktop']
