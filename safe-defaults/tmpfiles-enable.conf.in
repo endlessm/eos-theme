@@ -1,0 +1,9 @@
+# systemd-tmpfiles --create --remove is invoked for this file when a
+# "safe defaults" system is upgraded, or when eos-safe-defaults enable
+# is run manually. this means if any link or file is removed from this
+# list, it should be replaced with an r to avoid any dangling symlinks.
+# note that systemd-tmpfiles r fails to remove a dangling symlink, so
+# if a symlinked config file in the ostree is no longer needed it should
+# be made empty rather than deleted, otherwise the change from L to r
+# in this file will be ineffective.
+L @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf - - - - @DATAROOTDIR@/eos-safe-defaults/nm-opendns-family-shield.conf

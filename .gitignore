@@ -61,6 +61,10 @@ po/Makefile.in.in
 po/POTFILES
 po/gnome-themes-standard.pot
 po/stamp-it
+safe-defaults/eos-safe-defaults
+safe-defaults/eos-safe-defaults.service
+safe-defaults/tmpfiles-enable.conf
+safe-defaults/tmpfiles-disable.conf
 settings/50_eos-theme.gschema.override
 settings/com.endlessm.settings.gschema.override
 settings/settings

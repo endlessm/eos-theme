@@ -66,10 +66,24 @@ AC_ARG_ENABLE(settings,
               [enable_settings="yes"])
 AM_CONDITIONAL([BUILD_SETTINGS],[test "x$enable_settings" = "xyes"])
 
+# allow systemdunitdir to be overridden on the command line so
+# that make distcheck doesn't fail when run as a non-root user
+m4_define([no_systemdunitdir_error],
+          [m4_normalize([Could not get systemdsystemunitdir setting from]
+                        [systemd pkg-config file])])
+AC_ARG_WITH([systemdunitdir],
+            [AS_HELP_STRING([--with-systemdunitdir],
+                            [Path to the system directory for systemd units])],
+            [systemdunitdir="$withval"],
+            [PKG_CHECK_VAR([systemdunitdir], [systemd],
+                           [systemdsystemunitdir], [],
+                           [AC_MSG_ERROR(no_systemdunitdir_error)])])
+
 AC_CONFIG_FILES([
 Makefile
 fonts/Makefile
 icons/Makefile
+safe-defaults/Makefile
 settings/Makefile
 po/Makefile.in
 ])
