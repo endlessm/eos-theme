@@ -10,6 +10,10 @@ DEB_MAKE_INSTALL_TARGET  := install DESTDIR=$(CURDIR)/debian/tmp/
 DEB_DH_INSTALLGSETTINGS_ARGS_eos-default-settings += --priority=50
 DEB_CONFIGURE_EXTRA_FLAGS += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
+# assume converted systems don't want the safe defaults applied
+DEB_DH_SYSTEMD_ENABLE_ARGS += --no-enable
+DEB_DH_SYSTEMD_START_ARGS += --no-start
+
 install/eos-icon-theme::
 	sed "s/@arch@/$(DEB_HOST_GNU_CPU)/" \
 		< debian/eos-icon-theme.conf.in \
