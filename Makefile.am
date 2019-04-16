@@ -1,3 +1,8 @@
+# move systemdunitdir somewhere user-writable during distcheck
+AM_DISTCHECK_CONFIGURE_FLAGS = \
+	--with-systemdunitdir='$${prefix}/lib/systemd/system' \
+	$(NULL)
+
 SUBDIRS = po
 
 if BUILD_ICONTHEME
@@ -9,7 +14,7 @@ SUBDIRS += fonts
 endif
 
 if BUILD_SETTINGS
-SUBDIRS += settings
+SUBDIRS += safe-defaults settings
 endif
 
 MAINTAINERCLEANFILES =			\

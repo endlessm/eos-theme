@@ -1,0 +1,3 @@
+r @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf
+r @SYSCONFDIR@/chromium/policies/managed/safe-search.json
+r @SYSCONFDIR@/opt/chrome/policies/managed/safe-search.json
