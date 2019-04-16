@@ -1,4 +1,6 @@
+lib/systemd/system
 etc/X11/Xsession.d
 usr/share/dconf
 usr/share/eos-default-settings
+usr/share/eos-safe-defaults
 usr/share/glib-2.0/schemas
