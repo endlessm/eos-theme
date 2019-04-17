@@ -17,6 +17,10 @@ if BUILD_SETTINGS
 SUBDIRS += safe-defaults settings
 endif
 
+EXTRA_DIST = \
+	autogen.sh \
+	$(NULL)
+
 MAINTAINERCLEANFILES =			\
 	Makefile.in			\
 	aclocal.m4			\
