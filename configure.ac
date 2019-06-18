@@ -77,7 +77,8 @@ AC_ARG_WITH([systemdunitdir],
             [systemdunitdir="$withval"],
             [PKG_CHECK_VAR([systemdunitdir], [systemd],
                            [systemdsystemunitdir], [],
-                           [AC_MSG_ERROR(no_systemdunitdir_error)])])
+                           [AM_COND_IF([BUILD_SETTINGS],
+                                       [AC_MSG_ERROR(no_systemdunitdir_error)])])])
 
 AC_CONFIG_FILES([
 Makefile
