@@ -114,10 +114,9 @@ index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&
 # in its app menu; download the eos-extra.xml.gz as an external AppStream file.
 [org.gnome.software]
 show-nonfree-ui=false
-enable-software-sources=false
+enable-repos-dialog=false
 show-folder-management=false
 show-nonfree-prompt=false
-show-nonfree-software=true
 external-appstream-system-wide=true
 external-appstream-urls=['https://d3lapyynmdp1i9.cloudfront.net/app-info/eos-extra.xml.gz']
 screenshot-cache-age-maximum=0
