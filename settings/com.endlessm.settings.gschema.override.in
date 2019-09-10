@@ -134,7 +134,7 @@ show-browser=false
 candidate-encodings=['UTF-8', 'GB18030', 'ISO-8859-15', 'UTF-16']
 
 [org.gnome.settings-daemon.plugins.media-keys]
-logout=''
+logout=[]
 
 [org.gnome.settings-daemon.plugins.power]
 ambient-enabled=false
