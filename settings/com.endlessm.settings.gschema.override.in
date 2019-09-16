@@ -152,3 +152,6 @@ enabled=true
 [org.gnome.desktop.peripherals.touchpad]
 click-method='default'
 tap-to-click=true
+
+[org.gnome.ControlCenter]
+facesdirs=['/usr/share/pixmaps/faces/EndlessOS/']

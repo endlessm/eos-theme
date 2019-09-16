@@ -82,6 +82,7 @@ AC_ARG_WITH([systemdunitdir],
 
 AC_CONFIG_FILES([
 Makefile
+faces/Makefile
 fonts/Makefile
 icons/Makefile
 safe-defaults/Makefile
