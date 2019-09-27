@@ -3,7 +3,7 @@ AM_DISTCHECK_CONFIGURE_FLAGS = \
 	--with-systemdunitdir='$${prefix}/lib/systemd/system' \
 	$(NULL)
 
-SUBDIRS = po
+SUBDIRS = po faces
 
 if BUILD_ICONTHEME
 SUBDIRS += icons
