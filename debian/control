@@ -20,6 +20,7 @@ Homepage: http://www.endlessm.com
 Package: eos-theme
 Architecture: any
 Depends: eos-icon-theme,
+         eos-extra-faces,
          eos-extra-fonts,
          eos-default-settings
 Description: transitional metapackage for EndlessOS theme
@@ -34,6 +35,14 @@ Breaks: eos-theme (<< 1.4.0)
 Description: default settings for EndlessOS
  This package contains default settings for EndlessOS, including
  GSettings overrides and X11 environment defaults.
+
+Package: eos-extra-faces
+Architecture: any
+Depends: ${misc:Depends}
+Replaces: eos-theme (<< 1.4.0)
+Breaks: eos-theme (<< 1.4.0)
+Description: extra faces for EndlessOS
+ This package contains extra avatar used by Endless.
 
 Package: eos-extra-fonts
 Architecture: any
