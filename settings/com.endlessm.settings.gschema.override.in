@@ -89,7 +89,7 @@ favorite-apps=['org.gnome.Software.desktop', 'chromium-browser.desktop', 'org.gn
 # Automatically play video DVDs and launch the App Center when a USB with a repo
 # is inserted
 [org.gnome.desktop.media-handling]
-autorun-x-content-start-app=['x-content/ostree-software', 'x-content/unix-software', 'x-content/video-dvd']
+autorun-x-content-start-app=['x-content/ostree-repository', 'x-content/unix-software', 'x-content/video-dvd']
 
 # Hide EOG sidebar by default
 [org.gnome.eog.ui]
