@@ -27,6 +27,7 @@ document-font-name='Lato 12'
 # Hide the weekday by default
 [org.gnome.desktop.interface]
 clock-show-weekday=false
+facesdirs=['/usr/share/pixmaps/faces/EndlessOS/']
 
 [org.gnome.desktop.wm.preferences]
 titlebar-font='Lato Bold 13'
@@ -152,6 +153,3 @@ enabled=true
 [org.gnome.desktop.peripherals.touchpad]
 click-method='default'
 tap-to-click=true
-
-[org.gnome.ControlCenter]
-facesdirs=['/usr/share/pixmaps/faces/EndlessOS/']
