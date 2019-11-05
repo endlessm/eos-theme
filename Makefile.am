@@ -3,7 +3,7 @@ AM_DISTCHECK_CONFIGURE_FLAGS = \
 	--with-systemdunitdir='$${prefix}/lib/systemd/system' \
 	$(NULL)
 
-SUBDIRS = po faces
+SUBDIRS = po
 
 if BUILD_ICONTHEME
 SUBDIRS += icons
@@ -15,6 +15,10 @@ endif
 
 if BUILD_SETTINGS
 SUBDIRS += safe-defaults settings
+endif
+
+if BUILD_FACES
+SUBDIRS += faces
 endif
 
 EXTRA_DIST = \

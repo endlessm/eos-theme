@@ -66,6 +66,12 @@ AC_ARG_ENABLE(settings,
               [enable_settings="yes"])
 AM_CONDITIONAL([BUILD_SETTINGS],[test "x$enable_settings" = "xyes"])
 
+AC_ARG_ENABLE([faces],
+              [AC_HELP_STRING([--enable-faces],
+                              [enable faces build [default=yes]])],,
+              [enable_faces="yes"])
+AM_CONDITIONAL([BUILD_FACES],[test "x$enable_faces" = "xyes"])
+
 # allow systemdunitdir to be overridden on the command line so
 # that make distcheck doesn't fail when run as a non-root user
 m4_define([no_systemdunitdir_error],
