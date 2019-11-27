@@ -56,10 +56,6 @@ always-show-log-out=true
 [org.gnome.nautilus.preferences]
 default-folder-viewer='list-view'
 
-# Do not restore browser previous session
-[com.endlessm.eos-browser]
-restore-session-policy='never'
-
 # Decrease the likelihood that an unsteady click is interpreted as a drag
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
@@ -67,10 +63,6 @@ drag-threshold=10
 # Disable the switch user option on the user menu
 [org.gnome.desktop.lockdown]
 disable-user-switching=true
-
-# Set Exploration Center as browser homepage
-[com.endlessm.eos-browser]
-homepage-url='file:///usr/share/EndlessOS/exploration_center/index.html'
 
 # Automatically import user's pictures into Shotwell
 [org.yorba.shotwell.preferences.files]
