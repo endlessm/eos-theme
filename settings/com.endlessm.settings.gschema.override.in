@@ -56,10 +56,6 @@ always-show-log-out=true
 [org.gnome.nautilus.preferences]
 default-folder-viewer='list-view'
 
-# Do not restore browser previous session
-[com.endlessm.eos-browser]
-restore-session-policy='never'
-
 # Decrease the likelihood that an unsteady click is interpreted as a drag
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
@@ -67,10 +63,6 @@ drag-threshold=10
 # Disable the switch user option on the user menu
 [org.gnome.desktop.lockdown]
 disable-user-switching=true
-
-# Set Exploration Center as browser homepage
-[com.endlessm.eos-browser]
-homepage-url='file:///usr/share/EndlessOS/exploration_center/index.html'
 
 # Automatically import user's pictures into Shotwell
 [org.yorba.shotwell.preferences.files]
@@ -104,8 +96,8 @@ show-confirmation-dialog=false
 
 # Override the order for default search providers
 [org.gnome.desktop.search-providers]
-sort-order=['org.gnome.Software.desktop', 'gnome-calculator.desktop', 'com.endlessm.encyclopedia.ar.desktop', 'com.endlessm.encyclopedia.en.desktop', 'com.endlessm.encyclopedia.es.desktop', 'com.endlessm.encyclopedia.fr.desktop', 'com.endlessm.encyclopedia.id.desktop', 'com.endlessm.encyclopedia.pt.desktop', 'com.endlessm.encyclopedia.th.desktop', 'com.endlessm.encyclopedia.vi.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Yelp.desktop']
-disabled=['org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'gnote.desktop']
+sort-order=['org.gnome.Software.desktop', 'org.gnome.Calculator.desktop', 'com.endlessm.encyclopedia.ar.desktop', 'com.endlessm.encyclopedia.en.desktop', 'com.endlessm.encyclopedia.es.desktop', 'com.endlessm.encyclopedia.fr.desktop', 'com.endlessm.encyclopedia.id.desktop', 'com.endlessm.encyclopedia.pt.desktop', 'com.endlessm.encyclopedia.th.desktop', 'com.endlessm.encyclopedia.vi.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Yelp.desktop']
+disabled=['org.gnome.clocks.desktop']
 
 # Include Endless sample media in the directories indexed by tracker
 # (tracker does not follow symlinks, so we need the absolute path
