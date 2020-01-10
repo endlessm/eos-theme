@@ -158,6 +158,7 @@ fontdocdir = $(datadir)/doc/fonts-EndlessOS
 dist_fontdoc_DATA = \
 	ABeeZee-LICENSE.txt \
 	Abel-LICENSE.txt \
+	AlegreyaSansSC-LICENSE.txt \
 	Alice-LICENSE.txt \
 	Amaranth-LICENSE.txt \
 	AmaticSC-LICENSE.txt \
@@ -165,6 +166,7 @@ dist_fontdoc_DATA = \
 	Cardo-LICENSE.txt \
 	FiraSans-LICENSE.txt \
 	HammersmithOne-LICENSE.txt \
+	KalpurushANSI-LICENSE.txt \
 	LibreBaskerville-LICENSE.txt \
 	LibreFranklin-LICENSE.txt \
 	MarcellusSC-LICENSE.txt \
