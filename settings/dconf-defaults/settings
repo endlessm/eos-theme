@@ -15,3 +15,9 @@
 # https://phabricator.endlessm.com/T20990
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 show-in-lock-screen=false
+
+# Preset the enabled-extensions gsetting to enable mandatory shell extensions on Endless OS.
+# https://help.gnome.org/admin/system-admin-guide/stable/extensions-lockdown.html.en
+# https://phabricator.endlessm.com/T28777
+[org/gnome/shell]
+enabled-extensions=['ubuntu-appindicators@ubuntu.com']
