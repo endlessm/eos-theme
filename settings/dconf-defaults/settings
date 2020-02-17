@@ -21,3 +21,6 @@ show-in-lock-screen=false
 # https://phabricator.endlessm.com/T28777
 [org/gnome/shell]
 enabled-extensions=['ubuntu-appindicators@ubuntu.com']
+development-tools=false
+disabled-extensions=['']
+disable-user-extensions=true
