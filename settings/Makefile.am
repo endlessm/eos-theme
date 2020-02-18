@@ -34,6 +34,7 @@ xsession_DATA = \
 
 EXTRA_DIST = \
 	dconf-defaults/settings \
+	dconf-defaults/locks/00_settings \
 	com.endlessm.settings.gschema.override.in \
 	user.in \
 	$(xsession_DATA) \
