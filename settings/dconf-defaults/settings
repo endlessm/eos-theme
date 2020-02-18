@@ -23,4 +23,6 @@ show-in-lock-screen=false
 enabled-extensions=['ubuntu-appindicators@ubuntu.com']
 development-tools=false
 disabled-extensions=['']
-disable-user-extensions=true
+# disable-user-extensions disables all extensions keeping [enabled|disabled]-extensions
+# list unchanged.
+disable-user-extensions=false
