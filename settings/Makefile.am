@@ -32,6 +32,11 @@ xsession_DATA = \
 	65gtk-overlay-scrolling \
 	$(NULL)
 
+autostartdir = $(datadir)/gnome/autostart
+dist_autostart_DATA = \
+	com.endlessm.EknServicesMultiplexer-flatpak-permissions.desktop \
+	$(NULL)
+
 EXTRA_DIST = \
 	dconf-defaults/settings \
 	com.endlessm.settings.gschema.override.in \
