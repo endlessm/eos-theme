@@ -1,3 +1,9 @@
 r @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf
-r @SYSCONFDIR@/chromium/policies/managed/safe-search.json
+r @SYSCONFDIR@/chromium-browser/policies/managed/safe-search.json
 r @SYSCONFDIR@/opt/chrome/policies/managed/safe-search.json
+
+# cleanup fallout from T29779
+r @SYSCONFDIR@/chromium/policies/managed/safe-search.json
+r @SYSCONFDIR@/chromium/policies/managed
+r @SYSCONFDIR@/chromium/policies
+r @SYSCONFDIR@/chromium
