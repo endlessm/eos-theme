@@ -100,12 +100,6 @@ sort-order=['org.gnome.Software.desktop', 'org.gnome.Calculator.desktop', 'com.e
 disabled=['org.gnome.clocks.desktop']
 enabled=['org.learningequality.Kolibri.desktop']
 
-# Include Endless sample media in the directories indexed by tracker
-# (tracker does not follow symlinks, so we need the absolute path
-# even though they are linked from the xdg user directories)
-[org.freedesktop.Tracker.Miner.Files]
-index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS', '/var/endless-content']
-
 # Do not show the nonfree tags in GNOME Software nor the sources option/dialog
 # in its app menu; download the eos-extra.xml.gz as an external AppStream file.
 [org.gnome.software]
