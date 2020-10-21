@@ -15,12 +15,5 @@ DEB_DH_AUTORECONF_ARGS := ./autogen.sh
 DEB_DH_SYSTEMD_ENABLE_ARGS += --no-enable
 DEB_DH_SYSTEMD_START_ARGS += --no-start
 
-install/eos-icon-theme::
-	sed "s/@arch@/$(DEB_HOST_GNU_CPU)/" \
-		< debian/eos-icon-theme.conf.in \
-		> debian/eos-icon-theme.conf
-	install -m644 debian/eos-icon-theme.sh \
-		debian/eos-icon-theme/etc/X11/Xsession.d/20eos-icon-theme
-
 clean::
 	rm -f debian/eos-icon-theme.conf
