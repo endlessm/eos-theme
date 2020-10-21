@@ -1,3 +1,10 @@
+eos-theme (1.1.7) master; urgency=low
+
+  * Remove Flatpak icon theme overrides and tmpfiles.d configuration for
+    eos-icon-theme (https://phabricator.endlessm.com/T30537)
+
+ -- Dylan McCall <dylan@endlessos.org>  Wed, 21 Oct 2020 11:21:54 -0700
+
 eos-theme (1.1.6) master; urgency=medium
 
   * Install an autostart desktop file to set the flatpak permissions for the

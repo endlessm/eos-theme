@@ -1,6 +1,0 @@
-D /run/share 0755 - - -
-D /run/share/icons 0755 - - -
-L /run/share/icons/EndlessOS - - - - /var/lib/flatpak/runtime/org.freedesktop.Platform.Icontheme.EndlessOS/@arch@/1.0/active/files
-D /run/share-extra 0755 - - -
-D /run/share-extra/icons 0755 - - -
-L /run/share-extra/icons/EndlessOS - - - - /var/endless-extra/flatpak/runtime/org.freedesktop.Platform.Icontheme.EndlessOS/@arch@/1.0/active/files
