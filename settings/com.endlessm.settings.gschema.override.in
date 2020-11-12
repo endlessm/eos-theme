@@ -77,7 +77,7 @@ monitor-library=true
 # Endless-specific default taskbar icons
 [org.gnome.shell]
 icon-grid-layout={}
-favorite-apps=['org.gnome.Software.desktop', 'com.hack_computer.Clubhouse.desktop', 'chromium-browser.desktop', 'org.gnome.Nautilus.desktop']
+favorite-apps=['org.gnome.Software.desktop', 'com.hack_computer.Clubhouse.desktop', 'org.chromium.Chromium.desktop', 'org.gnome.Nautilus.desktop']
 
 # Automatically play video DVDs and launch the App Center when a USB with a repo
 # is inserted
