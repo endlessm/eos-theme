@@ -1,6 +1,11 @@
 r @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf
-r @SYSCONFDIR@/chromium-browser/policies/managed/safe-search.json
 r @SYSCONFDIR@/opt/chrome/policies/managed/safe-search.json
+r /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search/@FLATPAK_ARCH@/1
+r /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search/@FLATPAK_ARCH@
+r /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search
+
+# cleanup old config now that we moved to the chromium flatpak, see T30997
+r @SYSCONFDIR@/chromium-browser/policies/managed/safe-search.json
 
 # cleanup fallout from T29779
 r @SYSCONFDIR@/chromium/policies/managed/safe-search.json
