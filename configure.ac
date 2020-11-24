@@ -19,6 +19,7 @@ dnl Initialize libtool
 AM_DISABLE_STATIC
 AC_LIBTOOL_WIN32_DLL
 AM_PROG_LIBTOOL
+AC_CANONICAL_TARGET
 
 dnl Initialize intltool
 IT_PROG_INTLTOOL([0.40.0])
@@ -79,6 +80,17 @@ AC_ARG_WITH([systemdunitdir],
                            [systemdsystemunitdir], [],
                            [AM_COND_IF([BUILD_SETTINGS],
                                        [AC_MSG_ERROR(no_systemdunitdir_error)])])])
+
+flatpak_arch="x86_64"
+case $target_cpu in
+  arm*)
+    flatpak_arch="arm"
+  ;;
+  aarch64*)
+    flatpak_arch="aarch64"
+  ;;
+esac
+AC_SUBST(flatpak_arch)
 
 AC_CONFIG_FILES([
 Makefile
