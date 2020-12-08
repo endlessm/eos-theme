@@ -6,10 +6,6 @@ dynamic-workspaces=false
 [org.gnome.desktop.wm.preferences]
 num-workspaces=1
 
-# Disable switching users from the lock screen
-[org.gnome.desktop.screensaver]
-user-switch-enabled=false
-
 # Force the app menu to be on the application window rather than the shell panel
 # (required due to removal of the app menu from the panel)
 [org.gnome.settings-daemon.plugins.xsettings]
@@ -59,10 +55,6 @@ default-folder-viewer='list-view'
 # Decrease the likelihood that an unsteady click is interpreted as a drag
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
-
-# Disable the switch user option on the user menu
-[org.gnome.desktop.lockdown]
-disable-user-switching=true
 
 # Automatically import user's pictures into Shotwell
 [org.yorba.shotwell.preferences.files]
