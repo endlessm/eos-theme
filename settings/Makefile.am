@@ -37,11 +37,17 @@ dist_autostart_DATA = \
 	com.endlessm.EknServicesMultiplexer-flatpak-permissions.desktop \
 	$(NULL)
 
+containers_settingsdir = $(sysconfdir)/containers/registries.conf.d
+containers_settings_DATA = \
+	00-default-registries.conf \
+	$(NULL)
+
 EXTRA_DIST = \
 	dconf-defaults/settings \
 	com.endlessm.settings.gschema.override.in \
 	user.in \
 	$(xsession_DATA) \
+	$(containers_settings_DATA) \
 	$(NULL)
 
 CLEANFILES = \
