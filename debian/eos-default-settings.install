@@ -1,4 +1,5 @@
 lib/systemd/system
+etc/containers/registries.conf.d
 etc/X11/Xsession.d
 usr/sbin/eos-safe-defaults
 usr/share/dconf

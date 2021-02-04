@@ -34,7 +34,7 @@ Replaces: eos-theme (<< 1.4.0)
 Breaks: eos-theme (<< 1.4.0)
 Description: default settings for EndlessOS
  This package contains default settings for EndlessOS, including
- GSettings overrides and X11 environment defaults.
+ GSettings overrides and X11 environment defaults, among others.
 
 Package: eos-extra-faces
 Architecture: any
