@@ -22,12 +22,6 @@ AM_DISABLE_STATIC
 AC_LIBTOOL_WIN32_DLL
 AM_PROG_LIBTOOL
 
-dnl Initialize intltool
-IT_PROG_INTLTOOL([0.40.0])
-
-GETTEXT_PACKAGE="${PACKAGE}"
-AC_SUBST(GETTEXT_PACKAGE)
-
 GLIB_GSETTINGS
 AC_PATH_PROG([DCONF],[dconf])
 
@@ -100,7 +94,6 @@ fonts/Makefile
 icons/Makefile
 safe-defaults/Makefile
 settings/Makefile
-po/Makefile.in
 ])
 
 AC_OUTPUT
