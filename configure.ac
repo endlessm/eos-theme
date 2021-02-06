@@ -4,6 +4,8 @@ AC_PREREQ(2.53)
 AC_INIT([eos-theme], [1.5.0],
         [http://www.endlessm.com])
 
+AC_CANONICAL_TARGET
+
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-xz no-dist-gzip])
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
@@ -19,13 +21,6 @@ dnl Initialize libtool
 AM_DISABLE_STATIC
 AC_LIBTOOL_WIN32_DLL
 AM_PROG_LIBTOOL
-AC_CANONICAL_TARGET
-
-dnl Initialize intltool
-IT_PROG_INTLTOOL([0.40.0])
-
-GETTEXT_PACKAGE="${PACKAGE}"
-AC_SUBST(GETTEXT_PACKAGE)
 
 GLIB_GSETTINGS
 AC_PATH_PROG([DCONF],[dconf])
@@ -99,7 +94,6 @@ fonts/Makefile
 icons/Makefile
 safe-defaults/Makefile
 settings/Makefile
-po/Makefile.in
 ])
 
 AC_OUTPUT

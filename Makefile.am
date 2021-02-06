@@ -3,7 +3,7 @@ AM_DISTCHECK_CONFIGURE_FLAGS = \
 	--with-systemdunitdir='$${prefix}/lib/systemd/system' \
 	$(NULL)
 
-SUBDIRS = po
+SUBDIRS =
 
 if BUILD_ICONTHEME
 SUBDIRS += icons
@@ -53,8 +53,3 @@ dist-hook:
 		else \
 		echo A git clone is required to generate a ChangeLog >&2; \
 	fi
-
-# we don't want to install mo files, all translations are already stored
-# in theme files
-install-data-local:
-	$(MAKE) -C po uninstall

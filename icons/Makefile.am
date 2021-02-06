@@ -1,8 +1,8 @@
 themedir = $(datadir)/icons/EndlessOS
-theme_in_files = index.theme.in.in
-theme_DATA = $(theme_in_files:.theme.in.in=.theme)
+theme_in_files = index.theme.in
+theme_DATA = $(theme_in_files:.theme.in=.theme)
 
-fullcolor_render_sizes = "24x24" "64x64" "scalable"
+fullcolor_render_sizes = "24x24" "64x64"
 symbolic_render_sizes = "scalable"
 symbolic_encode_sizes = "16x16" "24x24" "32x32" "48x48" "64x64" "96x96"
 
@@ -12,12 +12,11 @@ all_dirs+=$(shell SIZES="$(symbolic_render_sizes)"; for size in $$SIZES; do for 
 THEME_DIRS = $(shell ALL_DIRS="$(all_dirs)"; echo $$ALL_DIRS | tr ' ' '\n' | sort -u | tr '\n' ',')
 
 THEME_FILES = $(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/fullcolor/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
-THEME_FILES += $(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/apps/$$size/* \( -name "*.png" -or -name "*.svg" \)`; do printf "$$file "; done; done;)
 THEME_FILES += $(shell SIZES="$(symbolic_render_sizes)"; for size in $$SIZES; do for file in `find $(srcdir)/symbolic/$$size/* -name "*.svg"`; do printf "$$file "; done; done;)
 
-EXTRA_DIST = index.theme.in.in $(THEME_FILES)
+EXTRA_DIST = index.theme.in $(THEME_FILES)
 
-index.theme.in: index.theme.in.in Makefile
+index.theme: index.theme.in Makefile
 	dirs="`echo $(THEME_DIRS)`"; \
 	sed -e "s|\@THEME_DIRS\@|$$dirs|g" < $< > $@; \
 	echo "" >> $@; \
@@ -82,8 +81,6 @@ index.theme.in: index.theme.in.in Makefile
 		fi; \
 		echo "" >> $@; \
 	done
-
-@INTLTOOL_THEME_RULE@
 
 install-data-local:
 	for size in $(fullcolor_render_sizes); do \
