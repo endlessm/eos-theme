@@ -60,10 +60,6 @@ drag-threshold=10
 [org.yorba.shotwell.preferences.files]
 auto-import=true
 
-# Automatically import user's music into Rhythmbox
-[org.gnome.rhythmbox.rhythmdb]
-monitor-library=true
-
 # Default desktop layout. An empty value indicates that the real per-personality
 # default stored in usr/share/EndlessOS/personality-defaults/ should be used
 # Endless-specific default taskbar icons
@@ -105,10 +101,6 @@ screenshot-cache-age-maximum=0
 # Remove default screencast duration limit
 [org.gnome.settings-daemon.plugins.media-keys]
 max-screencast-length=0
-
-# Make Rhythmbox seem less like a database management app
-[org.gnome.rhythmbox.source]
-show-browser=false
 
 # Enable GB18030 encoding in gedit
 [org.gnome.gedit.preferences.encodings]
