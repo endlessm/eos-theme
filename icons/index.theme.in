@@ -1,6 +1,6 @@
 [Icon Theme]
-_Name=EndlessOS
-_Comment=EndlessOS icon theme
+Name=EndlessOS
+Comment=EndlessOS icon theme
 Inherits=Adwaita
 
 # Directory list
