@@ -42,12 +42,18 @@ containers_settings_DATA = \
 	00-default-registries.conf \
 	$(NULL)
 
+cupspkhelperdir = $(datadir)/polkit-1/rules.d
+cupspkhelper_DATA = \
+	com.endlessm.Config.Printing.rules \
+	$(NULL)
+
 EXTRA_DIST = \
 	dconf-defaults/settings \
 	com.endlessm.settings.gschema.override.in \
 	user.in \
 	$(xsession_DATA) \
 	$(containers_settings_DATA) \
+	$(cupspkhelper_DATA) \
 	$(NULL)
 
 CLEANFILES = \
