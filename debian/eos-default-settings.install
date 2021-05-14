@@ -7,3 +7,4 @@ usr/share/eos-default-settings
 usr/share/eos-safe-defaults
 usr/share/glib-2.0/schemas
 usr/share/gnome/autostart
+usr/share/polkit-1/rules.d
