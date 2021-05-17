@@ -1,6 +1,6 @@
 polkit.addRule(function(action, subject) {
     /* Permit users in group lpadmin to admin printers via GUI */
-    if (action.id.indexOf("org.opensuse.cupspkhelper.mechanism.") &&
+    if (action.id.indexOf("org.opensuse.cupspkhelper.mechanism.") == 0 &&
         subject.active && subject.local && subject.isInGroup("lpadmin")) {
             return polkit.Result.YES;
     }
