@@ -47,6 +47,11 @@ cupspkhelper_DATA = \
 	com.endlessm.Config.Printing.rules \
 	$(NULL)
 
+nmconfdir = $(exec_prefix)/lib/NetworkManager/conf.d
+dist_nmconf_DATA = \
+	endless-connectivity.conf \
+	$(NULL)
+
 EXTRA_DIST = \
 	dconf-defaults/settings \
 	com.endlessm.settings.gschema.override.in \
