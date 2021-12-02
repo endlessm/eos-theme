@@ -40,10 +40,12 @@ safe_defaults_DATA = \
 safe_defaults_chrome_policy_safe_searchdir = \
 	$(datadir)/eos-safe-defaults/chrome/policies/managed
 safe_defaults_chrome_policy_safe_search_DATA = \
+	dns-over-https.json \
 	chrome-safe-search.json \
 	$(NULL)
 
 EXTRA_DIST = \
+	dns-over-https.json \
 	chrome-safe-search.json \
 	eos-safe-defaults.in \
 	eos-safe-defaults.service.in \
