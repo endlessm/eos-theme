@@ -6,7 +6,8 @@
 # if a symlinked config file in the ostree is no longer needed it should
 # be made empty rather than deleted, otherwise the change from L to r
 # in this file will be ineffective.
-L @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf - - - - @DATAROOTDIR@/eos-safe-defaults/nm-opendns-family-shield.conf
+L @SYSCONFDIR@/NetworkManager/conf.d/nm-use-dnsmasq.conf - - - - @DATAROOTDIR@/eos-safe-defaults/nm-use-dnsmasq.conf
+L @SYSCONFDIR@/NetworkManager/dnsmasq.d/dnsmasq-opendns-family-shield.conf - - - - @DATAROOTDIR@/eos-safe-defaults/dnsmasq-opendns-family-shield.conf
 L @SYSCONFDIR@/opt/chrome/policies/managed/dns-over-https.json - - - - @DATAROOTDIR@/eos-safe-defaults/chrome/policies/managed/dns-over-https.json
 L @SYSCONFDIR@/opt/chrome/policies/managed/safe-search.json - - - - @DATAROOTDIR@/eos-safe-defaults/chrome/policies/managed/chrome-safe-search.json
 D /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search 0755 - - -
@@ -21,3 +22,6 @@ r @SYSCONFDIR@/chromium/policies/managed/safe-search.json
 r @SYSCONFDIR@/chromium/policies/managed
 r @SYSCONFDIR@/chromium/policies
 r @SYSCONFDIR@/chromium
+
+# cleanup fallout from T30363
+r @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf

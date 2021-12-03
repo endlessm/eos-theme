@@ -33,7 +33,8 @@ generated_tmpfiles = \
 
 safe_defaultsdir = $(datadir)/eos-safe-defaults
 safe_defaults_DATA = \
-	nm-opendns-family-shield.conf \
+	dnsmasq-opendns-family-shield.conf \
+	nm-use-dnsmasq.conf \
 	$(generated_tmpfiles) \
 	$(NULL)
 
@@ -46,10 +47,11 @@ safe_defaults_chrome_policy_safe_search_DATA = \
 
 EXTRA_DIST = \
 	dns-over-https.json \
+	dnsmasq-opendns-family-shield.conf \
 	chrome-safe-search.json \
 	eos-safe-defaults.in \
 	eos-safe-defaults.service.in \
-	nm-opendns-family-shield.conf \
+	nm-use-dnsmasq.conf \
 	tmpfiles-disable.conf.in \
 	tmpfiles-enable.conf.in \
 	$(NULL)
