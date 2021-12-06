@@ -1,4 +1,6 @@
-r @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf
+r @SYSCONFDIR@/NetworkManager/conf.d/nm-use-dnsmasq.conf
+r @SYSCONFDIR@/NetworkManager/dnsmasq.d/dnsmasq-opendns-family-shield.conf
+r @SYSCONFDIR@/opt/chrome/policies/managed/dns-over-https.json
 r @SYSCONFDIR@/opt/chrome/policies/managed/safe-search.json
 r /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search/@FLATPAK_ARCH@/1
 r /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search/@FLATPAK_ARCH@
@@ -12,3 +14,6 @@ r @SYSCONFDIR@/chromium/policies/managed/safe-search.json
 r @SYSCONFDIR@/chromium/policies/managed
 r @SYSCONFDIR@/chromium/policies
 r @SYSCONFDIR@/chromium
+
+# cleanup fallout from T30363
+r @SYSCONFDIR@/NetworkManager/conf.d/opendns-family-shield.conf
