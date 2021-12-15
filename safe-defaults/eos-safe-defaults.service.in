@@ -1,7 +1,11 @@
 [Unit]
 Description=Enable/update the Endless family-safe default settings
 ConditionNeedsUpdate=/etc
-Before=NetworkManager.service
+DefaultDependencies=no
+Requires=local-fs.target
+After=local-fs.target
+Before=NetworkManager.service systemd-update-done.service
+Conflicts=shutdown.target
 
 [Service]
 Type=oneshot
