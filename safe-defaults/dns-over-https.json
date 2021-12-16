@@ -1,4 +1,4 @@
 {
-  "DnsOverHttpsMode": "secure",
+  "DnsOverHttpsMode": "automatic",
   "DnsOverHttpsTemplates": "https://doh.familyshield.opendns.com/dns-query"
 }
