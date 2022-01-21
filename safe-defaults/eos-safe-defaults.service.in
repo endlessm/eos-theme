@@ -1,6 +1,5 @@
 [Unit]
 Description=Enable/update the Endless family-safe default settings
-ConditionNeedsUpdate=/etc
 DefaultDependencies=no
 Requires=local-fs.target
 After=local-fs.target
@@ -11,6 +10,7 @@ Conflicts=shutdown.target
 Type=oneshot
 RemainAfterExit=true
 ExecStart=@SBINDIR@/eos-safe-defaults enable
+ExecStop=@SBINDIR@/eos-safe-defaults disable
 
 [Install]
 WantedBy=multi-user.target
