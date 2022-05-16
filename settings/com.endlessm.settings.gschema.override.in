@@ -47,11 +47,7 @@ drag-threshold=10
 [org.yorba.shotwell.preferences.files]
 auto-import=true
 
-# Default desktop layout. An empty value indicates that the real per-personality
-# default stored in usr/share/EndlessOS/personality-defaults/ should be used
-# Endless-specific default taskbar icons
 [org.gnome.shell]
-icon-grid-layout={}
 favorite-apps=['org.gnome.Software.desktop', 'com.hack_computer.Clubhouse.desktop', 'org.chromium.Chromium.desktop', 'org.gnome.Nautilus.desktop']
 
 # Automatically play video DVDs and launch the App Center when a USB with a repo
