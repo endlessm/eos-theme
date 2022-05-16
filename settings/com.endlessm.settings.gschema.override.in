@@ -1,8 +1,3 @@
-# Force the app menu to be on the application window rather than the shell panel
-# (required due to removal of the app menu from the panel)
-[org.gnome.settings-daemon.plugins.xsettings]
-overrides={"Gtk/ShellShowsAppMenu": <int32 0>}
-
 # Select the icon theme
 [org.gnome.desktop.interface]
 icon-theme='EndlessOS'
