@@ -16,9 +16,6 @@ avatar-directories=['/usr/share/pixmaps/faces/EndlessOS/']
 titlebar-font='Lato Bold 13'
 titlebar-uses-system-font=false
 
-[org.gnome.settings-daemon.plugins.xsettings]
-hinting='slight'
-
 # Enable the minimize and maximize buttons
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
