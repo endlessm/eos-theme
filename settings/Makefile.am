@@ -32,11 +32,6 @@ xsession_DATA = \
 	65gtk-overlay-scrolling \
 	$(NULL)
 
-autostartdir = $(datadir)/gnome/autostart
-dist_autostart_DATA = \
-	com.endlessm.EknServicesMultiplexer-flatpak-permissions.desktop \
-	$(NULL)
-
 containers_settingsdir = $(sysconfdir)/containers/registries.conf.d
 containers_settings_DATA = \
 	00-default-registries.conf \
