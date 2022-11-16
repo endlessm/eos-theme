@@ -1,0 +1,11 @@
+lib/systemd/system
+etc/containers/registries.conf.d
+etc/X11/Xsession.d
+usr/lib/NetworkManager/conf.d
+usr/sbin/eos-safe-defaults
+usr/share/dconf
+usr/share/eos-default-settings
+usr/share/eos-safe-defaults
+usr/share/glib-2.0/schemas
+usr/share/gnome/autostart
+usr/share/polkit-1/rules.d

@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/autoreconf.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include debian/gnome.mk
+include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+
+DEB_MAKE_INSTALL_TARGET  := install DESTDIR=$(CURDIR)/debian/tmp/
+DEB_DH_INSTALLGSETTINGS_ARGS_eos-default-settings += --priority=50
+DEB_CONFIGURE_EXTRA_FLAGS += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
+DEB_DH_AUTORECONF_ARGS := ./autogen.sh
+
+# assume converted systems don't want the safe defaults applied
+DEB_DH_SYSTEMD_ENABLE_ARGS += --no-enable
+DEB_DH_SYSTEMD_START_ARGS += --no-start
+
+clean::
+	rm -f debian/eos-icon-theme.conf
