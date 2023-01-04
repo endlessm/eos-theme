@@ -21,10 +21,12 @@
 case "$1" in
   "enable")
     systemd-tmpfiles --create --remove @DATAROOTDIR@/eos-safe-defaults/tmpfiles-enable.conf
+    update-ca-certificates
     echo "$0: Enabled family-safe default configuration."
     ;;
   "disable")
     systemd-tmpfiles --remove @DATAROOTDIR@/eos-safe-defaults/tmpfiles-disable.conf
+    update-ca-certificates
     echo "$0: Disabled family-safe default configuration."
     ;;
   *)
