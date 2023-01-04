@@ -35,6 +35,7 @@ safe_defaultsdir = $(datadir)/eos-safe-defaults
 safe_defaults_DATA = \
 	dnsmasq-opendns-family-shield.conf \
 	nm-use-dnsmasq.conf \
+	Cisco_Umbrella_Root_CA.cer \
 	$(generated_tmpfiles) \
 	$(NULL)
 
@@ -52,6 +53,7 @@ EXTRA_DIST = \
 	eos-safe-defaults.in \
 	eos-safe-defaults.service.in \
 	nm-use-dnsmasq.conf \
+	Cisco_Umbrella_Root_CA.cer \
 	tmpfiles-disable.conf.in \
 	tmpfiles-enable.conf.in \
 	$(NULL)

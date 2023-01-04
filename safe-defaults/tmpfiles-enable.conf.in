@@ -13,6 +13,8 @@ L @SYSCONFDIR@/opt/chrome/policies/managed/safe-search.json - - - - @DATAROOTDIR
 D /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search 0755 - - -
 D /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search/@FLATPAK_ARCH@ 0755 - - -
 L /run/flatpak/extension/org.chromium.Chromium.Policy.safe-search/@FLATPAK_ARCH@/1 - - - - @DATAROOTDIR@/eos-safe-defaults/chrome
+d /usr/local/share/ca-certificates 0755 - - -
+L /usr/local/share/ca-certificates/Cisco_Umbrella_Root_CA.crt - - - - @DATAROOTDIR@/eos-safe-defaults/Cisco_Umbrella_Root_CA.cer
 
 # cleanup old config now that we moved to the chromium flatpak, see T30997
 r @SYSCONFDIR@/chromium-browser/policies/managed/safe-search.json
