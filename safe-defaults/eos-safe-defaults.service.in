@@ -2,7 +2,7 @@
 Description=Enable/update the Endless family-safe default settings
 DefaultDependencies=no
 Requires=local-fs.target
-After=local-fs.target
+After=local-fs.target eos-update-system-ca.service
 Before=NetworkManager.service systemd-update-done.service
 Conflicts=shutdown.target
 
