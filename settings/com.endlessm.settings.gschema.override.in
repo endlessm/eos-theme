@@ -45,7 +45,7 @@ drag-threshold=10
 auto-import=true
 
 [org.gnome.shell]
-favorite-apps=['org.gnome.Software.desktop', 'com.hack_computer.Clubhouse.desktop', 'org.chromium.Chromium.desktop', 'org.gnome.Nautilus.desktop']
+favorite-apps=['org.gnome.Software.desktop', 'org.chromium.Chromium.desktop', 'org.gnome.Nautilus.desktop']
 
 # Automatically play video DVDs; don't autostart for
 # x-content/ostree-repository since Software doesn't currently support it.
