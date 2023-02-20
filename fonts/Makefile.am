@@ -147,6 +147,20 @@ dist_font_DATA = \
 	Skranji-Regular.ttf \
 	Sniglet-ExtraBold.ttf \
 	Sniglet-Regular.ttf \
+	SourceCodePro-Black.otf \
+	SourceCodePro-BlackIt.otf \
+	SourceCodePro-Bold.otf \
+	SourceCodePro-BoldIt.otf \
+	SourceCodePro-ExtraLight.otf \
+	SourceCodePro-ExtraLightIt.otf \
+	SourceCodePro-It.otf \
+	SourceCodePro-Light.otf \
+	SourceCodePro-LightIt.otf \
+	SourceCodePro-Medium.otf \
+	SourceCodePro-MediumIt.otf \
+	SourceCodePro-Regular.otf \
+	SourceCodePro-Semibold.otf \
+	SourceCodePro-SemiboldIt.otf \
 	VarelaRound-Regular.ttf \
 	$(NULL)
 
@@ -182,5 +196,6 @@ dist_fontdoc_DATA = \
 	Sanchez-LICENSE.txt \
 	Skranji-LICENSE.txt \
 	Sniglet-LICENSE.txt \
+	SourceCodePro-LICENSE.txt \
 	VarelaRound-LICENSE.txt \
 	$(NULL)

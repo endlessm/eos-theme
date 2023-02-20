@@ -7,6 +7,12 @@ icon-theme='EndlessOS'
 font-name='Lato 12'
 document-font-name='Lato 12'
 
+# This restores the default from gsettings-desktop-schemas that Debian
+# overrides because Source Code Pro isn't packaged.
+#
+# https://bugs.debian.org/736681
+monospace-font-name='Source Code Pro 10'
+
 # Hide the weekday by default
 [org.gnome.desktop.interface]
 clock-show-weekday=false
