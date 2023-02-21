@@ -80,7 +80,7 @@ enabled=['org.learningequality.Kolibri.desktop']
 show-nonfree-ui=false
 enable-repos-dialog=false
 external-appstream-system-wide=true
-external-appstream-urls=['https://d3lapyynmdp1i9.cloudfront.net/app-info/eos-extra.xml.gz']
+external-appstream-urls=['https://gnome-software-data.endlessm.com/app-info/eos-extra.xml.gz']
 screenshot-cache-age-maximum=0
 
 # Remove default screencast duration limit
