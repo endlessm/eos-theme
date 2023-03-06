@@ -95,7 +95,7 @@ show-nonfree-ui=false
 enable-repos-dialog=false
 show-nonfree-prompt=false
 external-appstream-system-wide=true
-external-appstream-urls=['https://d3lapyynmdp1i9.cloudfront.net/app-info/eos-extra.xml.gz']
+external-appstream-urls=['https://appstream.endlessos.org/app-info/eos-extra.xml.gz']
 screenshot-cache-age-maximum=0
 
 # Remove default screencast duration limit
