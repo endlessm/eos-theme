@@ -2,6 +2,7 @@ lib/systemd/system
 etc/containers/registries.conf.d
 etc/X11/Xsession.d
 usr/lib/NetworkManager/conf.d
+usr/lib/tmpfiles.d
 usr/sbin/eos-safe-defaults
 usr/share/dconf
 usr/share/eos-default-settings
