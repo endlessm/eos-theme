@@ -39,10 +39,6 @@ picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
 [org.gnome.shell]
 always-show-log-out=true
 
-# Set Nautilus default view to list view
-[org.gnome.nautilus.preferences]
-default-folder-viewer='list-view'
-
 # Decrease the likelihood that an unsteady click is interpreted as a drag
 [org.gnome.settings-daemon.peripherals.mouse]
 drag-threshold=10
