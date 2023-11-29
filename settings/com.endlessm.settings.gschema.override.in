@@ -69,7 +69,7 @@ show-confirmation-dialog=false
 [org.gnome.desktop.search-providers]
 sort-order=['org.gnome.Software.desktop', 'org.gnome.Calculator.desktop', 'com.endlessm.encyclopedia.ar.desktop', 'com.endlessm.encyclopedia.en.desktop', 'com.endlessm.encyclopedia.es.desktop', 'com.endlessm.encyclopedia.fr.desktop', 'com.endlessm.encyclopedia.id.desktop', 'com.endlessm.encyclopedia.pt.desktop', 'com.endlessm.encyclopedia.th.desktop', 'com.endlessm.encyclopedia.vi.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Yelp.desktop']
 disabled=['org.gnome.clocks.desktop']
-enabled=['org.learningequality.Kolibri.desktop']
+enabled=['org.endlessos.Key.desktop', 'org.learningequality.Kolibri.desktop']
 
 # Do not show the nonfree tags in GNOME Software nor the sources option/dialog
 # in its app menu; download the eos-extra.xml.gz as an external AppStream file.
