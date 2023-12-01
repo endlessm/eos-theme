@@ -80,10 +80,6 @@ external-appstream-system-wide=true
 external-appstream-urls=['https://appstream.endlessos.org/app-info/eos-extra.xml.gz']
 screenshot-cache-age-maximum=0
 
-# Remove default screencast duration limit
-[org.gnome.settings-daemon.plugins.media-keys]
-max-screencast-length=0
-
 # Enable GB18030 encoding in gedit
 [org.gnome.gedit.preferences.encodings]
 candidate-encodings=['UTF-8', 'GB18030', 'ISO-8859-15', 'UTF-16']
