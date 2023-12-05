@@ -39,10 +39,6 @@ picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
 [org.gnome.shell]
 always-show-log-out=true
 
-# Decrease the likelihood that an unsteady click is interpreted as a drag
-[org.gnome.settings-daemon.peripherals.mouse]
-drag-threshold=10
-
 # Automatically import user's pictures into Shotwell
 [org.yorba.shotwell.preferences.files]
 auto-import=true
