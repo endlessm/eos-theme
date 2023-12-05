@@ -91,6 +91,7 @@ AC_CONFIG_FILES([
 Makefile
 faces/Makefile
 fonts/Makefile
+gnome-initial-setup/Makefile
 gnome-software/Makefile
 icons/Makefile
 safe-defaults/Makefile
