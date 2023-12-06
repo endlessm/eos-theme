@@ -27,6 +27,16 @@ settings_DATA = \
 	50_eos-theme.gschema.override \
 	$(NULL)
 
+gtk3settingsdir = $(datadir)/gtk-3.0
+dist_gtk3settings_DATA = \
+	settings.ini \
+	$(NULL)
+
+gtk4settingsdir = $(datadir)/gtk-4.0
+dist_gtk4settings_DATA = \
+	settings.ini \
+	$(NULL)
+
 xsessiondir = $(sysconfdir)/X11/Xsession.d
 dist_xsession_DATA = \
 	65gtk-overlay-scrolling \
