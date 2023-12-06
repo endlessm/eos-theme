@@ -28,17 +28,17 @@ settings_DATA = \
 	$(NULL)
 
 xsessiondir = $(sysconfdir)/X11/Xsession.d
-xsession_DATA = \
+dist_xsession_DATA = \
 	65gtk-overlay-scrolling \
 	$(NULL)
 
 containers_settingsdir = $(sysconfdir)/containers/registries.conf.d
-containers_settings_DATA = \
+dist_containers_settings_DATA = \
 	00-default-registries.conf \
 	$(NULL)
 
 cupspkhelperdir = $(datadir)/polkit-1/rules.d
-cupspkhelper_DATA = \
+dist_cupspkhelper_DATA = \
 	com.endlessm.Config.Printing.rules \
 	$(NULL)
 
@@ -51,9 +51,6 @@ EXTRA_DIST = \
 	dconf-defaults/settings \
 	com.endlessm.settings.gschema.override.in \
 	user.in \
-	$(xsession_DATA) \
-	$(containers_settings_DATA) \
-	$(cupspkhelper_DATA) \
 	$(NULL)
 
 CLEANFILES = \
