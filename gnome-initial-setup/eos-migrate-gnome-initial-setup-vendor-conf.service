@@ -1,0 +1,13 @@
+[Unit]
+Description=Migrate GNOME Initial Setup vendor configuration to /etc
+Before=gdm.service
+ConditionPathExists=/var/lib/eos-image-defaults/branding/gnome-initial-setup.conf
+ConditionPathExists=!/etc/gnome-initial-setup/vendor.conf
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=mv /var/lib/eos-image-defaults/branding/gnome-initial-setup.conf /etc/gnome-initial-setup/vendor.conf
+
+[Install]
+WantedBy=multi-user.target
