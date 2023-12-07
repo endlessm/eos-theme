@@ -131,4 +131,4 @@ install-data-hook:
 uninstall-hook:
 	@rm -f  $(DESTDIR)$(themedir)/icon-theme.cache
 
-CLEANFILES = index.theme.in index.theme
+CLEANFILES = index.theme
