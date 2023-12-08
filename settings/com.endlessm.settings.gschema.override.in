@@ -35,10 +35,6 @@ picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
 [org.gnome.desktop.screensaver]
 picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
 
-# Always enable log out
-[org.gnome.shell]
-always-show-log-out=true
-
 # Automatically import user's pictures into Shotwell
 [org.yorba.shotwell.preferences.files]
 auto-import=true
