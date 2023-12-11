@@ -30,6 +30,7 @@ button-layout='appmenu:minimize,maximize,close'
 # Specify the default background image
 [org.gnome.desktop.background]
 picture-uri='file:///usr/share/eos-media/desktop-background-C.jpg'
+picture-uri-dark='file:///usr/share/eos-media/desktop-background-C.jpg'
 
 # Specify the default lock screen image
 [org.gnome.desktop.screensaver]
