@@ -16,7 +16,6 @@ monospace-font-name='Source Code Pro 10'
 
 # Hide the weekday by default
 [org.gnome.desktop.interface]
-clock-show-weekday=false
 avatar-directories=['/usr/share/pixmaps/faces/EndlessOS/']
 
 [org.gnome.desktop.wm.preferences]
