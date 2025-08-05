@@ -94,6 +94,7 @@ fonts/Makefile
 gnome-initial-setup/Makefile
 gnome-software/Makefile
 icons/Makefile
+logos/Makefile
 safe-defaults/Makefile
 settings/Makefile
 ])

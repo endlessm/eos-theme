@@ -3,7 +3,7 @@ AM_DISTCHECK_CONFIGURE_FLAGS = \
 	--with-systemdunitdir='$${prefix}/lib/systemd/system' \
 	$(NULL)
 
-SUBDIRS = gnome-initial-setup gnome-software
+SUBDIRS = gnome-initial-setup gnome-software logos
 
 if BUILD_ICONTHEME
 SUBDIRS += icons

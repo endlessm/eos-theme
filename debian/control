@@ -22,7 +22,8 @@ Architecture: any
 Depends: eos-icon-theme,
          eos-extra-faces,
          eos-extra-fonts,
-         eos-default-settings
+         eos-default-settings,
+         eos-logos
 Description: transitional metapackage for EndlessOS theme
  This is a transitional metapackage that depends on the
  other packages provided by eos-theme.
@@ -60,3 +61,11 @@ Replaces: eos-theme (<< 1.4.0)
 Breaks: eos-theme (<< 1.4.0)
 Description: default icon theme for EndlessOS
  This package contains the default icon theme used by EndlessOS.
+
+Package: eos-logos
+Architecture: any
+Depends: ${misc:Depends}
+Replaces: eos-theme (<< 1.4.0)
+Breaks: eos-theme (<< 1.4.0)
+Description: logos of EndlessOS
+ This package contains EndlessOS logos.
