@@ -4,10 +4,8 @@ theme_DATA = $(theme_in_files:.theme.in=.theme)
 
 fullcolor_render_sizes = "24x24" "64x64"
 symbolic_render_sizes = "scalable"
-symbolic_encode_sizes = "16x16" "24x24" "32x32" "48x48" "64x64" "96x96"
 
 all_dirs=$(shell SIZES="$(fullcolor_render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/fullcolor/$$size/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
-all_dirs+=$(shell SIZES="$(symbolic_encode_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/symbolic/scalable/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
 all_dirs+=$(shell SIZES="$(symbolic_render_sizes)"; for size in $$SIZES; do for dir in `find $(srcdir)/symbolic/$$size/* -type d`; do dirname="`basename $$dir`"; printf "$$size/$$dirname\n"; done; done;)
 THEME_DIRS = $(shell ALL_DIRS="$(all_dirs)"; echo $$ALL_DIRS | tr ' ' '\n' | sort -u | tr '\n' ',')
 
@@ -97,10 +95,6 @@ install-data-local:
 			context="`dirname $$file`"; \
 			$(mkdir_p) $(DESTDIR)$(themedir)/$$size/$$context; \
 			$(install_sh_DATA) $(srcdir)/symbolic/$$size/$$file $(DESTDIR)$(themedir)/$$size/$$file; \
-			for enc_size in $(symbolic_encode_sizes); do \
-				$(mkdir_p) $(DESTDIR)$(themedir)/$$enc_size/$$context; \
-				$(GTK_ENCODE_SYMBOLIC_SVG) $(srcdir)/symbolic/$$size/$$file $$enc_size -o $(DESTDIR)$(themedir)/$$enc_size/$$context; \
-			done; \
 		done; \
 	done
 
@@ -116,10 +110,6 @@ uninstall-local:
 		for file in `cd $(srcdir)/symbolic/$$size && find . -name "*.svg"`; do \
 			context="`dirname $$file`"; \
 			rm -f $(DESTDIR)$(themedir)/$$size/$$file; \
-			for enc_size in $(symbolic_encode_sizes); do \
-				name="`basename $$file .svg`.symbolic.png"; \
-				rm -f $(DESTDIR)$(themedir)/$$enc_size/$$context/$$name; \
-			done; \
 		done; \
 	done
 
